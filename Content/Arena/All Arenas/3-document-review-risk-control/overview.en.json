@@ -1,0 +1,119 @@
+{
+  "highlight": "The LangChain ecosystem is mature and stable",
+  "industry": "Information Technology,Administrative Management,Finance & Trade,Energy & Manufacturing",
+  "category": "Risk Control,Management,Operations",
+  "cycle": "3.5-5 days",
+  "case_no": "Case251119X01",
+  "sections": [
+    {
+      "title": "1. Business Highlights",
+      "subsections": [
+        {
+          "title": "Highlight Cards",
+          "content": [
+            "- The LangChain ecosystem is mature and stable: 120K+ GitHub stars and 90M+ monthly downloads, making it suitable for long-term maintenance",
+            "- More accurate complex document parsing: Layout-aware table extraction reaches an F1 of 84.4%, outperforming traditional tools",
+            "- Low scenario migration cost: Adapts to many PDF review tasks by adjusting prompts and rules",
+            "- Deployable with a moderate technical threshold: A demo can be completed relatively quickly by configuring the workflow"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "2. Basic Information",
+      "subsections": [
+        {
+          "title": "2.1 Overview",
+          "content": [
+            "**Business Background**: Document inspection, review, and risk identification are widely used in industries such as finance and healthcare, as well as in functions such as management and operations. Based on user-predefined rules and standards, this solution automatically parses editable and semi-structured PDF files provided by users, checks title consistency and chapter completeness, evaluates risks in key items, and finally outputs a JSON-format report containing the extracted key content and evaluation results."
+          ]
+        },
+        {
+          "title": "2.2 Classification Tags",
+          "content": [
+            "**Industry**: Information Technology, Administrative Management, Finance & Trade, Energy & Manufacturing",
+            "**Category**: Risk Control, Management, Operations",
+            "**Technology Category**: Natural Language Processing (NLP), Agent, Retrieval-Augmented Generation (RAG), Information Extraction"
+          ]
+        },
+        {
+          "title": "2.3 Implementation Cycle",
+          "content": [
+            "- Demo development: 3.5-5 days"
+          ]
+        },
+        {
+          "title": "2.4 Team Composition",
+          "content": [
+            "- Demo phase: 1 business expert, 1 algorithm engineer"
+          ]
+        },
+        {
+          "title": "2.5 Business Pain Points",
+          "content": [
+            "- Low efficiency and high cost of manual review: Reviewing one 30-100 page specialized plan document often requires business staff to perform supporting actions such as search, verification, tracing, and communication, taking 3-5 hours, while professional documents impose high capability requirements on business staff",
+            "- High error rate in manual review: Reviewing 5+ documents continuously in one day increases the risk of missed detections by about 10%, which may lead to serious safety incidents and legal disputes",
+            "- Poor traceability in manual review: After a problem point is found, departments such as operations may need to be coordinated to inspect logs before the document operation record can be confirmed, making traceability evidence difficult and inefficient to obtain"
+          ]
+        },
+        {
+          "title": "2.6 Core Functions",
+          "content": [
+            "- Structured processing: Organizes original text written in natural language into structured text segments according to chapter layout",
+            "- Intelligent chapter inspection: Automatically checks text chapters for completeness based on preset specifications and standards",
+            "- Intelligent risk assessment: Automatically evaluates the risks of specified key information in the document based on preset specifications and standards",
+            "- Standardized output: Outputs results based on a preset format template"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3. Best Practice Version",
+      "subsections": [
+        {
+          "title": "3.1.1 Reasons for Best Practice Selection",
+          "content": [
+            "- Mature technology: Built on mainstream open-source components such as LangChain and Pydantic, making the overall solution stable and easy to maintain.",
+            "- More accurate parsing: Layout-aware technology achieves an F1 of 84.4% on complex table extraction tasks, outperforming traditional tools.",
+            "- Strong generalization: The structured parsing and standardized output modules can be migrated to many PDF review scenarios.",
+            "- Efficient implementation: A demo can be built quickly by configuring the established process, with moderate programming requirements."
+          ]
+        },
+        {
+          "title": "3.1.2 Version Information",
+          "content": [
+            "- **Version Type**: Private deployment - server deployment edition",
+            "- **Team Name**: Real-World AI self-developed and verified",
+            "- **Chinese Name**: /",
+            "- **English Name**: Real-World AI",
+            "- **Author Website**: This site",
+            "- **Initial Release Date**: 2025-11-14",
+            "- **Last Updated**: 2026-02-02",
+            "- **Last Reviewed**: 2026-02-02",
+            "- **Key Dependencies**: LangChain (by LangChain) · Pydantic (by Pydantic) · unstructured (by Unstructured.io) · Faiss (by Facebook) · GLM"
+          ]
+        },
+        {
+          "title": "3.1.3 Implementation Details",
+          "content": [
+            "[Practice Details](https://gvxnc4ekbvn.feishu.cn/wiki/BQlFwLeAfiQlMHkPg5zc10P4nKb?from=from_copylink)"
+          ]
+        },
+        {
+          "title": "3.1.4 Metrics",
+          "content": [
+            "**Core Business Metrics**",
+            "- Time to review one 30-100 page document is reduced by 90%",
+            "- Labor cost in the document review workflow is reduced by 80%",
+            "- Human error in the document review workflow is reduced by 80%",
+            "**Core Technical Metrics**",
+            "- Chapter completeness judgment (macro-average F1) >=99%",
+            "- Target field similarity matching accuracy (Jaro-Winkler value) >= 0.95",
+            "- Text summary generation (Ragas Faithfulness value) >= 0.98",
+            "- JSON document format compliance >= 100%"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -37,15 +37,21 @@ nul
 arena_data.json
 *.xlsx~
 
-# cus add
+# ide
 .idea/
-.DS_Store
-# .claude/
-node_modules/
-/node_modules/
-*.zip
-/push.sh
-/run_pull.sh
-/run_push.sh
+
+# log
 logs/
 *.log
+
+# python
+__pycache__/
+*.py[cod]
+.eggs/
+*.egg-info/
+
+# custom
+/run.sh
+/run_pull.sh
+/run_push.sh
+/push.sh

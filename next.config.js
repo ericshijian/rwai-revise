@@ -1,24 +1,21 @@
 const createNextIntlPlugin = require('next-intl/plugin');
+const withNextIntl = createNextIntlPlugin();
+const basePath = process.env.NEXT_BASE_PATH || '';
+const isStaticExport = process.env.STATIC_EXPORT === '1' || process.env.STATIC_EXPORT === 'true';
 
-// Use i18n config from root directory
-const withNextIntl = createNextIntlPlugin('./i18n.ts');
-
-const repo = process.env.GITHUB_REPOSITORY?.split('/')[1] ?? 'npm-test-2';
-const isGhPages = process.env.GITHUB_ACTIONS === 'true';
-const basePath = isGhPages ? `/${repo}` : '';
-
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: isGhPages ? 'export' : undefined,
-  trailingSlash: true,
-
+  ...(isStaticExport ? { output: 'export', trailingSlash: true } : {}),
   basePath,
-  assetPrefix: isGhPages ? `${basePath}/` : '',
-  env: {
-    NEXT_PUBLIC_BASE_PATH: basePath,
-  },
-
+  assetPrefix: basePath ? `${basePath}/` : undefined,
   images: {
     unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
+    ],
   },
 };
 

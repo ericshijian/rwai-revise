@@ -1,13 +1,14 @@
 import fs from 'fs';
 import path from 'path';
+import { getArenaContentFromStaticData, type ArenaContentValue } from '@/lib/static-data';
 
 export interface ContentFile {
   content: string;
   frontmatter?: Record<string, any>;
 }
 
-function normalizeLocale(locale: string): 'en' | 'zh' {
-  return locale === 'zh' ? 'zh' : 'en';
+export interface ArenaContentFile {
+  content: ArenaContentValue;
 }
 
 /**
@@ -23,20 +24,15 @@ export async function getContentFile(
   locale: string
 ): Promise<ContentFile | null> {
   try {
-    const safeLocale = normalizeLocale(locale);
     const contentDir = path.join(process.cwd(), 'Content', contentType);
-    const filePath = path.join(contentDir, `${fileName}.${safeLocale}.md`);
-
-    console.log(`[getContentFile] Looking for: ${filePath}`);
+    const filePath = path.join(contentDir, `${fileName}.${locale}.md`);
 
     // Check if file exists
     if (!fs.existsSync(filePath)) {
-      console.error(`[getContentFile] File not found: ${filePath}`);
       return null;
     }
 
     const content = fs.readFileSync(filePath, 'utf-8');
-    console.log(`[getContentFile] Found file, content length: ${content.length}`);
 
     // Parse frontmatter if exists (between first --- and second ---)
     let frontmatter: Record<string, any> | undefined;
@@ -99,8 +95,35 @@ export async function getArenaContent(
   arenaId: string,
   pageType: string,
   locale: string
-): Promise<ContentFile | null> {
-  return getContentFile(`Arena/All Arenas/${arenaId}`, pageType, locale);
+): Promise<ArenaContentFile | null> {
+  if (pageType === 'overview' || pageType === 'implementation' || pageType === 'tech-configuration') {
+    const normalizedLocale = locale === 'zh' ? 'zh' : 'en';
+    const tabJsonPath = path.join(
+      process.cwd(),
+      'Content',
+      'Arena',
+      'All Arenas',
+      arenaId,
+      `${pageType}.${normalizedLocale}.json`
+    );
+
+    if (fs.existsSync(tabJsonPath)) {
+      try {
+        const parsed = JSON.parse(fs.readFileSync(tabJsonPath, 'utf-8')) as ArenaContentValue;
+        if (parsed && typeof parsed === 'object') {
+          return { content: parsed };
+        }
+      } catch (error) {
+        console.error(`[getArenaContent] Failed to parse tab JSON: ${tabJsonPath}`, error);
+      }
+    }
+  }
+
+  const exportedContent = await getArenaContentFromStaticData(arenaId, pageType, locale);
+  if (exportedContent) {
+    return { content: exportedContent };
+  }
+  return null;
 }
 
 /**
@@ -141,15 +164,14 @@ export async function getHomepageSectionContent(
   section: string,
   locale: string
 ): Promise<ContentFile | null> {
-  const safeLocale = normalizeLocale(locale);
-  const contentFile = await getContentFile('Homepage', 'homepage', safeLocale);
+  const contentFile = await getContentFile('Homepage', 'homepage', locale);
   if (!contentFile) {
-    console.error(`[getHomepageSectionContent] Content file not found for locale=${safeLocale}`);
+    console.error(`[getHomepageSectionContent] Content file not found for locale=${locale}`);
     return null;
   }
 
   const sectionHeader =
-    HOMEPAGE_SECTION_HEADERS[section]?.[safeLocale] ?? section;
+    HOMEPAGE_SECTION_HEADERS[section]?.[locale] ?? section;
 
   // Split by ## headers at the start of a line
   const lines = contentFile.content.split('\n');
@@ -171,7 +193,7 @@ export async function getHomepageSectionContent(
   }
 
   if (sectionStart === -1) {
-    console.error(`[getHomepageSectionContent] Section not found: section="${section}", locale="${safeLocale}", header="${sectionHeader}"`);
+    console.error(`[getHomepageSectionContent] Section not found: section="${section}", locale="${locale}", header="${sectionHeader}"`);
     // Log all ## headers for debugging
     const allHeaders = lines.filter(line => line.startsWith('## ')).map(line => `"${line.substring(3).trim()}"`);
     console.error(`[getHomepageSectionContent] Available headers:`, allHeaders.join(', '));

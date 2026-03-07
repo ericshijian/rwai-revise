@@ -4,10 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run sync-content && next build",
+    "build": "next build",
+    "build:sync": "npm run sync-content && next build",
     "start": "next start",
-    "lint": "next lint",
+    "start:static": "npx serve@latest out -l ${PORT:-8080}",
+    "lint": "eslint .",
     "sync-content": "tsx scripts/sync-content.ts",
+    "export-static-data": "tsx scripts/export-static-data.ts",
     "sync-arena-list": "tsx scripts/sync-arena-list.ts",
     "check-i18n": "tsx scripts/check-i18n.ts"
   },
@@ -42,7 +45,6 @@
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.19",
     "tsx": "^4.21.0",
-    "typescript": "^5.9.3",
-    "@swc/helpers": "^0.5.18"
+    "typescript": "^5.9.3"
   }
 }

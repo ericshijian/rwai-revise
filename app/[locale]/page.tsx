@@ -1,22 +1,16 @@
 import { Button, Badge } from '@/components/ui';
-import { arenas, industries, categories } from '@/lib/data';
+import { industries, categories } from '@/lib/arena-taxonomy';
 import { Arena } from '@/lib/types';
 import { CheckCircle2, Trophy, Star, ArrowRight, Building2, ShoppingCart, GraduationCap, HeartPulse, Zap, Factory, Building, Target, Users, Code2, Layers, FlaskRound, Copy, Shield } from 'lucide-react';
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
 import { getHomepageSectionContent, parseHomepageSectionContent } from '@/lib/content';
 import { Suspense, Fragment } from 'react';
 import Image from 'next/image';
-import { withBasePath } from '@/lib/paths';
 import { ParticlesBackground } from '@/components/effects/particles-background';
 import { ParticleNebulaBackground } from '@/components/effects/particle-nebula-background';
 import { FeaturedArenasShowcase, FeaturedArenasShowcaseSkeleton } from '@/components/featured-arenas-showcase';
-
-// Force static generation
-export const dynamic = 'force-static';
-
-export function generateStaticParams() {
-  return [{ locale: 'en' }, { locale: 'zh' }];
-}
+import { getAllArenasFromStaticData } from '@/lib/static-data';
 
 // Helper function to get localized labels (fallback to content files for consistency)
 function getLabel(locale: string, key: string): string {
@@ -35,6 +29,10 @@ export default async function HomePage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  const supportedLocales = ['en', 'zh'];
+  if (!supportedLocales.includes(locale)) {
+    notFound();
+  }
 
   return (
     <div className="w-full">
@@ -451,6 +449,8 @@ async function ValuePropSection({ locale }: { locale: string }) {
  * Partners Logo Carousel Section
  */
 async function PartnersCarouselSection({ locale }: { locale: string }) {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+  const withBasePath = (path: string) => `${basePath}${path}`;
   const partners = [
     { id: '1', name: 'Partner 1', logo: withBasePath('/partners/logo1.png') },
     { id: '2', name: 'Partner 2', logo: withBasePath('/partners/logo2.png') },
@@ -550,6 +550,8 @@ async function FeaturedArenasSection({ locale }: { locale: string }) {
 
   // Read configuration from markdown
   const arenaIdsStr = parsed['Arena IDs'] || '';
+
+  const arenas = await getAllArenasFromStaticData();
 
   // Parse arena IDs
   const arenaIds = arenaIdsStr.split(',').map((id: string) => id.trim()).filter((id: string) => id);

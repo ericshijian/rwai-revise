@@ -1,25 +1,14 @@
 import { notFound } from 'next/navigation';
-import { getArenaById, getArenaByFolderId, arenas } from '@/lib/data';
 import { ArenaDetailClient } from './client-page';
+import { getAllArenasFromStaticData } from '@/lib/static-data';
 import { getArenaContent } from '@/lib/content';
+import type { ArenaContentValue } from '@/lib/static-data';
 
-// Force static generation for this page
-export const dynamic = 'force-static';
-
-// Disable dynamic params - only pre-generated pages will be accessible
 export const dynamicParams = false;
 
 export async function generateStaticParams() {
-  const locales = ['en', 'zh'];
-
-  const params = locales.flatMap((locale) =>
-    arenas.map((arena) => ({
-      locale,
-      id: arena.folderId,
-    }))
-  );
-
-  return params;
+  const arenas = await getAllArenasFromStaticData();
+  return arenas.map((arena) => ({ id: arena.folderId }));
 }
 
 export default async function ArenaDetailPage({
@@ -28,31 +17,23 @@ export default async function ArenaDetailPage({
   params: Promise<{ locale: string; id: string }>;
 }) {
   const { locale, id } = await params;
-
-  // Try to find arena by id first (for backward compatibility), then by folderId
-  let arena = getArenaById(id);
-  if (!arena) {
-    arena = getArenaByFolderId(id);
-  }
+  const arenas = await getAllArenasFromStaticData();
+  const arena = arenas.find((item) => item.folderId === id || item.id === id);
 
   if (!arena) {
     notFound();
   }
 
-  // Load all content server-side
+  // Load content from exported static JSON only.
   const tabs = ['overview', 'implementation', 'tech-configuration', 'requirements', 'validation-report', 'project-report'] as const;
-  const content: Record<string, string> = {};
-  let hasContent = arena.hasContent || false;
-
-  // Only load content files if hasContent is true
-  if (hasContent) {
-    for (const tab of tabs) {
-      const result = await getArenaContent(id, tab, locale);
-      if (result) {
-        content[tab] = result.content;
-      }
+  const content: Record<string, ArenaContentValue> = {};
+  for (const tab of tabs) {
+    const contentFile = await getArenaContent(arena.folderId, tab, locale);
+    if (contentFile?.content) {
+      content[tab] = contentFile.content;
     }
   }
+  const hasContent = Object.keys(content).length > 0;
 
   return (
     <ArenaDetailClient

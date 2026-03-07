@@ -3,8 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { Arena } from '@/lib/types';
-import { industries } from '@/lib/data';
-import { withBasePath } from '@/lib/paths';
+import { industries } from '@/lib/arena-taxonomy';
 
 interface FeaturedArenasShowcaseProps {
   arenas: Arena[];
@@ -118,6 +117,8 @@ export function FeaturedArenasShowcase({ arenas, locale, title, subtitle }: Feat
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [videoError, setVideoError] = useState(false);
   const [videoLoading, setVideoLoading] = useState(true);
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+  const withBasePath = (path: string) => `${basePath}${path}`;
 
   const selectedArena = arenas[selectedIndex] || arenas[0];
   const isZh = locale === 'zh';
@@ -280,7 +281,7 @@ export function FeaturedArenasShowcase({ arenas, locale, title, subtitle }: Feat
                     }}
                   >
                     <source
-                      src={withBasePath(`/videos/${selectedArena.videoFile || `${selectedArena.folderId}.mp4`}`)}
+                      src="https://rwai-dev.oss-cn-shanghai.aliyuncs.com/demo.mp4"
                       type="video/mp4"
                     />
                     Your browser does not support the video tag.

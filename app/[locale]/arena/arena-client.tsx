@@ -1,12 +1,12 @@
 'use client';
 
-import React from 'react';
+import React, { use } from 'react';
 import { useTranslations } from 'next-intl';
 import { useState, useMemo } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { arenas, categories, industries } from '@/lib/data';
+import { categories, industries } from '@/lib/arena-taxonomy';
 import type { Arena } from '@/lib/types';
 import { Shield, Trophy, Filter, ArrowUpDown, ArrowUp, ArrowDown, Code2, Search, Check, Zap, Star, DollarSign } from 'lucide-react';
 
@@ -178,12 +178,14 @@ function truncateText(text: string, maxLength: number): string {
 }
 
 interface ArenaClientProps {
-  locale: string;
+  params: Promise<{ locale: string }>;
   pageTitle: string;
   pageSubtitle: string;
+  arenas: Arena[];
 }
 
-export default function ArenaClient({ locale, pageTitle, pageSubtitle }: ArenaClientProps) {
+export default function ArenaClient({ params, pageTitle, pageSubtitle, arenas }: ArenaClientProps) {
+  const { locale } = use(params);
   const searchParams = useSearchParams();
   const t = useTranslations('arena');
   const isChina = locale === 'zh';

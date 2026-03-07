@@ -2,7 +2,6 @@
 
 import { useTranslations, useLocale } from 'next-intl';
 import { usePathname, useRouter } from 'next/navigation';
-import Link from 'next/link';
 import { useState } from 'react';
 import { Button } from '@/components/ui';
 import { Menu, X, Github } from 'lucide-react';
@@ -22,6 +21,8 @@ export function Header() {
   const pathname = usePathname();
   const router = useRouter();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+  const withBasePath = (path: string) => `${basePath}${path}`;
 
   const switchLocale = (newLocale: string) => {
     const newPath = pathname.replace(`/${locale}`, `/${newLocale}`);
@@ -33,9 +34,9 @@ export function Header() {
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
         <div className="flex items-center">
-          <Link href={`/${locale}`} className="text-2xl font-bold text-primary">
+          <a href={withBasePath(`/${locale}`)} className="text-2xl font-bold text-primary">
             RWAI Arena
-          </Link>
+          </a>
         </div>
 
         {/* Desktop Navigation */}
@@ -43,9 +44,9 @@ export function Header() {
           {navItems.map((item) => {
             const isActive = pathname === `/${locale}${item.href}`;
             return (
-              <Link
+              <a
                 key={item.key}
-                href={`/${locale}${item.href}`}
+                href={withBasePath(`/${locale}${item.href}`)}
                 className={cn(
                   'text-sm font-medium transition-colors hover:text-text-primary',
                   isActive
@@ -54,7 +55,7 @@ export function Header() {
                 )}
               >
                 {t(item.key)}
-              </Link>
+              </a>
             );
           })}
         </div>
@@ -103,9 +104,9 @@ export function Header() {
             {navItems.map((item) => {
               const isActive = pathname === `/${locale}${item.href}`;
               return (
-                <Link
+                <a
                   key={item.key}
-                  href={`/${locale}${item.href}`}
+                  href={withBasePath(`/${locale}${item.href}`)}
                   onClick={() => setMobileMenuOpen(false)}
                   className={cn(
                     'block py-2 text-base font-medium transition-colors',
@@ -115,7 +116,7 @@ export function Header() {
                   )}
                 >
                   {t(item.key)}
-                </Link>
+                </a>
               );
             })}
             <div className="pt-3 border-t border-gray-200 flex items-center justify-between">
