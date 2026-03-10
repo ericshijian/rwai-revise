@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+"""
+自动检测 V1/V2 格式的 xlsx 转换脚本
+输入：List of Arenas.xlsx
+输出：page.zh.json
+"""
 from __future__ import annotations
 
 import argparse
@@ -26,8 +31,8 @@ JSON_FIELDS = [
     "challenger",
 ]
 
-# Source worksheet columns: B~M (A is ignored)
-XLSX_COLS = {
+# V1: 列 B~M (索引 1~12)
+XLSX_COLS_V1 = {
     "arena_no": 1,
     "title": 2,
     "champion": 3,
@@ -40,6 +45,22 @@ XLSX_COLS = {
     "security": 10,
     "cost": 11,
     "challenger": 12,
+}
+
+# V2: 列 A~L (索引 0~11)
+XLSX_COLS_V2 = {
+    "arena_no": 0,
+    "title": 1,
+    "champion": 2,
+    "verification_status": 3,
+    "highlights": 4,
+    "industry": 5,
+    "category": 6,
+    "speed": 7,
+    "quality": 8,
+    "security": 9,
+    "cost": 10,
+    "challenger": 11,
 }
 
 
@@ -87,7 +108,11 @@ def parse_sheet_paths(zipf: zipfile.ZipFile) -> list[tuple[str, str]]:
         rel_id = rel.attrib.get("Id")
         target = rel.attrib.get("Target")
         if rel_id and target:
-            full_path = posixpath.normpath(posixpath.join("xl", target))
+            # Handle absolute paths (e.g., /xl/worksheets/sheet2.xml)
+            if target.startswith("/"):
+                full_path = target.lstrip("/")
+            else:
+                full_path = posixpath.normpath(posixpath.join("xl", target))
             rel_map[rel_id] = full_path
 
     results: list[tuple[str, str]] = []
@@ -155,6 +180,45 @@ def parse_sheet_rows(zipf: zipfile.ZipFile, sheet_path: str, shared_strings: lis
     return rows
 
 
+def detect_version(rows: list[list[str]]) -> str:
+    """
+    检测 xlsx 格式版本
+    V2: 第一列(A列，索引0)是"擂台编号"
+    V1: 第一列是空的，第二列(B列，索引1)是"擂台编号"
+    """
+    if not rows:
+        return "v1"
+
+    # 找第一个非空行作为表头行
+    header_row = None
+    for row in rows:
+        # 检查是否有任何单元格包含"擂台编号"
+        for cell in row:
+            if "擂台编号" in cell:
+                header_row = row
+                break
+        if header_row:
+            break
+
+    if not header_row:
+        return "v1"  # 默认v1
+
+    # 检查 A 列（索引0）是否是"擂台编号"
+    col_a = header_row[0].strip() if len(header_row) > 0 else ""
+
+    # 检查 B 列（索引1）是否是"擂台编号"
+    col_b = header_row[1].strip() if len(header_row) > 1 else ""
+
+    if col_a == "擂台编号":
+        return "v2"
+    elif col_b == "擂台编号":
+        return "v1"
+    else:
+        # 如果都检测不到，看 A 列是否有内容
+        # V2 的 A 列有内容，V1 的 A 列通常是空的
+        return "v2" if col_a else "v1"
+
+
 def clean_value(value: str) -> str:
     text = value.strip()
     if text.endswith(".0"):
@@ -177,7 +241,31 @@ def normalize_arena_no(text: str) -> str:
     return value
 
 
-def build_zh_rows(xlsx_path: Path) -> list[dict[str, str]]:
+def build_zh_rows(rows: list[list[str]], version: str) -> list[dict[str, str]]:
+    xlsx_cols = XLSX_COLS_V2 if version == "v2" else XLSX_COLS_V1
+
+    result: list[dict[str, str]] = []
+    for row in rows:
+        arena_no = normalize_arena_no(row[xlsx_cols["arena_no"]] if len(row) > xlsx_cols["arena_no"] else "")
+        title = clean_value(row[xlsx_cols["title"]] if len(row) > xlsx_cols["title"] else "")
+
+        if not arena_no or not arena_no.isdigit():
+            continue
+        if not title or "敬请期待" in title:
+            continue
+
+        item: dict[str, str] = {}
+        for key in JSON_FIELDS:
+            idx = xlsx_cols[key]
+            item[key] = clean_value(row[idx] if len(row) > idx else "")
+        item["arena_no"] = arena_no
+        result.append(item)
+
+    return result
+
+
+def parse_xlsx(xlsx_path: Path) -> tuple[list[list[str]], str]:
+    """解析 xlsx，返回行数据和检测到的版本"""
     with zipfile.ZipFile(xlsx_path, "r") as zipf:
         shared_strings = parse_shared_strings(zipf)
         sheets = parse_sheet_paths(zipf)
@@ -187,37 +275,24 @@ def build_zh_rows(xlsx_path: Path) -> list[dict[str, str]]:
         _, sheet_path = sheets[0]
         rows = parse_sheet_rows(zipf, sheet_path, shared_strings)
 
-    result: list[dict[str, str]] = []
-    for row in rows:
-        arena_no = normalize_arena_no(row[XLSX_COLS["arena_no"]] if len(row) > XLSX_COLS["arena_no"] else "")
-        title = clean_value(row[XLSX_COLS["title"]] if len(row) > XLSX_COLS["title"] else "")
-
-        if not arena_no or not arena_no.isdigit():
-            continue
-        if not title or "敬请期待" in title:
-            continue
-
-        item: dict[str, str] = {}
-        for key in JSON_FIELDS:
-            idx = XLSX_COLS[key]
-            item[key] = clean_value(row[idx] if len(row) > idx else "")
-        item["arena_no"] = arena_no
-        result.append(item)
-
-    return result
+    version = detect_version(rows)
+    return rows, version
 
 
 def to_json(xlsx_path: Path) -> Path:
     if not xlsx_path.exists():
         raise FileNotFoundError(f"File not found: {xlsx_path}")
 
+    rows, version = parse_xlsx(xlsx_path)
+
     output_path = xlsx_path.parent / OUTPUT_ZH_JSON_NAME
-    zh_rows = build_zh_rows(xlsx_path)
+    zh_rows = build_zh_rows(rows, version)
 
     with output_path.open("w", encoding="utf-8") as f:
         json.dump(zh_rows, f, ensure_ascii=False, indent=2)
         f.write("\n")
 
+    print(f"Detected format: {version.upper()}")
     return output_path
 
 
@@ -225,7 +300,7 @@ def main() -> None:
     default_file = Path(__file__).resolve().parent / "List of Arenas.xlsx"
 
     parser = argparse.ArgumentParser(
-        description="Generate 'page.zh.json' from List of Arenas.xlsx."
+        description="Generate 'page.zh.json' from List of Arenas.xlsx (auto-detect V1/V2 format)."
     )
     parser.add_argument(
         "xlsx",
