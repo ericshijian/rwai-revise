@@ -791,7 +791,7 @@ async function FinalCtaSection({ locale }: { locale: string }) {
             <Link href={`/${locale}/arena`}>{primaryButton}</Link>
           </Button>
           <Button size="large" variant="secondary" className="border-white text-white hover:bg-white/10" asChild>
-            <a href="https://github.com/THU-ZJAI/Real-World-AI" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/THU-ZJAI/Real-World-AI_Source" target="_blank" rel="noopener noreferrer">
               {secondaryButton}
             </a>
           </Button>
