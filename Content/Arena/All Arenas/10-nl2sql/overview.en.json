@@ -11,10 +11,10 @@
         {
           "title": "Highlight Cards",
           "content": [
-            "- BIRD execution accuracy reaches 75.63%: This open-source NL2SQL solution has reached SOTA-level performance",
-            "- Spider Test EX reaches 89.65%: Complex SQL generation capability is in the top tier",
-            "- Reproducible setup completed in 2-4 days: Includes the BIRD reproduction and evaluation workflow",
-            "- Lower the barrier to using SQL: Natural language can generate high-quality query scripts"
+            "- BIRD execution accuracy reaches 75.63%: Reaches the top level among current open-source NL2SQL solutions",
+            "- Spider Test EX 89.65%: Stable leading performance on a classic benchmark",
+            "- SQL generation time <1 second: Suitable for high-frequency data access and real-time queries",
+            "- 50% lower labor cost: Lowers the data-access barrier for non-SQL users"
           ]
         }
       ]
@@ -25,7 +25,7 @@
         {
           "title": "2.1 Overview",
           "content": [
-            "**Business Background**: Convert user query requirements described in natural language into SQL statements."
+            "**Business Background**: Convert query requirements described by users in natural language into SQL queries."
           ]
         },
         {
@@ -33,7 +33,7 @@
           "content": [
             "**Industry**: Information Technology",
             "**Category**: Service",
-            "**Technology Category**: Large Language Model (LLM), Natural Language Processing, Data Governance, Foundation Large Model, Model Evaluation, NL2SQL, Database, Operations"
+            "**Technology Category**: Large Language Model (LLM), Natural Language Processing, Data Governance, Foundation Model, Model Evaluation, NL2SQL, Database, Operations"
           ]
         },
         {
@@ -51,16 +51,16 @@
         {
           "title": "2.5 Business Pain Points",
           "content": [
-            "- Traditional database operations require specialized operations staff or database administrators and demand strong SQL skills; algorithm practitioners who need specific data also face the cost of learning SQL",
+            "- Traditional database operations require specialized operations staff or database administrators, and these roles need strong SQL proficiency; algorithm practitioners who need specific data also face the cost of learning SQL",
             "- Traditional manual approval workflows are cumbersome and inefficient",
-            "- High data movement and large data volumes create additional challenges for the task"
+            "- High data flow and large data volume create additional challenges for the task"
           ]
         },
         {
           "title": "2.6 Core Functions",
           "content": [
-            "- User instruction understanding: Accurately understands the user's SQL generation requirements expressed in natural language",
-            "- Best SQL script generation: Filters and retrieves multiple candidate SQL instruction patterns based on user requirements, integrates, checks, and ranks them, and returns the optimal result"
+            "- User instruction understanding: Precisely understands SQL-generation requirements expressed in users' natural language",
+            "- Optimal SQL script generation: According to user requirements, screens and retrieves multiple candidate SQL instruction patterns, integrates, checks, and ranks them, and returns the optimal result"
           ]
         }
       ]
@@ -71,23 +71,23 @@
         {
           "title": "3.1.1 Reasons for Best Practice Selection",
           "content": [
-            "- Leading performance: XiYanSQL-QwenCoder achieved 75.63% EX on BIRD, reaching open-source SOTA.",
-            "- Strong generalization: EX reached 89.65% on Spider Test, with stable performance on complex query generation.",
-            "- Reproducible solution: Provides rapid setup steps and the BIRD evaluation process based on this model.",
-            "- Business-friendly: Natural language can generate SQL directly, significantly lowering the barrier to database operations."
+            "- Leading performance: Uses the XiYanSQL-QwenCoder series, achieving EX 75.63% on BIRD and EX 89.65% on Spider Test, placing it among the top open-source solutions.",
+            "- Extremely fast response: Single SQL generation takes no more than 1 second, making it suitable for high-frequency queries and online interaction scenarios.",
+            "- Accurate and usable: Average SQL generation accuracy reaches 95%, significantly reducing manual rewriting and debugging cost.",
+            "- Significant cost reduction: Overall labor cost is reduced by 50%, enabling business users unfamiliar with SQL to retrieve data quickly."
           ]
         },
         {
           "title": "3.1.2 Version Information",
           "content": [
-            "- **Version Type**: Private deployment - server deployment edition",
-            "- **Team Name**: Real-World AI republished and verified",
+            "- **Version Type**: Private Deployment - Server Deployment Edition",
+            "- **Team Name**: Real-World AI Reproduced and Verified",
             "- **Chinese Name**: Alibaba Cloud Team",
             "- **English Name**: Alibaba Cloud XGenerationLab",
             "- **Author Website**: https://cn.aliyun.com/product/bailian/xiyan",
             "- **Initial Release Date**: 2025-03",
-            "- **Last Updated**: 2026-03-10",
-            "- **Last Reviewed**: 2026-03-10",
+            "- **Last Updated**: 2025-10-31",
+            "- **Last Reviewed**: 2025-11-09",
             "- **Key Dependencies**: XiYan-SQL · XiYanSQL-QwenCoder"
           ]
         },
@@ -102,7 +102,7 @@
           "content": [
             "**Core Business Metrics**",
             "- Time to generate a single SQL script does not exceed 1 second",
-            "- Average SQL script generation accuracy reaches 95%",
+            "- Average accuracy of generated SQL scripts reaches 95%",
             "- Reduce labor cost by 50%",
             "**Core Technical Metrics**",
             "- Same as the business metrics"

@@ -1,6 +1,6 @@
 {
-  "highlight": "Enterprise-grade demo video completed in two and a half days",
-  "industry": "Information Technology,Finance & Trade,Science & Education",
+  "highlight": "A 1-minute demo video completed in 2.5 days",
+  "industry": "Information Technology,Finance & Trade,Scientific Research & Education",
   "category": "Service,Operations,Marketing",
   "cycle": "2.5 days",
   "case_no": "Case251107Y02",
@@ -11,10 +11,10 @@
         {
           "title": "Highlight Cards",
           "content": [
-            "- Enterprise-grade demo video completed in two and a half days: A finished video can be delivered quickly when requirements are clear",
-            "- Full MCP toolchain coverage: Speech recognition, voice-over, soundtrack, and other steps can be completed in an integrated workflow",
-            "- Mature open-source solution combination: Built on coordinated execution with Claude Code and multiple MCP services",
-            "- Tool selection is among the leaders: Core MCP components receive strong attention on platforms such as GitHub and Hugging Face"
+            "- A 1-minute demo video completed in 2.5 days: Significantly faster than the traditional 7+ day production cycle",
+            "- Cost controlled within RMB 1,000: Suitable for low-budget delivery by SMEs",
+            "- Character Error Rate (CER) <=5%: Subtitle recognition quality meets demo needs",
+            "- One integrated workflow for subtitles, dubbing, and background music: Supports fast revision and finalization"
           ]
         }
       ]
@@ -25,15 +25,15 @@
         {
           "title": "2.1 Overview",
           "content": [
-            "**Business Background**: Based on video materials recorded by the user and requirement settings entered in text, this solution automatically generates a presentation video with voice, subtitles, and background music."
+            "**Business Background**: Based on user-recorded video footage and text-based requirement settings, this solution automatically generates an introduction video that includes voice-over, subtitles, and background music."
           ]
         },
         {
           "title": "2.2 Classification Tags",
           "content": [
-            "**Industry**: Information Technology, Finance & Trade, Science & Education",
+            "**Industry**: Information Technology, Finance & Trade, Scientific Research & Education",
             "**Category**: Service, Operations, Marketing",
-            "**Technology Category**: MCP tools, Computer Vision, Speech and Audio, ASR, TTS"
+            "**Technology Category**: MCP Tools, Computer Vision, Speech and Audio, ASR, TTS"
           ]
         },
         {
@@ -51,19 +51,19 @@
         {
           "title": "2.5 Business Pain Points",
           "content": [
-            "- Small and mid-sized companies consistently have strong demand for product function demos, but with limited budgets they often have to trade off between high-quality video production and high cost",
-            "- Traditional manual production of this type of video requires roles such as recording, editing, and sometimes soundtrack production and voice-over, resulting in relatively high labor cost, usually RMB 100-1500 per minute or even higher",
-            "- Traditional manual production takes a long time for editing footage and processing audio such as denoising, alignment, and soundtrack work, usually taking about 7+ days from preparation to completion",
-            "- If the finished video needs adjustment, traditional manual production makes revision relatively difficult"
+            "- Small and medium-sized companies consistently have strong demand for product feature demos, but limited budgets force tradeoffs between high-quality video production and high spending",
+            "- Traditional manual production of this type of video usually requires personnel for filming, editing, possibly music arrangement, and voice-over, with labor costs typically ranging from RMB 100-1500 per minute or even higher",
+            "- Traditional manual production takes a long time for editing footage and audio processing, such as denoising, alignment, and music matching, usually around 7+ days from preparation to completion",
+            "- Traditional manual production makes post-release revisions relatively difficult"
           ]
         },
         {
           "title": "2.6 Core Functions",
           "content": [
-            "- Convert the original audio of the video into subtitles based on ASR technology",
-            "- Generate speech from subtitles based on TTS technology",
-            "- Generate background music based on subtitles and user instructions through music generation technology",
-            "- Integrate subtitles, speech, background music, and the original video to produce a new presentation video"
+            "- Convert the original video audio into subtitles using ASR technology",
+            "- Generate voice-over from subtitles using TTS technology",
+            "- Generate background music from subtitles and user instructions using music generation technology",
+            "- Integrate subtitles, voice-over, background music, and the original video to generate a new introduction video"
           ]
         }
       ]
@@ -74,24 +74,24 @@
         {
           "title": "3.1.1 Reasons for Best Practice Selection",
           "content": [
-            "- Faster delivery: When requirements are clear, an enterprise-grade demo video can be completed in as little as two and a half days.",
-            "- Complete toolchain: Key steps such as speech recognition, text-to-speech, and music generation can all be connected.",
-            "- Mature solution: Uses Claude Code to call multiple MCP services, with a clear and stable collaboration workflow.",
-            "- Leading selection: The MCP tools used are all in the high-attention tier on platforms such as GitHub and Hugging Face."
+            "- Faster delivery: When requirements are clear, completion can be as fast as 2.5 days, clearly shorter than traditional video production cycles.",
+            "- Cost under control: The cost of a 1-minute demo video can be kept within RMB 1,000, making it suitable for budget-sensitive scenarios.",
+            "- Mature toolchain: Combines current mainstream MCP tools to cover the full chain of ASR, TTS, and soundtrack generation.",
+            "- Easy revision: Subtitles, dubbing, and background music can be regenerated automatically, keeping iteration cost low."
           ]
         },
         {
           "title": "3.1.2 Version Information",
           "content": [
-            "- **Version Type**: Private deployment - server deployment edition",
-            "- **Team Name**: Real-World AI self-developed and verified",
+            "- **Version Type**: Private Deployment - Server Deployment Edition",
+            "- **Team Name**: Real-World AI Self-Developed and Verified",
             "- **Chinese Name**: /",
             "- **English Name**: Real-World AI",
             "- **Author Website**: This site",
             "- **Initial Release Date**: 2025-11-07",
             "- **Last Updated**: 2026-03-10",
             "- **Last Reviewed**: 2026-03-10",
-            "- **Key Dependencies**: Claude Code · FFmpeg · FunASR · PaddleSpeech · GLM"
+            "- **Key Dependencies**: Claude Code · FFmpeg · FunASR · PaddleSpeech · Claude Opus 4.6"
           ]
         },
         {
@@ -104,15 +104,15 @@
           "title": "3.1.4 Metrics",
           "content": [
             "**Core Business Metrics**",
-            "- Audio, video, and subtitles stay synchronized, the video is clear and plays smoothly, and the output meets expected quality, ideally with added value such as soundtrack effects",
-            "- Response is timely during production and modifications are quick, with finalization completed within 1 week",
-            "- Production cost is controlled within RMB 1000",
+            "- Audio, visuals, and subtitles are synchronized, the video is clear and plays smoothly, meeting expected quality and ideally including value-added elements such as background music",
+            "- The production process is responsive, revisions are quick, and the final cut is completed within 1 week",
+            "- Production cost is controlled within RMB 1,000",
             "- Video duration is about 1 minute",
             "**Core Technical Metrics**",
             "- Character Error Rate (CER) <=5%",
             "- Average recognition accuracy (Acc) >= 75%",
             "- Average recognition speed (RTF) <= 0.5",
-            "- Subjective spot checks of speech naturalness pass"
+            "- Speech naturalness passes subjective spot checks"
           ]
         }
       ]

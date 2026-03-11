@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { Arena } from '@/lib/types';
 import { industries } from '@/lib/arena-taxonomy';
@@ -117,17 +117,42 @@ export function FeaturedArenasShowcase({ arenas, locale, title, subtitle }: Feat
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [videoError, setVideoError] = useState(false);
   const [videoLoading, setVideoLoading] = useState(true);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
   const withBasePath = (path: string) => `${basePath}${path}`;
 
   const selectedArena = arenas[selectedIndex] || arenas[0];
   const isZh = locale === 'zh';
 
-  // Reset video state when changing arena
   useEffect(() => {
+    let rafId: number | null = null;
     setVideoError(false);
     setVideoLoading(true);
-  }, [selectedIndex]);
+
+    const checkReady = () => {
+      const videoEl = videoRef.current;
+      if (!videoEl) {
+        rafId = requestAnimationFrame(checkReady);
+        return;
+      }
+
+      // Fallback for browsers/environments where canplay/loadeddata timing is inconsistent.
+      if (videoEl.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA || videoEl.currentTime > 0) {
+        setVideoLoading(false);
+        return;
+      }
+
+      rafId = requestAnimationFrame(checkReady);
+    };
+
+    rafId = requestAnimationFrame(checkReady);
+
+    return () => {
+      if (rafId !== null) {
+        cancelAnimationFrame(rafId);
+      }
+    };
+  }, [selectedArena?.id]);
 
   return (
     <section className="relative py-section bg-[#0A0E17]">
@@ -262,6 +287,7 @@ export function FeaturedArenasShowcase({ arenas, locale, title, subtitle }: Feat
                 ) : (
                   <video
                     key={selectedArena.id}
+                    ref={videoRef}
                     className="w-full aspect-video object-contain bg-black"
                     controls
                     autoPlay
@@ -270,6 +296,12 @@ export function FeaturedArenasShowcase({ arenas, locale, title, subtitle }: Feat
                     playsInline
                     onError={() => {
                       setVideoError(true);
+                      setVideoLoading(false);
+                    }}
+                    onPlaying={() => {
+                      setVideoLoading(false);
+                    }}
+                    onLoadedMetadata={() => {
                       setVideoLoading(false);
                     }}
                     onCanPlay={() => {

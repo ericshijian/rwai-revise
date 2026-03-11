@@ -69,7 +69,7 @@
 <p>该方案在Deep Research评测基准DeepResearch Bench上跑测综合得分为51.86，在该榜单截止12月24日全部开源可用方案中排名第2位（与第1位方案tavily-research（51.97）综合得分差距小于1.5%，确保生成报告准确、可信，提升用户体验。</p>
 <p>该方案的报告平均生成时间≤15分钟，比salesforce-air-deep-research（平均约为20分钟）快33%，提升调研效率。</p>
 <p>成本优化</p>
-<p>该方案支持以GLM-4.7等API收费相对更低的高性能大模型为基座，从而节省近60%运营成本。</p>
+<p>该方案支持以GLM-5等API收费相对更低的高性能大模型为基座，从而节省近60%运营成本。</p>
 <p>该方案生成报告模板的契合度≥95%，格式规范度≥99%，相比人工方案（约1周，需沟通、调研、专家咨询、校对、排版等流程），人力成本降低约95%。</p>
 <p>——实践者</p></td>
 </tr>
@@ -92,11 +92,11 @@
 <p>关联引用</p>
 <p>Claude Code (by Anthropic) GitHub：https://github.com/anthropics/claude-code</p>
 <p>Metaso MCP (by 秘塔科技) 文档：https://www.modelscope.cn/mcp/servers/metasota/metaso-search</p>
-<p>GLM-4.7(by 智谱) GitHub：https://github.com/zai-org/GLM-4.5</p>
+<p>GLM-5(by 智谱) GitHub：https://github.com/zai-org/GLM-5</p>
 <p>版本状态</p>
 <p>首发日期：2025-11-20</p>
-<p>最近更新：2026-02-02</p>
-<p>最近审阅：2026-02-02</p></td>
+<p>最近更新：2026-03-10</p>
+<p>最近审阅：2026-03-10</p></td>
 </tr>
 </tbody>
 </table>

@@ -68,7 +68,7 @@ export function Header() {
               onClick={() => switchLocale(locale === 'en' ? 'zh' : 'en')}
               className="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors"
             >
-              {locale === 'en' ? 'EN' : '中文'}
+              {locale === 'en' ? '中文' : 'EN'}
             </button>
           </div>
 

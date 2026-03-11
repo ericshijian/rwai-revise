@@ -64,9 +64,9 @@
 - **英文名称**: Real-World AI
 - **作者网站**: 本站
 - **首发日期**: 2025-11-07
-- **最近更新**: 2026-02-02
-- **最近审阅**: 2026-02-02
-- **关键依赖**: Claude Code · FFmpeg · FunASR · PaddleSpeech · GLM
+- **最近更新**: 2026-03-10
+- **最近审阅**: 2026-03-10
+- **关键依赖**: Claude Code · FFmpeg · FunASR · PaddleSpeech · Claude Opus 4.6
 
 ### 3.1.3 实施详情
 

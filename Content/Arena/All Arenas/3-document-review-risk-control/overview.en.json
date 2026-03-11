@@ -1,5 +1,5 @@
 {
-  "highlight": "The LangChain ecosystem is mature and stable",
+  "highlight": "90% faster review for 30-100 page documents",
   "industry": "Information Technology,Administrative Management,Finance & Trade,Energy & Manufacturing",
   "category": "Risk Control,Management,Operations",
   "cycle": "3.5-5 days",
@@ -11,10 +11,10 @@
         {
           "title": "Highlight Cards",
           "content": [
-            "- The LangChain ecosystem is mature and stable: 120K+ GitHub stars and 90M+ monthly downloads, making it suitable for long-term maintenance",
-            "- More accurate complex document parsing: Layout-aware table extraction reaches an F1 of 84.4%, outperforming traditional tools",
-            "- Low scenario migration cost: Adapts to many PDF review tasks by adjusting prompts and rules",
-            "- Deployable with a moderate technical threshold: A demo can be completed relatively quickly by configuring the workflow"
+            "- 90% faster review for 30-100 page documents: Dramatically shortens processing time for each document",
+            "- Section completeness F1 >=99%: Structured inspection results are stable and reliable",
+            "- 80% lower review labor cost: Reduces repetitive verification and coordination",
+            "- General-purpose PDF risk review: Adapts to compliant documents across finance, healthcare, and other domains"
           ]
         }
       ]
@@ -25,7 +25,7 @@
         {
           "title": "2.1 Overview",
           "content": [
-            "**Business Background**: Document inspection, review, and risk identification are widely used in industries such as finance and healthcare, as well as in functions such as management and operations. Based on user-predefined rules and standards, this solution automatically parses editable and semi-structured PDF files provided by users, checks title consistency and chapter completeness, evaluates risks in key items, and finally outputs a JSON-format report containing the extracted key content and evaluation results."
+            "**Business Background**: Document inspection, review, and risk identification are widely used in industries such as finance and healthcare, as well as in management and operations functions. Based on user-defined rules and standards, this solution automatically parses editable, semi-structured PDF files provided by users, checks title consistency and section completeness, evaluates risks for key items, and ultimately outputs a JSON-formatted report containing the extracted key content and assessment results."
           ]
         },
         {
@@ -51,18 +51,18 @@
         {
           "title": "2.5 Business Pain Points",
           "content": [
-            "- Low efficiency and high cost of manual review: Reviewing one 30-100 page specialized plan document often requires business staff to perform supporting actions such as search, verification, tracing, and communication, taking 3-5 hours, while professional documents impose high capability requirements on business staff",
-            "- High error rate in manual review: Reviewing 5+ documents continuously in one day increases the risk of missed detections by about 10%, which may lead to serious safety incidents and legal disputes",
-            "- Poor traceability in manual review: After a problem point is found, departments such as operations may need to be coordinated to inspect logs before the document operation record can be confirmed, making traceability evidence difficult and inefficient to obtain"
+            "- Low efficiency and high cost of manual review: Reviewing a 30-100 page specialized document often requires business staff to assist with searching, verification, tracing, and communication, taking 3-5 hours; professional documents also demand strong domain expertise",
+            "- High error rate in manual review: Reviewing 5+ documents continuously within a day increases missed-detection risk by about 10%, which may lead to serious safety incidents and legal disputes",
+            "- Poor traceability in manual review: After an issue is found, teams may need to coordinate with operations and other departments to check logs before confirming document actions, making traceability evidence difficult and inefficient to obtain"
           ]
         },
         {
           "title": "2.6 Core Functions",
           "content": [
-            "- Structured processing: Organizes original text written in natural language into structured text segments according to chapter layout",
-            "- Intelligent chapter inspection: Automatically checks text chapters for completeness based on preset specifications and standards",
-            "- Intelligent risk assessment: Automatically evaluates the risks of specified key information in the document based on preset specifications and standards",
-            "- Standardized output: Outputs results based on a preset format template"
+            "- Structured processing: Organizes source text written in natural language into structured text segments by chapter layout",
+            "- Intelligent section inspection: Based on preset standards and rules, the workflow automatically checks the completeness of text sections",
+            "- Intelligent risk assessment: Based on preset standards and rules, the workflow automatically evaluates risks for specified key information in the document",
+            "- Standardized output: Outputs results using preset format templates"
           ]
         }
       ]
@@ -73,17 +73,17 @@
         {
           "title": "3.1.1 Reasons for Best Practice Selection",
           "content": [
-            "- Mature technology: Built on mainstream open-source components such as LangChain and Pydantic, making the overall solution stable and easy to maintain.",
-            "- More accurate parsing: Layout-aware technology achieves an F1 of 84.4% on complex table extraction tasks, outperforming traditional tools.",
-            "- Strong generalization: The structured parsing and standardized output modules can be migrated to many PDF review scenarios.",
-            "- Efficient implementation: A demo can be built quickly by configuring the established process, with moderate programming requirements."
+            "- Higher review efficiency: Review time for 30-100 page documents is reduced by 90%, making it suitable for fast batch processing.",
+            "- More stable risk control: Section completeness F1 >=99% and text-summary Faithfulness >=0.98 significantly reduce missed detections and misjudgments.",
+            "- Lower labor input: Review process labor cost is reduced by 80%, replacing a large amount of repetitive checking work.",
+            "- Stronger generalization: Layout-aware parsing combined with rule-based workflows can be quickly migrated to PDF review scenarios across industries."
           ]
         },
         {
           "title": "3.1.2 Version Information",
           "content": [
-            "- **Version Type**: Private deployment - server deployment edition",
-            "- **Team Name**: Real-World AI self-developed and verified",
+            "- **Version Type**: Private Deployment - Server Deployment Edition",
+            "- **Team Name**: Real-World AI Self-Developed and Verified",
             "- **Chinese Name**: /",
             "- **English Name**: Real-World AI",
             "- **Author Website**: This site",
@@ -103,13 +103,13 @@
           "title": "3.1.4 Metrics",
           "content": [
             "**Core Business Metrics**",
-            "- Time to review one 30-100 page document is reduced by 90%",
+            "- Review time for one 30-100 page document is reduced by 90%",
             "- Labor cost in the document review workflow is reduced by 80%",
             "- Human error in the document review workflow is reduced by 80%",
             "**Core Technical Metrics**",
-            "- Chapter completeness judgment (macro-average F1) >=99%",
-            "- Target field similarity matching accuracy (Jaro-Winkler value) >= 0.95",
-            "- Text summary generation (Ragas Faithfulness value) >= 0.98",
+            "- Section completeness judgment (macro-average F1) >=99%",
+            "- Target-field similarity matching accuracy (Jaro-Winkler score) >= 0.95",
+            "- Text summary generation (Ragas Faithfulness score) >= 0.98",
             "- JSON document format compliance >= 100%"
           ]
         }

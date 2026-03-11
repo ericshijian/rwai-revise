@@ -15,9 +15,9 @@
                 "title": "亮点卡片",
                 "content": [
                   "- DeepResearch Bench排名第2：权威基准测试综合得分51.86，与第一名差距<1.5%",
-                  "- 减少95%手动研究工作量：自动化资料搜集与信息整合，显著提升调研效率",
-                  "- 报告≤15分钟生成：快速输出结构化调研文档，支持批量生成",
-                  "- 支持开源大模型：采用GLM-4.7等高性价比基座，整体成本更低"
+                  "- 减少95%手动研究工作量：自动化资料搜集、信息整合，大幅提升调研效率",
+                  "- 报告≤15分钟生成：快速输出高质量结构化调研文档，支持批量生成",
+                  "- 支持开源大模型：节省90%成本，GLM-5等常见开源基座大模型"
                 ]
               },
               {
@@ -85,7 +85,7 @@
                 "title": "3.1.1 入选最佳实践理由",
                 "content": [
                   "- 效果领先：在 DeepResearch Bench 开源方案中排名第 2，生成内容稳定、可信，适用于正式业务决策场景。",
-                  "- 生成更快：单篇报告 ≤15 分钟完成，显著快于同类方案（普遍 ≥20 分钟）。",
+                  "- 生成更快：单篇报告 ≤15 分钟完成，显著快于同类方案与人工周级流程。",
                   "- 成本更低：支持高性价比常用大模型，在保持效果的前提下，整体成本降低 60%+。",
                   "- 企业可用：模板契合度 ≥95%，格式规范度 ≥99%，可直接用于内部汇报与对外材料。"
                 ]
@@ -99,8 +99,8 @@
                   "- **英文名称**: Real-World AI",
                   "- **作者网站**: 本站",
                   "- **首发日期**: 2025-11-20",
-                  "- **最近更新**: 2026-02-02",
-                  "- **最近审阅**: 2026-02-02",
+                  "- **最近更新**: 2026-03-10",
+                  "- **最近审阅**: 2026-03-10",
                   "- **关键依赖**: Claude Code · Metaso MCP · GLM"
                 ]
               },
@@ -703,7 +703,7 @@
     "en": {
       "overview": {
         "highlight": "Ranked No. 2 on DeepResearch Bench",
-        "industry": "Information Technology,Science & Education,Finance & Trade",
+        "industry": "Information Technology,Scientific Research & Education,Finance & Trade",
         "category": "Service,Operations,Management",
         "cycle": "3.5-5 days",
         "case_no": "Case251120Y01",
@@ -714,17 +714,17 @@
               {
                 "title": "Highlight Cards",
                 "content": [
-                  "- Ranked No. 2 on DeepResearch Bench: Achieved a comprehensive score of 51.86 on the authoritative benchmark, with a gap of less than 1.5% from first place",
-                  "- Reduce 95% of manual research workload: Automates data collection and information integration, significantly improving research efficiency",
-                  "- Reports generated in <=15 minutes: Rapidly outputs structured research documents and supports batch generation",
-                  "- Supports open-source large models: Uses cost-effective foundation models such as GLM-4.7, lowering overall cost"
+                  "- Ranked #2 in DeepResearch Bench: Score 51.86 on authoritative benchmark, <1.5% gap from #1",
+                  "- Reduce 95% Manual Research Workload: Automated data collection and integration, greatly improving efficiency",
+                  "- Generate Reports in <=15 Minutes: Quickly output high-quality structured research documents, support batch generation",
+                  "- Support Open-Source LLMs: Save 90% cost, support open-source models like GLM-5"
                 ]
               },
               {
                 "title": "Demo",
                 "content": [
                   "**[Download is not currently supported for this type of content]**",
-                  "(Expected outcome preview. Video material is from [DeerFlow] produced by ByteDance.)"
+                  "(Preview of expected results. Video material is from [DeerFlow] produced by ByteDance.)"
                 ]
               }
             ]
@@ -735,14 +735,14 @@
               {
                 "title": "2.1 Overview",
                 "content": [
-                  "**Business Background**: Intelligent research tasks are widely used in scenarios such as competitive and industry research, supervision and review, and training and learning across industries including finance and trade, consulting and management, public policy, marketing, and enterprise operations. The demand is broad and the usage frequency is extremely high.",
-                  "**Solution**: Based on the research topic and keywords entered by the user, this example automatically collects relevant materials, performs knowledge extraction and integration through intelligent workflows, and finally generates and outputs a research document according to a preset template."
+                  "**Business Background**: Intelligent research tasks are widely used in scenarios such as competitive research, industry research, supervision and review, and training and learning across industries including finance and trade, consulting and management, public policy, marketing, and enterprise operations. Demand is broad and usage frequency is extremely high.",
+                  "**Solution**: Based on the research topic and keywords entered by the user, this case automatically collects relevant materials, performs knowledge extraction and integration through an intelligent workflow, and finally generates and outputs a research document according to a preset template."
                 ]
               },
               {
                 "title": "2.2 Classification Tags",
                 "content": [
-                  "**Industry**: Information Technology, Science & Education, Finance & Trade",
+                  "**Industry**: Information Technology, Scientific Research & Education, Finance & Trade",
                   "**Category**: Service, Operations, Management",
                   "**Technology Category**: Large Language Model (LLM), Natural Language Processing (NLP), Agent, Retrieval-Augmented Generation (RAG), Text Generation"
                 ]
@@ -762,18 +762,18 @@
               {
                 "title": "2.5 Business Pain Points",
                 "content": [
-                  "- Low efficiency of manual research: Completing a full research report, such as an industry report or competitive analysis report, usually requires professional researchers to spend 1-3 weeks collecting, organizing, analyzing, and writing materials",
-                  "- Difficult information integration: When facing massive information sources, manual filtering and integration can easily miss important content, and it is difficult to ensure the accuracy and timeliness of information",
-                  "- Inconsistent report formats: Different people and institutions have very different writing styles and layout requirements, affecting report standardization and consistency",
-                  "- High update and maintenance costs: Market conditions change rapidly, so manually updating and maintaining research report versions requires continuous investment; building a research team or inviting experts also adds extra cost"
+                  "- Low efficiency of manual research: Completing a full research report, such as an industry report or competitive analysis report, usually requires researchers with domain expertise to spend 1-3 weeks on material collection, organization, analysis, and writing",
+                  "- High difficulty of information integration: When facing massive information sources, manual filtering and integration can easily miss important content, and it is difficult to ensure information accuracy and timeliness",
+                  "- Inconsistent report formats: Different people and organizations have very different writing styles and layout requirements, affecting report standardization and consistency",
+                  "- High update and maintenance costs: Rapidly changing market conditions require continuous investment to manually update and maintain research report versions; building a research team or engaging experts also incurs additional costs"
                 ]
               },
               {
                 "title": "2.6 Core Functions",
                 "content": [
-                  "- Internet-wide data collection: Automatically collects relevant materials across the internet based on user-entered topics and keywords",
-                  "- Information integration and analysis: Extracts key information from collected candidate materials and generates viewpoints and summaries",
-                  "- Automatic report generation: Automatically generates structured research documents according to preset templates"
+                  "- Internet-wide material collection: Based on user-entered topics and keywords, automatically collect relevant materials across the internet",
+                  "- Information integration and analysis: Extract key information from collected candidate materials and generate viewpoints and summaries",
+                  "- Automated report generation: Automatically generate structured research documents according to preset templates"
                 ]
               }
             ]
@@ -784,23 +784,23 @@
               {
                 "title": "3.1.1 Reasons for Best Practice Selection",
                 "content": [
-                  "- Leading performance: Ranked No. 2 among open-source solutions on DeepResearch Bench, with stable and trustworthy generated content suitable for formal business decision-making scenarios.",
-                  "- Faster generation: A single report is completed in <=15 minutes, significantly faster than comparable solutions, which generally take >=20 minutes.",
-                  "- Lower cost: Supports cost-effective mainstream large models while maintaining performance, reducing overall cost by more than 60%.",
-                  "- Enterprise-ready: Template fit is >=95% and format compliance is >=99%, enabling direct use in internal reporting and external materials."
+                  "- Quality Leadership: Ranked #2 on DeepResearch Bench. Stable, trustworthy output for business decisions.",
+                  "- ⚡ Faster Generation: ≤15 min per report, significantly faster than alternatives (typically ≥20 min).",
+                  "- 💰 Lower Cost: Supports high-performance & cost-effective models (e.g., GLM series), 60%+ cost reduction while maintaining quality.",
+                  "- ✓ Enterprise Ready: ≥95% template match, ≥99% format compliance. Ready for internal and external use."
                 ]
               },
               {
                 "title": "3.1.2 Version Information",
                 "content": [
-                  "- **Version Type**: Private deployment - server deployment edition",
-                  "- **Team Name**: Real-World AI self-developed and verified",
+                  "- **Version Type**: Private Deployment - Server Deployment Edition",
+                  "- **Team Name**: Real-World AI Self-Developed and Verified",
                   "- **Chinese Name**: /",
                   "- **English Name**: Real-World AI",
                   "- **Author Website**: This site",
                   "- **Initial Release Date**: 2025-11-20",
-                  "- **Last Updated**: 2026-02-02",
-                  "- **Last Reviewed**: 2026-02-02",
+                  "- **Last Updated**: 2026-03-10",
+                  "- **Last Reviewed**: 2026-03-10",
                   "- **Key Dependencies**: Claude Code · Metaso MCP · GLM"
                 ]
               },
@@ -816,7 +816,7 @@
                   "**Core Business Metrics**",
                   "- Single-document research accuracy: Report template fit >=95% and format compliance >=99%, improving processes such as format revision",
                   "- Single-document review time: Reduced to within 15 minutes (manual work requires 1 week), supporting large-scale and stable batch generation",
-                  "- Single-document labor cost: Combined with the efficiency indicators above and the technical indicators below, manual operation and review cost can be reduced by 95%, improving user experience",
+                  "- Single-document labor cost: Combined with the efficiency indicators above and the technical indicators below, manual operation and review costs can be reduced by 95%, improving user experience",
                   "**Core Technical Metrics**",
                   "- Comprehensive evaluation of single-document research performance: DeepResearch Bench comprehensive score >=51, ensuring the credibility of generated reports"
                 ]
@@ -1416,10 +1416,10 @@
               {
                 "title": "亮点卡片",
                 "content": [
-                  "- BIRD执行准确率75.63%：开源NL2SQL方案达到SOTA水平",
-                  "- Spider Test EX值89.65%：复杂SQL生成能力处于第一梯队",
-                  "- 2-4日完成可复现搭建：附带BIRD复现与跑测流程",
-                  "- 降低SQL使用门槛：自然语言即可生成高质量查询脚本"
+                  "- BIRD执行准确率75.63%：达到当前开源NL2SQL头部水平",
+                  "- Spider Test EX 89.65%：经典评测集表现稳定领先",
+                  "- SQL生成时间<1秒：适合高频取数与实时查询",
+                  "- 人力成本降低50%：降低非SQL人员取数门槛"
                 ]
               }
             ]
@@ -1476,10 +1476,10 @@
               {
                 "title": "3.1.1 入选最佳实践理由",
                 "content": [
-                  "- 效果领先：XiYanSQL-QwenCoder 在 BIRD 上取得 75.63% EX，达到开源 SOTA。",
-                  "- 泛化能力强：在 Spider Test 上 EX 达 89.65%，复杂查询生成表现稳定。",
-                  "- 方案可复现：给出了基于该模型的快速搭建步骤与 BIRD 跑测过程。",
-                  "- 业务友好：自然语言即可生成 SQL，显著降低数据库操作门槛。"
+                  "- 效果领先：采用 XiYanSQL-QwenCoder 系列，在 BIRD 上 EX 75.63%、Spider Test 上 EX 89.65%，处于开源头部水平。",
+                  "- 响应极快：单次 SQL 生成时间不超过 1 秒，适合高频查询和在线交互场景。",
+                  "- 准确可用：SQL 生成平均准确率达 95%，显著减少人工改写与排错成本。",
+                  "- 降本显著：整体人力成本降低 50%，让不熟悉 SQL 的业务人员也能快速取数。"
                 ]
               },
               {
@@ -1937,10 +1937,10 @@
               {
                 "title": "Highlight Cards",
                 "content": [
-                  "- BIRD execution accuracy reaches 75.63%: This open-source NL2SQL solution has reached SOTA-level performance",
-                  "- Spider Test EX reaches 89.65%: Complex SQL generation capability is in the top tier",
-                  "- Reproducible setup completed in 2-4 days: Includes the BIRD reproduction and evaluation workflow",
-                  "- Lower the barrier to using SQL: Natural language can generate high-quality query scripts"
+                  "- BIRD execution accuracy reaches 75.63%: Reaches the top level among current open-source NL2SQL solutions",
+                  "- Spider Test EX 89.65%: Stable leading performance on a classic benchmark",
+                  "- SQL generation time <1 second: Suitable for high-frequency data access and real-time queries",
+                  "- 50% lower labor cost: Lowers the data-access barrier for non-SQL users"
                 ]
               }
             ]
@@ -1951,7 +1951,7 @@
               {
                 "title": "2.1 Overview",
                 "content": [
-                  "**Business Background**: Convert user query requirements described in natural language into SQL statements."
+                  "**Business Background**: Convert query requirements described by users in natural language into SQL queries."
                 ]
               },
               {
@@ -1959,7 +1959,7 @@
                 "content": [
                   "**Industry**: Information Technology",
                   "**Category**: Service",
-                  "**Technology Category**: Large Language Model (LLM), Natural Language Processing, Data Governance, Foundation Large Model, Model Evaluation, NL2SQL, Database, Operations"
+                  "**Technology Category**: Large Language Model (LLM), Natural Language Processing, Data Governance, Foundation Model, Model Evaluation, NL2SQL, Database, Operations"
                 ]
               },
               {
@@ -1977,16 +1977,16 @@
               {
                 "title": "2.5 Business Pain Points",
                 "content": [
-                  "- Traditional database operations require specialized operations staff or database administrators and demand strong SQL skills; algorithm practitioners who need specific data also face the cost of learning SQL",
+                  "- Traditional database operations require specialized operations staff or database administrators, and these roles need strong SQL proficiency; algorithm practitioners who need specific data also face the cost of learning SQL",
                   "- Traditional manual approval workflows are cumbersome and inefficient",
-                  "- High data movement and large data volumes create additional challenges for the task"
+                  "- High data flow and large data volume create additional challenges for the task"
                 ]
               },
               {
                 "title": "2.6 Core Functions",
                 "content": [
-                  "- User instruction understanding: Accurately understands the user's SQL generation requirements expressed in natural language",
-                  "- Best SQL script generation: Filters and retrieves multiple candidate SQL instruction patterns based on user requirements, integrates, checks, and ranks them, and returns the optimal result"
+                  "- User instruction understanding: Precisely understands SQL-generation requirements expressed in users' natural language",
+                  "- Optimal SQL script generation: According to user requirements, screens and retrieves multiple candidate SQL instruction patterns, integrates, checks, and ranks them, and returns the optimal result"
                 ]
               }
             ]
@@ -1997,17 +1997,17 @@
               {
                 "title": "3.1.1 Reasons for Best Practice Selection",
                 "content": [
-                  "- Leading performance: XiYanSQL-QwenCoder achieved 75.63% EX on BIRD, reaching open-source SOTA.",
-                  "- Strong generalization: EX reached 89.65% on Spider Test, with stable performance on complex query generation.",
-                  "- Reproducible solution: Provides rapid setup steps and the BIRD evaluation process based on this model.",
-                  "- Business-friendly: Natural language can generate SQL directly, significantly lowering the barrier to database operations."
+                  "- Leading performance: Uses the XiYanSQL-QwenCoder series, achieving EX 75.63% on BIRD and EX 89.65% on Spider Test, placing it among the top open-source solutions.",
+                  "- Extremely fast response: Single SQL generation takes no more than 1 second, making it suitable for high-frequency queries and online interaction scenarios.",
+                  "- Accurate and usable: Average SQL generation accuracy reaches 95%, significantly reducing manual rewriting and debugging cost.",
+                  "- Significant cost reduction: Overall labor cost is reduced by 50%, enabling business users unfamiliar with SQL to retrieve data quickly."
                 ]
               },
               {
                 "title": "3.1.2 Version Information",
                 "content": [
-                  "- **Version Type**: Private deployment - server deployment edition",
-                  "- **Team Name**: Real-World AI republished and verified",
+                  "- **Version Type**: Private Deployment - Server Deployment Edition",
+                  "- **Team Name**: Real-World AI Reproduced and Verified",
                   "- **Chinese Name**: Alibaba Cloud Team",
                   "- **English Name**: Alibaba Cloud XGenerationLab",
                   "- **Author Website**: https://cn.aliyun.com/product/bailian/xiyan",
@@ -2028,7 +2028,7 @@
                 "content": [
                   "**Core Business Metrics**",
                   "- Time to generate a single SQL script does not exceed 1 second",
-                  "- Average SQL script generation accuracy reaches 95%",
+                  "- Average accuracy of generated SQL scripts reaches 95%",
                   "- Reduce labor cost by 50%",
                   "**Core Technical Metrics**",
                   "- Same as the business metrics"
@@ -2448,7 +2448,7 @@
   "11-feature-recommendation-assistant": {
     "zh": {
       "overview": {
-        "highlight": "REQ>95%显著减少无效对话",
+        "highlight": "主动追问率超过95%",
         "industry": "信息技术,科研教育",
         "category": "服务,运营",
         "cycle": "≤ 7日",
@@ -2460,10 +2460,10 @@
               {
                 "title": "亮点卡片",
                 "content": [
-                  "- REQ>95%显著减少无效对话：主动追问能力明显强于通用模型",
-                  "- 平均≤3轮完成需求澄清：单次对话解决效率提升70%",
-                  "- 任务解决率≥90%：用户更容易获得可执行推荐结果",
-                  "- 启动成本下降约80%：低代码流程配合轻量模型即可落地"
+                  "- 主动追问率超过95%：显著高于通用模型约15%",
+                  "- 任务解决率≥90%：推荐结果更接近真实需求",
+                  "- 平均≤3轮完成推荐：用户获取方案效率提升70%",
+                  "- 启动成本降低80%：低代码即可完成流程搭建"
                 ]
               }
             ]
@@ -2519,10 +2519,10 @@
               {
                 "title": "3.1.1 入选最佳实践理由",
                 "content": [
-                  "- 主动性更强：REQ >95%，面对信息缺失场景能稳定发起有效追问。",
-                  "- 解决更快：追问准确率 >92%，平均 ≤3 轮完成澄清，对话效率提升约 70%。",
-                  "- 体验更稳：任务解决率 ≥90%，首字响应延迟 <5 秒，适合实时咨询场景。",
-                  "- 成本更低：低代码平台加轻量模型即可落地，启动成本下降约 80%。"
+                  "- 追问能力强：REQ >95%，显著高于通用模型约 15%，有效缓解信息缺失场景下的幻觉。",
+                  "- 推荐更准：TSR ≥90%、Q-ACC >92%，少轮对话即可收敛到可执行方案。",
+                  "- 对话更短：平均不超过 3 轮完成需求澄清，用户从发问到解决的效率提升约 70%。",
+                  "- 启动更省：低代码流程配合轻量模型可将启动成本降低约 80%，推理成本再降约 30%。"
                 ]
               },
               {
@@ -2534,8 +2534,8 @@
                   "- **英文名称**: Real-World AI",
                   "- **作者网站**: 本站",
                   "- **首发日期**: 2025-11-26",
-                  "- **最近更新**: 2026-02-02",
-                  "- **最近审阅**: 2026-02-02",
+                  "- **最近更新**: 2026-03-10",
+                  "- **最近审阅**: 2026-03-10",
                   "- **关键依赖**: Coze （by 字节跳动） · GLM"
                 ]
               },
@@ -2566,8 +2566,8 @@
     },
     "en": {
       "overview": {
-        "highlight": "REQ >95% significantly reduces ineffective conversations",
-        "industry": "Information Technology,Science & Education",
+        "highlight": "Proactive follow-up rate exceeds 95%",
+        "industry": "Information Technology,Scientific Research & Education",
         "category": "Service,Operations",
         "cycle": "<= 7 days",
         "case_no": "Case251126X01",
@@ -2578,10 +2578,10 @@
               {
                 "title": "Highlight Cards",
                 "content": [
-                  "- REQ >95% significantly reduces ineffective conversations: Its proactive follow-up capability is clearly stronger than general-purpose models",
-                  "- Requirements clarified in <=3 turns on average: Single-session resolution efficiency improves by 70%",
-                  "- Task resolution rate >=90%: Users are more likely to get actionable recommendation results",
-                  "- Startup cost reduced by about 80%: Can be implemented with low-code workflows and lightweight models"
+                  "- Proactive follow-up rate exceeds 95%: About 15% higher than general-purpose models",
+                  "- Task success rate >=90%: Recommendations align more closely with real user needs",
+                  "- Recommendation completed in an average of <=3 turns: Improves user solution-acquisition efficiency by 70%",
+                  "- 80% lower startup cost: The workflow can be built with low-code tools"
                 ]
               }
             ]
@@ -2592,13 +2592,13 @@
               {
                 "title": "2.1 Overview",
                 "content": [
-                  "**Business Background**: In recent years, with the explosion of AI technology and the wave of intelligent transformation across industries, massive numbers of non-algorithm practitioners in vertical industries urgently want to find AI tools that meet their needs and suit them, but it is difficult to achieve this through traditional methods. In response to this \"information asymmetry\" in vertical industries, this example builds an intelligent guidance assistant for selecting AI tools in vertical domains. Using an \"expert consultation\" style, it proactively asks clarifying follow-up questions in response to vague or incomplete natural-language queries from users, such as \"I want to find a tool for writing documents,\" and gradually delivers precise AI tool recommendations through a limited number of dialogue turns."
+                  "**Business Background**: In recent years, with the explosion of AI technology and the wave of intelligent transformation across industries, a large number of non-algorithm practitioners in vertical industries urgently want to find AI tools that match their needs and fit their situations, but struggle to do so through traditional methods. To address this information asymmetry in vertical industries, this case builds an intelligent guidance assistant for selecting AI tools in vertical domains. It works like expert consulting: when users provide vague or incomplete natural-language queries, such as I need a tool for writing documents, the assistant proactively asks clarifying follow-up questions and gradually arrives at precise AI tool recommendations within a limited number of dialogue turns."
                 ]
               },
               {
                 "title": "2.2 Classification Tags",
                 "content": [
-                  "**Industry**: Information Technology, Science & Education",
+                  "**Industry**: Information Technology, Scientific Research & Education",
                   "**Category**: Service, Operations",
                   "**Technology Category**: Agent, Large Language Model (LLM), Natural Language Processing (NLP), Knowledge Graph (KG), Intent Understanding, Retrieval-Augmented Generation (RAG)"
                 ]
@@ -2618,15 +2618,15 @@
               {
                 "title": "2.5 Business Pain Points",
                 "content": [
-                  "- Vague intent leads to serious hallucinations: Users often cannot accurately describe technical constraints such as budget, deployment method, and specific requirements. Traditional chatbots are either not flexible enough or make blind guesses and recommendations, causing mismatched results, such as recommending expensive enterprise software to individual users, with low usability and confidence",
-                  "- Low efficiency of passive interaction: When traditional chatbots encounter inputs outside their preset range, they tend to output generic refusal text such as \"insufficient information\" and lack constructive guidance, forcing users to repeatedly probe and refine their wording before the bot can clarify their needs",
-                  "- Poor conversion and user experience: Traditional chatbots mostly respond passively and lack expert-level proactive follow-up capability, so conversations are easily interrupted and user churn is high, making it hard to create effective business conversion and cross-recommendation opportunities"
+                  "- Vague intent leads to severe hallucinations: Users often cannot accurately describe technical constraints such as budget, deployment method, or specific needs. Traditional chatbots are either not flexible enough or make blind guesses and recommendations, leading to mismatched results, such as recommending expensive enterprise software to individual users, with low usability and confidence",
+                  "- Passive interaction is inefficient: When traditional chatbots face inputs beyond their preset scope, they tend to output generic rejection text such as insufficient information without constructive guidance, forcing users to keep probing and refining their own wording before the bot can understand the need",
+                  "- Poor conversion and user experience: Traditional chatbots are mostly passive responders and lack expert-level proactive questioning, making conversations easy to interrupt, increasing user drop-off, and making it difficult to generate effective business conversion and cross-selling opportunities"
                 ]
               },
               {
                 "title": "2.6 Core Functions",
                 "content": [
-                  "- Follow-up guidance: When users express needs vaguely, the assistant does not answer directly but instead refines and clarifies the user's real needs through 1-3 rounds of follow-up questions"
+                  "- Follow-up guidance: When users express vague needs, the dialogue assistant does not answer directly. Instead, it refines and clarifies real user needs through 1-3 rounds of follow-up questions"
                 ]
               }
             ]
@@ -2637,44 +2637,44 @@
               {
                 "title": "3.1.1 Reasons for Best Practice Selection",
                 "content": [
-                  "- More proactive: REQ >95%, enabling it to consistently initiate effective follow-up questions when information is missing.",
-                  "- Faster resolution: Follow-up accuracy >92%, with clarification completed in <=3 turns on average, improving conversation efficiency by about 70%.",
-                  "- More stable experience: Task solution rate >=90% and first-token latency <5 seconds, making it suitable for real-time consultation scenarios.",
-                  "- Lower cost: Can be implemented with a low-code platform plus lightweight models, reducing startup cost by about 80%."
+                  "- Strong follow-up capability: REQ >95%, about 15% higher than general-purpose models, effectively mitigating hallucinations in information-missing scenarios.",
+                  "- More accurate recommendations: TSR >=90% and Q-ACC >92%, allowing the dialogue to converge to an actionable solution within a few turns.",
+                  "- Shorter conversations: User needs are clarified in no more than 3 turns on average, improving end-to-end efficiency from question to solution by about 70%.",
+                  "- Lower startup cost: A low-code workflow plus lightweight models reduces startup cost by about 80%, with inference cost reduced by another 30%."
                 ]
               },
               {
                 "title": "3.1.2 Version Information",
                 "content": [
-                  "- **Version Type**: Private deployment - server deployment edition",
-                  "- **Team Name**: Real-World AI self-developed and verified",
+                  "- **Version Type**: Private Deployment - Server Deployment Edition",
+                  "- **Team Name**: Real-World AI Self-Developed and Verified",
                   "- **Chinese Name**: /",
                   "- **English Name**: Real-World AI",
                   "- **Author Website**: This site",
                   "- **Initial Release Date**: 2025-11-26",
-                  "- **Last Updated**: 2026-02-02",
-                  "- **Last Reviewed**: 2026-02-02",
+                  "- **Last Updated**: 2026-03-10",
+                  "- **Last Reviewed**: 2026-03-10",
                   "- **Key Dependencies**: Coze (by ByteDance) · GLM"
                 ]
               },
               {
                 "title": "3.1.3 Implementation Details",
                 "content": [
-                  "To be published"
+                  "To be released"
                 ]
               },
               {
                 "title": "3.1.4 Metrics",
                 "content": [
                   "**Core Business Metrics**",
-                  "- Average conversation turns <= 3: Reduce ineffective conversations and improve the user inquiry process by 70%",
-                  "- Task Solution Rate (TSR) >= 90%: The proportion of users who ultimately receive satisfactory recommendations, measured based on actions taken such as link clicks or positive ratings",
-                  "- First-token response latency < 5 seconds",
+                  "- Average number of dialogue turns <= 3: Reduces ineffective dialogue and improves user inquiry efficiency by 70%",
+                  "- Task Success Rate (TSR) >= 90%: The proportion of users who ultimately receive a satisfactory recommendation, measured by completed actions such as clicking a link or leaving positive feedback",
+                  "- First-character response latency < 5 seconds",
                   "**Core Technical Metrics**",
-                  "- Task Solution Rate (TSR) >= 90%: Same as the core business metric",
-                  "- First-token response latency < 5 seconds: Same as the core business metric",
-                  "- Request Rate (REQ) > 95%: How often the assistant proactively initiates follow-up questions when faced with queries missing information (for GPT-4o, this value is about 15%), helping improve the task solution rate (see core business metric)",
-                  "- Follow-up Accuracy (Q-ACC) > 92%: The accuracy with which the assistant's follow-up questions hit the core missing information; higher accuracy improves the user inquiry process efficiency (see core business metric)"
+                  "- Task Success Rate (TSR) >= 90%: same as the core business metric",
+                  "- First-character response latency < 5 seconds: same as the core business metric",
+                  "- Request Rate (REQ) > 95%: The frequency with which the assistant proactively asks follow-up questions when facing information-missing queries; for GPT-4o this value is about 15%, and higher REQ improves task success rate",
+                  "- Follow-up Accuracy (Q-ACC) > 92%: The accuracy with which follow-up questions hit the core missing information, improving user inquiry efficiency"
                 ]
               }
             ]
@@ -2686,7 +2686,7 @@
   "12-credit-report": {
     "zh": {
       "overview": {
-        "highlight": "信贷报告15分钟内生成",
+        "highlight": "评测综合得分49排名第1",
         "industry": "金融贸易",
         "category": "服务、运营",
         "cycle": "≤7日",
@@ -2698,10 +2698,10 @@
               {
                 "title": "亮点卡片",
                 "content": [
-                  "- 信贷报告15分钟内生成：较人工撰写效率提升160倍",
-                  "- 评测得分提升超41%：在参与对比方案中排名第一",
-                  "- 模板覆盖率≥95%：内容正确率>90%，可直接进入审核流程",
-                  "- 运营成本降低近60%：适配MiniMax-M2、GLM-4.7等高性价比模型"
+                  "- 评测综合得分49排名第1：较原方案提升41%",
+                  "- 报告≤15分钟生成：较人工流程提效160倍",
+                  "- 模板覆盖率≥95%：可稳定生成核心信贷章节",
+                  "- 运营成本降低近60%：适配高性价比基座模型"
                 ]
               }
             ]
@@ -2762,10 +2762,10 @@
               {
                 "title": "3.1.1 入选最佳实践理由",
                 "content": [
-                  "- 质量领先：在团队自建评测集中得分由约 35 提升至 49，提升超 41%，排名第一。",
-                  "- 生成更快：单篇信贷报告 ≤15 分钟完成，较人工流程效率提升约 160 倍。",
-                  "- 成本更低：适配高性价比基座模型，整体运营成本降低近 60%。",
-                  "- 交付可用：模板覆盖率 ≥95%，内容正确率 >90%，显著减少人工协同成本。"
+                  "- 效果领先：评测集综合得分达 49，较原人工+半自动方案提升超 41%，在参评方案中排名第一。",
+                  "- 生成更快：单篇报告 ≤15 分钟完成，较业界同类智能流程再快 33%，较人工模式提效约 160 倍。",
+                  "- 成本更低：适配 MiniMax-M2.1、GLM-5 等高性价比模型，整体运营成本降低近 60%。",
+                  "- 企业可用：模板覆盖率 ≥95%、内容正确率 >90%，可直接支撑授信、尽调、贷后等场景。"
                 ]
               },
               {
@@ -2777,9 +2777,9 @@
                   "- **英文名称**: Real-World AI",
                   "- **作者网站**: 本站",
                   "- **首发日期**: 2026-01-07",
-                  "- **最近更新**: 2026-02-02",
-                  "- **最近审阅**: 2026-02-02",
-                  "- **关键依赖**: 待更新"
+                  "- **最近更新**: 2026-03-10",
+                  "- **最近审阅**: 2026-03-10",
+                  "- **关键依赖**: LangChain（by LangChain） · GLM"
                 ]
               },
               {
@@ -2812,7 +2812,7 @@
     },
     "en": {
       "overview": {
-        "highlight": "Credit reports generated within 15 minutes",
+        "highlight": "Ranked No. 1 with a composite evaluation score of 49",
         "industry": "Finance & Trade",
         "category": "Service,Operations",
         "cycle": "<=7 days",
@@ -2824,10 +2824,10 @@
               {
                 "title": "Highlight Cards",
                 "content": [
-                  "- Credit reports generated within 15 minutes: 160x more efficient than manual drafting",
-                  "- Evaluation score improved by more than 41%: Ranked first among the compared solutions",
-                  "- Template coverage >=95%: Content accuracy >90%, allowing direct entry into the review process",
-                  "- Operating cost reduced by nearly 60%: Compatible with cost-effective models such as MiniMax-M2 and GLM-4.7"
+                  "- Ranked No. 1 with a composite evaluation score of 49: 41% improvement over the original solution",
+                  "- Report generated in <=15 minutes: 160x more efficient than manual workflows",
+                  "- Template coverage >=95%: Can reliably generate core credit-report sections",
+                  "- Nearly 60% lower operating cost: Compatible with cost-effective foundation models"
                 ]
               }
             ]
@@ -2838,7 +2838,7 @@
               {
                 "title": "2.1 Overview",
                 "content": [
-                  "**Business Background**: Credit business is a core profit source for banks, but report writing runs through the entire process from due diligence and approval to post-loan management. It requires extensive manual work for data collection and text organization, while also facing issues such as fragmented data sources, non-uniform templates, and uneven professionalism, leading to low business efficiency and high credit decision risk. Based on a vertical large model and integrated with technologies such as Agent, RAG, and OCR, this case builds an automated report generation demo that quickly outputs trustworthy and usable credit reports, including credit granting, due diligence, and post-loan types, through seamless multi-source data integration, structured content generation, and compliance checks, helping banks improve efficiency and reduce risk in credit operations."
+                  "**Business Background**: Credit business is a core source of profit for banks, but report writing runs through the full process of due diligence, approval, and post-loan management. It requires substantial manual effort for repetitive work such as data collection and text organization, while also facing issues such as fragmented data sources, inconsistent templates, and uneven professionalism, resulting in low business efficiency and high credit decision risk. This case builds an automated report-generation Demo based on a vertical large model and technologies such as Agent, RAG, and OCR. Through seamless integration of multi-source data, structured content generation, and compliance checks, it rapidly outputs credible and usable credit reports for scenarios such as credit approval, due diligence, and post-loan management, helping banks improve efficiency and reduce risk."
                 ]
               },
               {
@@ -2864,20 +2864,20 @@
               {
                 "title": "2.5 Business Pain Points",
                 "content": [
-                  "- Low efficiency of manual writing: Report writing involves extensive data transfer and text organization, which is time-consuming and labor-intensive and occupies core business manpower",
-                  "- Difficult data integration: Multi-source heterogeneous data such as internal banking system data, third-party business registration and credit data, and paper financial statements and collateral materials are difficult to integrate efficiently and are prone to errors",
-                  "- Non-uniform templates and professionalism: Report templates vary greatly across different banks and departments, and some staff lack professional financial and industry analysis capability, affecting report accuracy and decision reliability",
-                  "- Cumbersome review process: Non-standardized report outputs require large amounts of manual review and correction time, making process automation difficult"
+                  "- Low efficiency in manual writing: Report writing involves a large amount of data handling and text organization, is time-consuming and labor-intensive, and occupies core business manpower",
+                  "- Difficulty in data integration: Multi-source heterogeneous data, including internal banking systems, third-party business registration and credit data, and paper financial statements or collateral materials, are hard to integrate efficiently and are prone to errors",
+                  "- Inconsistent templates and professionalism: Report templates vary greatly across banks and departments, and some staff lack professional financial and industry analysis capabilities, affecting report accuracy and decision reliability",
+                  "- Cumbersome review workflow: Output standards for reports are inconsistent, so manual review requires substantial time for corrections, making the process hard to automate"
                 ]
               },
               {
                 "title": "2.6 Core Functions",
                 "content": [
-                  "- Automatic integration of multi-source data: Supports integration with internal private data, financial data sources, and third-party business registration, credit, and tax data, and combines OCR to parse paper documents for one-click data entry and verification",
-                  "- Custom template adaptation: Supports configuration and tuning of bank-specific report templates, covering multiple credit scenarios such as credit granting, due diligence, and post-loan risk assessment",
-                  "- Automatic report generation: Intelligently breaks down report chapter tasks, automatically matches bank templates, and completes 800+ objective data fills and 15+ analytical paragraph generations",
-                  "- Data traceability and compliance checks: Built-in multi-source data verification and financial compliance review rules provide source traceability for cited data to ensure report content is compliant and trustworthy",
-                  "- Human-in-the-loop editing: Supports report polishing, manual online fine-tuning, and layout refinement to meet personalized modification needs"
+                  "- Automatic integration of multi-source data: Supports connections to private internal-bank data, financial data sources, and third-party business registration, credit, and tax data; combines OCR to parse paper documents and enables one-click data entry and validation",
+                  "- Custom template adaptation: Supports configuration and tuning of bank-specific report templates, covering credit approval, due diligence, post-loan risk assessment, and other credit scenarios",
+                  "- Automatic report generation: Intelligently breaks down report-section tasks, automatically matches bank templates, and completes the filling of 800+ objective data points and generation of 15+ analytical paragraphs",
+                  "- Data traceability and compliance checks: Built-in multi-source data verification and financial compliance review rules provide citation tracing to ensure that report content is compliant and trustworthy",
+                  "- Human-in-the-loop editing: Supports report polishing, online manual fine-tuning, and formatting optimization to meet personalized revision needs"
                 ]
               }
             ]
@@ -2888,47 +2888,47 @@
               {
                 "title": "3.1.1 Reasons for Best Practice Selection",
                 "content": [
-                  "- Leading quality: In the team's self-built evaluation set, the score improved from about 35 to 49, an increase of more than 41%, ranking first.",
-                  "- Faster generation: A single credit report is completed within 15 minutes, improving efficiency by about 160x compared with the manual process.",
-                  "- Lower cost: Compatible with cost-effective foundation models, reducing overall operating cost by nearly 60%.",
-                  "- Deliverable output: Template coverage >=95% and content accuracy >90%, significantly reducing manual collaboration cost."
+                  "- Leading performance: The composite score on the evaluation set reaches 49, more than 41% better than the original manual-plus-semi-automated solution, ranking first among participating solutions.",
+                  "- Faster generation: A single report is completed in <=15 minutes, 33% faster than comparable intelligent workflows in the market and about 160x more efficient than manual methods.",
+                  "- Lower cost: Compatible with cost-effective models such as MiniMax-M2.1 and GLM-5, reducing overall operating cost by nearly 60%.",
+                  "- Enterprise-ready: Template coverage reaches >=95% and content accuracy exceeds 90%, directly supporting credit approval, due diligence, post-loan management, and related scenarios."
                 ]
               },
               {
                 "title": "3.1.2 Version Information",
                 "content": [
-                  "- **Version Type**: Private deployment - server deployment edition",
-                  "- **Team Name**: Real-World AI self-developed and verified",
+                  "- **Version Type**: Private Deployment - Server Deployment Edition",
+                  "- **Team Name**: Real-World AI Self-Developed and Verified",
                   "- **Chinese Name**: /",
                   "- **English Name**: Real-World AI",
                   "- **Author Website**: This site",
                   "- **Initial Release Date**: 2026-01-07",
-                  "- **Last Updated**: 2026-02-02",
-                  "- **Last Reviewed**: 2026-02-02",
-                  "- **Key Dependencies**: To be updated"
+                  "- **Last Updated**: 2026-03-10",
+                  "- **Last Reviewed**: 2026-03-10",
+                  "- **Key Dependencies**: LangChain (by LangChain) · GLM"
                 ]
               },
               {
                 "title": "3.1.3 Implementation Details",
                 "content": [
-                  "To be published"
+                  "To be released"
                 ]
               },
               {
                 "title": "3.1.4 Metrics",
                 "content": [
                   "**Core Business Metrics**",
-                  "- Response latency < 10 seconds: Time from data upload to the response of the first section of the draft report",
-                  "- Report coverage >=95%: Automatic generation of core sections such as equity structure, credit standing, and financial industry cooperation, improving completeness of content coverage",
-                  "- Report content accuracy > 90%: The accuracy ratio of core data and analytical content in the report after data and text validation",
-                  "- Task Solution Rate (TSR) >90%: The proportion of generated reports that can meet submission or review requirements after light manual fine-tuning",
-                  "- Based on the above metrics overall, the expected report generation efficiency is 160x higher than the traditional manual input and writing model",
+                  "- Response latency < 10 seconds: Time from data upload to the response of the first generated content segment in the draft report",
+                  "- Report coverage >=95%: Core sections such as equity structure, credit standing, and interbank financial cooperation are generated automatically, improving coverage completeness",
+                  "- Report content accuracy > 90%: The proportion of correct core data and analytical content in the report after data and text validation",
+                  "- Task Success Rate (TSR) >90%: The proportion of generated reports that can meet submission or review requirements after light manual refinement",
+                  "- Based on the metrics above, report-generation efficiency is expected to improve by 160x compared with traditional manual entry and writing",
                   "**Core Technical Metrics**",
-                  "- OCR field extraction accuracy > 95%: Accuracy of recognizing and extracting key information from paper documents such as financial statements and collateral materials",
-                  "- Agent task decomposition accuracy > 92%: Accuracy with which the agent hits the core objectives when splitting report chapter generation tasks",
-                  "- Risk recall rate > 99.5%: Recall ratio covering 31 risk intents across 5 major categories",
-                  "- Multi-source data integration success rate > 98%: Proportion of effective access to and integration of internal, third-party, and local document data",
-                  "- Follow-up Accuracy (Q-ACC) >90%: Accuracy with which intelligently initiated follow-up questions hit core needs when data is missing"
+                  "- OCR field extraction accuracy > 95%: Accuracy of recognition and extraction for key information in paper documents such as financial statements and collateral materials",
+                  "- Agent task decomposition accuracy > 92%: Accuracy with which the Agent hits the core objectives when splitting report-section generation tasks",
+                  "- Risk recall rate > 99.5%: Recall across 31 risk intents in 5 major categories",
+                  "- Multi-source data integration success rate > 98%: The proportion of effective access to and integration of internal, third-party, and local document data sources",
+                  "- Follow-up Accuracy (Q-ACC) >90%: In data-missing scenarios, the accuracy with which intelligent follow-up questions hit core supplemental information needs"
                 ]
               }
             ]
@@ -2940,7 +2940,7 @@
   "13-single-industrial-chain-graph": {
     "zh": {
       "overview": {
-        "highlight": "产业链图谱7天完成构建",
+        "highlight": "7天完成全国产业链图谱",
         "industry": "金融贸易,能源制造",
         "category": "服务、运营",
         "cycle": "≤7日",
@@ -2952,10 +2952,10 @@
               {
                 "title": "亮点卡片",
                 "content": [
-                  "- 产业链图谱7天完成构建：较传统2个月流程提效25倍",
-                  "- 图谱精度达89.32%：较传统人工+机器学习方案提升约20%",
-                  "- 仅需2人小组交付：人力成本降低约80%",
-                  "- 覆盖2.3亿工业品数据：千万家企业关系可统一纳入分析"
+                  "- 7天完成全国产业链图谱：较传统2个月流程提效25倍",
+                  "- 覆盖2.3亿工业品数据：连同千万家企业形成全景图谱",
+                  "- 图谱精度89.32%：较传统方案准确率提升约20%",
+                  "- 2人团队人力成本降80%：运营成本再降60%"
                 ]
               }
             ]
@@ -3010,10 +3010,10 @@
               {
                 "title": "3.1.1 入选最佳实践理由",
                 "content": [
-                  "- 图谱更准：构建精度达 89.32%，较传统人工结合机器学习方案提升约 20%。",
-                  "- 交付更快：全国级产业链图谱可由 2 个月压缩至 7 天完成，效率提升 25 倍。",
-                  "- 成本更低：仅需 2 人小组即可交付，人力成本下降约 80%。",
-                  "- 数据更全：覆盖 2.3 亿件工业品与千万家企业数据，适合产业分析与决策场景。"
+                  "- 构建更快：全国产业链图谱 7 天交付，较传统 2 个月流程提效约 25 倍。",
+                  "- 覆盖更全：覆盖 2.3 亿件工业品与千万家企业，实体与关系信息更完整。",
+                  "- 图谱更准：图谱精度达 89.32%，较传统人工结合机器学习方案提升约 20%。",
+                  "- 成本更低：2 人小组即可完成建设，结合开源模型与低代码平台，人力成本降 80%、运营成本降 60%。"
                 ]
               },
               {
@@ -3027,7 +3027,8 @@
                   "- **首发日期**: 2026-01-13",
                   "- **最近更新**: 2026-02-02",
                   "- **最近审阅**: 2026-02-02",
-                  "- **版本编号**: Case260113X01"
+                  "- **版本编号**: Case260113X01",
+                  "- **关键依赖**: LangChain（by LangChain） · GLM"
                 ]
               },
               {
@@ -3060,7 +3061,7 @@
     },
     "en": {
       "overview": {
-        "highlight": "Industrial chain graph built in 7 days",
+        "highlight": "Nationwide industrial chain graph completed in 7 days",
         "industry": "Finance & Trade,Energy & Manufacturing",
         "category": "Service,Operations",
         "cycle": "<=7 days",
@@ -3072,10 +3073,10 @@
               {
                 "title": "Highlight Cards",
                 "content": [
-                  "- Industrial chain graph built in 7 days: 25x more efficient than the traditional 2-month process",
-                  "- Graph accuracy reaches 89.32%: About 20% higher than traditional manual plus machine learning solutions",
-                  "- Delivered by a team of only 2 people: Labor cost reduced by about 80%",
-                  "- Covers 230 million industrial product records: Relationships among tens of millions of enterprises can be brought into unified analysis"
+                  "- Nationwide industrial chain graph completed in 7 days: 25x more efficient than the traditional 2-month process",
+                  "- Covers 230 million industrial product records: Forms a panoramic graph together with tens of millions of enterprises",
+                  "- Graph accuracy reaches 89.32%: About 20% more accurate than traditional solutions",
+                  "- 80% lower labor cost for a 2-person team: Operating cost reduced by another 60%"
                 ]
               }
             ]
@@ -3106,20 +3107,20 @@
               {
                 "title": "2.5 Business Pain Points",
                 "content": [
-                  "- Long construction cycle: Building a nationwide industrial chain graph traditionally takes 2 months and depends on extensive manual organization, making it difficult to respond quickly to changes in industrial dynamics",
-                  "- Difficult data integration: Nationwide industrial data is scattered across official statistics, industry associations, commercial databases, and other channels, and heterogeneous data is difficult to integrate in a unified way",
-                  "- Inaccurate relationship mining: Complex relationships such as upstream and downstream links, equity ownership, and technology cooperation rely on manual judgment, making it easy to miss key connections and potential risk points",
-                  "- High maintenance cost: Industrial nodes and relationships continue to change with policy and market shifts, while traditional modes have long update cycles and high maintenance labor cost"
+                  "- Long construction cycle: Building a nationwide industrial chain graph traditionally takes 2 months and depends on extensive manual sorting, making it hard to respond quickly to changing industrial dynamics",
+                  "- Difficult data integration: Nationwide industrial data is scattered across official statistics, industry associations, commercial databases, and other channels, and heterogeneous data is difficult to integrate consistently",
+                  "- Inaccurate relationship mining: Complex upstream-downstream, equity, and technical-cooperation relationships rely on manual judgment, making it easy to miss key links and potential risks",
+                  "- High maintenance cost: Industrial nodes and relationships keep evolving with policy and market changes, while traditional updates are slow and labor-intensive"
                 ]
               },
               {
                 "title": "2.6 Core Functions",
                 "content": [
-                  "- Low-code template-based configuration: Provides 30+ industry graph templates and supports custom node types, relation rules, and visualization styles",
-                  "- Intelligent graph generation: Automatically extracts industrial entities such as enterprises, products, and technologies, mines related relationships, and builds a \"six-dimensional hierarchy\" graph of resources - materials - components - products - services - data",
-                  "- Dynamic visualization and interaction: Generates an interactive graph dashboard supporting geographic distribution layers, value-flow annotations, enterprise competition landscape display, node drill-down, and multidimensional filtering",
-                  "- Intelligent analysis report export: Built-in capabilities for industrial chain value distribution, key node identification, and risk transmission simulation allow one-click export of industrial analysis reports and graph visualization files",
-                  "- Rapid update iteration: Supports incremental data updates and automatic relation verification, enabling one full-graph update every week to respond to changes in industrial dynamics"
+                  "- Low-code template configuration: Provides 30+ industry graph templates and supports custom node types, relationship rules, and visualization styles",
+                  "- Intelligent graph generation: Automatically extracts industrial entities such as enterprises, products, and technologies, mines relationships, and builds a six-dimensional hierarchy graph of resources - materials - components - products - services - data",
+                  "- Dynamic visualization and interaction: Generates an interactive graph dashboard supporting geographic distribution layers, value-flow annotations, enterprise competition views, node drill-down, and multi-dimensional filtering",
+                  "- Intelligent analysis report export: Built-in functions for industrial chain value distribution, key-node identification, and risk propagation simulation enable one-click export of industrial analysis reports and graph visualization files",
+                  "- Fast update and iteration: Supports incremental data updates and automatic relationship validation, enabling one full-graph refresh each week to keep up with industrial changes"
                 ]
               }
             ]
@@ -3130,30 +3131,31 @@
               {
                 "title": "3.1.1 Reasons for Best Practice Selection",
                 "content": [
-                  "- More accurate graphs: Construction accuracy reaches 89.32%, about 20% higher than traditional manual plus machine learning solutions.",
-                  "- Faster delivery: A national-scale industrial chain graph can be compressed from 2 months to 7 days, a 25x efficiency improvement.",
-                  "- Lower cost: Delivery requires only a 2-person team, reducing labor cost by about 80%.",
-                  "- More complete data: Covers 230 million industrial products and data from tens of millions of enterprises, making it suitable for industrial analysis and decision-making scenarios."
+                  "- Faster construction: The nationwide industrial chain graph is delivered in 7 days, about 25x faster than the traditional 2-month process.",
+                  "- Broader coverage: Covers 230 million industrial products and tens of millions of enterprises, with more complete entity and relationship information.",
+                  "- Higher graph accuracy: Graph accuracy reaches 89.32%, about 20% better than traditional manual-plus-machine-learning approaches.",
+                  "- Lower cost: A 2-person team can complete the build. Combined with open-source models and a low-code platform, labor cost drops by 80% and operating cost by 60%."
                 ]
               },
               {
                 "title": "3.1.2 Version Information",
                 "content": [
-                  "- **Version Type**: Private deployment - server deployment edition",
-                  "- **Team Name**: Real-World AI self-developed and verified",
+                  "- **Version Type**: Private Deployment - Server Deployment Edition",
+                  "- **Team Name**: Real-World AI Self-Developed and Verified",
                   "- **Chinese Name**: /",
                   "- **English Name**: Real-World AI",
                   "- **Author Website**: This site",
                   "- **Initial Release Date**: 2026-01-13",
                   "- **Last Updated**: 2026-02-02",
                   "- **Last Reviewed**: 2026-02-02",
-                  "- **Version Number**: Case260113X01"
+                  "- **Version Number**: Case260113X01",
+                  "- **Key Dependencies**: LangChain (by LangChain) · GLM"
                 ]
               },
               {
                 "title": "3.1.3 Implementation Details",
                 "content": [
-                  "To be published"
+                  "To be released"
                 ]
               },
               {
@@ -3161,16 +3163,16 @@
                 "content": [
                   "**Core Business Metrics**",
                   "- Graph construction cycle <=7 days: End-to-end time from data access to final graph delivery",
-                  "- Entity coverage >=92%: Coverage ratio of core links, enterprises, products, and other entities in the target national industrial chain",
-                  "- Relationship mining rate > 90%: Ratio of correctly mining upstream/downstream, cooperation, equity, and other relationships from the graph",
+                  "- Entity coverage >=92%: The proportion of core entities such as target industrial-chain links, enterprises, and products covered nationwide",
+                  "- Relationship mining rate > 90%: The proportion of upstream-downstream, partnership, equity, and other relationships correctly mined from the graph",
                   "- Data update response time < 24 hours: Time required to complete graph updates after new data or policy changes",
-                  "- Analysis time for custom dimensions < 3 seconds: Response speed after users initiate analysis on specific dimensions such as regional distribution or technology routes",
-                  "- Low-code configuration efficiency improvement > 80%: Efficiency improvement ratio for graph template configuration and adjustment compared with traditional coded development",
+                  "- Analysis response time for custom dimensions < 3 seconds: Speed after a user launches analysis on a specific dimension such as regional distribution or technology route",
+                  "- Low-code configuration efficiency improvement > 80%: Efficiency gain in graph-template configuration and adjustment compared with traditional coded development",
                   "**Core Technical Metrics**",
-                  "- Entity extraction accuracy > 93%: Accuracy of industrial entity recognition and disambiguation based on large models",
-                  "- Relation extraction F1 score > 91%: Comprehensive evaluation metric for mining complex industrial chain relationships",
-                  "- Data integration success rate > 98%: Proportion of effective access to and integration of multi-source heterogeneous data",
-                  "- Supported concurrent graph visualization users > 1000: User capacity for simultaneous online viewing and operation of the graph"
+                  "- Entity extraction accuracy > 93%: Accuracy of large-model-based industrial entity recognition and disambiguation",
+                  "- Relation extraction F1 > 91%: Comprehensive evaluation metric for mining complex industrial-chain relationships",
+                  "- Data integration success rate > 98%: The proportion of effective access to and integration of multi-source heterogeneous data sources",
+                  "- Concurrent graph visualization support > 1000 users: The number of users that can view and operate the graph simultaneously"
                 ]
               }
             ]
@@ -3182,7 +3184,7 @@
   "2-business-dashboard-website": {
     "zh": {
       "overview": {
-        "highlight": "1-2日完成网站Demo",
+        "highlight": "1名非技术人员1-2日搭建",
         "industry": "全场景适用",
         "category": "服务,营销,运营",
         "cycle": "2日",
@@ -3194,10 +3196,10 @@
               {
                 "title": "亮点卡片",
                 "content": [
-                  "- 1-2日完成网站Demo：非技术人员按指引即可搭建业务展示页",
-                  "- 只需文字材料输入：提供网页大纲和需求说明即可启动生成",
-                  "- 生成结果可直接分享：页面自带访问链接，便于内部评审和对外展示",
-                  "- 对话式持续修改：继续补充需求即可快速调整页面细节"
+                  "- 1名非技术人员1-2日搭建：无需完整前后端团队即可完成Demo",
+                  "- 页面内容完成率90%：输入文字计划后可快速生成可展示页面",
+                  "- 交互响应低于0.5秒：页面查看与演示过程流畅",
+                  "- 前期人力成本降低50%：明显减少产品、设计、开发协作投入"
                 ]
               },
               {
@@ -3264,10 +3266,10 @@
               {
                 "title": "3.1.1 入选最佳实践理由",
                 "content": [
-                  "- 上手门槛低：通常 1 名非技术人员 1-2 日内即可完成 Demo 搭建。",
-                  "- 输入要求简单：只需提供文字版网页大纲、功能目标等基础材料即可启动。",
-                  "- 分享方便：生成页面自带链接，适合汇报、评审和跨团队协作。",
-                  "- 修改灵活：可继续通过对话调整页面细节，迭代速度快。"
+                  "- 搭建更快：通常 1 名非技术人员在 1-2 日内即可完成 Demo，显著短于传统多人协作流程。",
+                  "- 所见即所得：页面内容完成率达 90%、准确率达 80%，支持边生成边调整。",
+                  "- 分享便捷：生成页面自带外链，方便直接演示、评审与对外分享。",
+                  "- 成本更低：前期人力投入降低 50%，适合中小企业快速验证业务想法。"
                 ]
               },
               {
@@ -3279,9 +3281,9 @@
                   "- **英文名称**: Real-World AI",
                   "- **作者网站**: 本站",
                   "- **首发日期**: 2025-11-07",
-                  "- **最近更新**: 2026-02-02",
-                  "- **最近审阅**: 2026-02-02",
-                  "- **关键依赖**: Lovable · Claude Code · GLM"
+                  "- **最近更新**: 2026-03-10",
+                  "- **最近审阅**: 2026-03-10",
+                  "- **关键依赖**: Lovable · Claude Code · Kimi-K2.5"
                 ]
               },
               {
@@ -3661,8 +3663,8 @@
     },
     "en": {
       "overview": {
-        "highlight": "Website demo completed in 1-2 days",
-        "industry": "Applicable to All Scenarios",
+        "highlight": "Built by 1 non-technical person in 1-2 days",
+        "industry": "All Scenarios",
         "category": "Service,Marketing,Operations",
         "cycle": "2 days",
         "case_no": "Case251107Y01",
@@ -3673,17 +3675,17 @@
               {
                 "title": "Highlight Cards",
                 "content": [
-                  "- Website demo completed in 1-2 days: Non-technical users can build a business showcase page by following the guidance",
-                  "- Only textual materials are required: Generation can start with a webpage outline and requirement description",
-                  "- Generated results can be shared directly: The page comes with an access link for internal review and external presentation",
-                  "- Continuous conversational revision: Page details can be adjusted quickly by continuing to add requirements"
+                  "- Built by 1 non-technical person in 1-2 days: A Demo can be completed without a full frontend-backend team",
+                  "- 90% page content completion: A presentable page can be generated quickly from a text plan",
+                  "- Interaction response under 0.5 seconds: Smooth page viewing and demo experience",
+                  "- 50% lower upfront labor cost: Significantly reduces coordination input across product, design, and development"
                 ]
               },
               {
                 "title": "Demo",
                 "content": [
-                  "**[Two-day business dashboard and website demo sample video.mp4]**",
-                  "(Expected outcome preview. Video material is from [Lovable] by LovableAI and [Claude Code] by Anthropic.)"
+                  "**[Two-Day Business Dashboard and Website Demo Video.mp4]**",
+                  "(Preview of expected results. Video material is from [Lovable] by LovableAI and [Claude Code] by Anthropic.)"
                 ]
               }
             ]
@@ -3694,15 +3696,15 @@
               {
                 "title": "2.1 Overview",
                 "content": [
-                  "**Business Background**: This case attempts to let users quickly turn the website text they envision into a what-you-see-is-what-you-get demo through web-based interaction by using agent technology based on large models, and then share it with others to experience."
+                  "**Business Background**: This case explores how users can quickly turn their website ideas expressed in text into a what-you-see-is-what-you-get Demo through web interaction using Agent technology powered by large models, and then share it with others for hands-on experience."
                 ]
               },
               {
                 "title": "2.2 Classification Tags",
                 "content": [
-                  "**Industry**: Applicable to All Scenarios",
+                  "**Industry**: All Scenarios",
                   "**Category**: Service, Marketing, Operations",
-                  "**Technology Category**: Visualization and Design, Agent, Context Engineering, Agent Application, Frontend Design"
+                  "**Technology Category**: Visualization and Design, Agent, Context Engineering, Agent Applications, Frontend Design"
                 ]
               },
               {
@@ -3714,25 +3716,25 @@
               {
                 "title": "2.4 Team Composition",
                 "content": [
-                  "- Demo phase: 1 business expert or product manager, with no programming requirement"
+                  "- Demo phase: 1 business expert or product manager, no programming skills required"
                 ]
               },
               {
                 "title": "2.5 Business Pain Points",
                 "content": [
-                  "- In recent years, small and medium-sized startups and many traditional industry enterprises have seen growing demand for online promotion windows, creating massive demand for business dashboards and website building",
-                  "- Traditional solutions require coordination among product managers, UI designers, and technical staff and involve multiple steps such as website design, UI drawing, frontend development, and sometimes backend development, resulting in high labor cost and long implementation cycles",
-                  "- Traditional solutions involve cumbersome communication during prototype modification and adjustment and cannot accurately achieve what-you-see-is-what-you-get results",
-                  "- Traditional solutions may require coordination of frontend and backend resources during the demo stage and ensuring viewer access and usage permissions"
+                  "- In recent years, demand for online promotional windows has continued to grow among small and medium-sized startups as well as many traditional enterprises, creating massive demand for business dashboards and website development",
+                  "- Traditional approaches require coordination among product managers, UI designers, and engineers, across steps such as website design, UI drafting, frontend development, and sometimes backend development, resulting in high labor costs and long implementation cycles",
+                  "- Traditional approaches involve cumbersome communication during prototype revisions and adjustments and often fail to achieve true WYSIWYG outcomes",
+                  "- Traditional approaches may also require coordinating frontend and backend resources during demos while managing viewers' access and usage permissions"
                 ]
               },
               {
                 "title": "2.6 Core Functions",
                 "content": [
-                  "- Page generation: Based on user-entered prompts, optionally with uploaded materials such as layout outlines for the target page, the agent generates the page",
-                  "- Page interaction: The generated page supports basic frontend interactive effects such as dropdowns, selection, search bars, and simple dialogue with a bot",
-                  "- Real changes, real results: Users can continue updating the generated page effect through interaction with the agent",
-                  "- External link sharing: The page demo can generate a corresponding link for convenient sharing and presentation"
+                  "- Page generation: Based on user-entered prompts, optionally with uploaded materials such as layout outlines for the target page, the Agent generates the page",
+                  "- Page interaction: The generated page supports demonstration of basic frontend interactive effects, such as dropdowns, selections, search bars, and simple conversations with a bot",
+                  "- Edit-and-see results: Users can continue interacting with the Agent to update the generated page effects",
+                  "- Shareable external link: The page Demo can generate a corresponding link for convenient sharing and presentation"
                 ]
               }
             ]
@@ -3743,24 +3745,24 @@
               {
                 "title": "3.1.1 Reasons for Best Practice Selection",
                 "content": [
-                  "- Low barrier to entry: Usually one non-technical person can complete the demo in 1-2 days.",
-                  "- Simple input requirements: It can start with only basic materials such as a textual webpage outline and functional goals.",
-                  "- Easy to share: Generated pages come with links and are suitable for reporting, reviews, and cross-team collaboration.",
-                  "- Flexible revision: Page details can continue to be adjusted through dialogue, enabling fast iteration."
+                  "- Faster setup: Typically, 1 non-technical person can complete the Demo within 1-2 days, much faster than traditional multi-person collaboration workflows.",
+                  "- WYSIWYG: Page content completion reaches 90% and accuracy reaches 80%, with support for iterative adjustment during generation.",
+                  "- Convenient sharing: Generated pages come with external links, making them easy to demo, review, and share externally.",
+                  "- Lower cost: Upfront labor input is reduced by 50%, making it suitable for SMEs to quickly validate business ideas."
                 ]
               },
               {
                 "title": "3.1.2 Version Information",
                 "content": [
-                  "- **Version Type**: Cloud-based - web operation edition",
-                  "- **Team Name**: Real-World AI self-developed and verified",
+                  "- **Version Type**: Cloud - Web Operation Edition",
+                  "- **Team Name**: Real-World AI Self-Developed and Verified",
                   "- **Chinese Name**: /",
                   "- **English Name**: Real-World AI",
                   "- **Author Website**: This site",
                   "- **Initial Release Date**: 2025-11-07",
-                  "- **Last Updated**: 2026-02-02",
-                  "- **Last Reviewed**: 2026-02-02",
-                  "- **Key Dependencies**: Lovable · Claude Code · GLM"
+                  "- **Last Updated**: 2026-03-10",
+                  "- **Last Reviewed**: 2026-03-10",
+                  "- **Key Dependencies**: Lovable · Claude Code · Kimi-K2.5"
                 ]
               },
               {
@@ -3773,15 +3775,15 @@
                 "title": "3.1.4 Metrics",
                 "content": [
                   "**Core Business Metrics**",
-                  "- Interactive response latency is below 0.5 seconds for convenient viewing at any time",
-                  "- What you see is what you get: The faster the turnaround from plan feedback to visible result, the better. At present it usually takes 1 week, and the target is a 100% efficiency improvement",
-                  "- Reduce early-stage labor cost by 50%",
+                  "- Interaction response latency is under 0.5 seconds, making the page easy to view at any time",
+                  "- WYSIWYG delivery: the faster the turnaround from feedback to visible results, the better; the current typical speed is 1 week, with a target efficiency gain of 100%",
+                  "- Reduce upfront labor cost by 50%",
                   "**Core Technical Metrics**",
-                  "- Generated page content completion rate, relative to the input text plan, reaches 90%",
-                  "- Generated page content accuracy, relative to the input text plan, reaches 80%",
+                  "- Generated page content completion rate (compared with the input text plan) reaches 90%",
+                  "- Generated page content accuracy (compared with the input text plan) reaches 80%",
                   "**Other Value Returns**",
-                  "- Provides a practice solution for independent workers and developers",
-                  "- Offers design and implementation inspiration for UI and frontend teams"
+                  "- Provides an exercise solution for independent builders and developers",
+                  "- Provides design and implementation inspiration for UI and frontend teams"
                 ]
               }
             ]
@@ -4142,7 +4144,7 @@
   "3-document-review-risk-control": {
     "zh": {
       "overview": {
-        "highlight": "LangChain生态成熟稳定",
+        "highlight": "30-100页文档审核提速90%",
         "industry": "信息技术,行政管理,金融贸易,能源制造",
         "category": "风控,管理,运营",
         "cycle": "3.5-5日",
@@ -4154,10 +4156,10 @@
               {
                 "title": "亮点卡片",
                 "content": [
-                  "- LangChain生态成熟稳定：GitHub 120K+ star、月下载量90M+，适合长期维护",
-                  "- 复杂文档解析更准：布局感知表格抽取F1达84.4%，优于传统工具",
-                  "- 场景迁移成本低：调整提示词和规则即可适配多类PDF审核任务",
-                  "- 中等技术门槛可落地：按流程配置即可较快完成Demo"
+                  "- 30-100页文档审核提速90%：大幅缩短单份文书处理时间",
+                  "- 章节完整度F1≥99%：结构化检查结果稳定可靠",
+                  "- 审核人力成本降低80%：减少重复核查与协同沟通",
+                  "- 通用PDF风险审查：适配金融、医疗等多类规范文档"
                 ]
               }
             ]
@@ -4216,10 +4218,10 @@
               {
                 "title": "3.1.1 入选最佳实践理由",
                 "content": [
-                  "- 技术成熟：基于 LangChain 与 Pydantic 等主流开源组件，整体稳定、易维护。",
-                  "- 解析更准：布局感知技术在复杂表格抽取任务上的 F1 达 84.4%，优于传统工具。",
-                  "- 泛化能力强：结构化解析与规范化输出模块可迁移到多种 PDF 审核场景。",
-                  "- 落地高效：按既有流程完成配置即可快速搭建 Demo，对编程能力要求适中。"
+                  "- 审核提效：30-100 页文档审核时间缩短 90%，适合批量文书快速处理。",
+                  "- 风险更稳：章节完整度 F1≥99%，文本摘要 Faithfulness≥0.98，显著降低漏检与误判。",
+                  "- 人力更省：审核流程人力成本降低 80%，可替代大量重复性核查工作。",
+                  "- 泛化更强：布局感知解析结合规则化工作流，可快速迁移到多行业 PDF 审查场景。"
                 ]
               },
               {
@@ -4231,8 +4233,8 @@
                   "- **英文名称**: Real-World AI",
                   "- **作者网站**: 本站",
                   "- **首发日期**: 2025-11-14",
-                  "- **最近更新**: 2026-02-02",
-                  "- **最近审阅**: 2026-02-02",
+                  "- **最近更新**: 2026-03-10",
+                  "- **最近审阅**: 2026-03-10",
                   "- **关键依赖**: LangChain（by LangChain） · Pydantic（by Pydantic） · unstructured（by Unstructured.io） · Faiss（by Facebook） · GLM"
                 ]
               },
@@ -4670,7 +4672,7 @@
     },
     "en": {
       "overview": {
-        "highlight": "The LangChain ecosystem is mature and stable",
+        "highlight": "90% faster review for 30-100 page documents",
         "industry": "Information Technology,Administrative Management,Finance & Trade,Energy & Manufacturing",
         "category": "Risk Control,Management,Operations",
         "cycle": "3.5-5 days",
@@ -4682,10 +4684,10 @@
               {
                 "title": "Highlight Cards",
                 "content": [
-                  "- The LangChain ecosystem is mature and stable: 120K+ GitHub stars and 90M+ monthly downloads, making it suitable for long-term maintenance",
-                  "- More accurate complex document parsing: Layout-aware table extraction reaches an F1 of 84.4%, outperforming traditional tools",
-                  "- Low scenario migration cost: Adapts to many PDF review tasks by adjusting prompts and rules",
-                  "- Deployable with a moderate technical threshold: A demo can be completed relatively quickly by configuring the workflow"
+                  "- 90% faster review for 30-100 page documents: Dramatically shortens processing time for each document",
+                  "- Section completeness F1 >=99%: Structured inspection results are stable and reliable",
+                  "- 80% lower review labor cost: Reduces repetitive verification and coordination",
+                  "- General-purpose PDF risk review: Adapts to compliant documents across finance, healthcare, and other domains"
                 ]
               }
             ]
@@ -4696,7 +4698,7 @@
               {
                 "title": "2.1 Overview",
                 "content": [
-                  "**Business Background**: Document inspection, review, and risk identification are widely used in industries such as finance and healthcare, as well as in functions such as management and operations. Based on user-predefined rules and standards, this solution automatically parses editable and semi-structured PDF files provided by users, checks title consistency and chapter completeness, evaluates risks in key items, and finally outputs a JSON-format report containing the extracted key content and evaluation results."
+                  "**Business Background**: Document inspection, review, and risk identification are widely used in industries such as finance and healthcare, as well as in management and operations functions. Based on user-defined rules and standards, this solution automatically parses editable, semi-structured PDF files provided by users, checks title consistency and section completeness, evaluates risks for key items, and ultimately outputs a JSON-formatted report containing the extracted key content and assessment results."
                 ]
               },
               {
@@ -4722,18 +4724,18 @@
               {
                 "title": "2.5 Business Pain Points",
                 "content": [
-                  "- Low efficiency and high cost of manual review: Reviewing one 30-100 page specialized plan document often requires business staff to perform supporting actions such as search, verification, tracing, and communication, taking 3-5 hours, while professional documents impose high capability requirements on business staff",
-                  "- High error rate in manual review: Reviewing 5+ documents continuously in one day increases the risk of missed detections by about 10%, which may lead to serious safety incidents and legal disputes",
-                  "- Poor traceability in manual review: After a problem point is found, departments such as operations may need to be coordinated to inspect logs before the document operation record can be confirmed, making traceability evidence difficult and inefficient to obtain"
+                  "- Low efficiency and high cost of manual review: Reviewing a 30-100 page specialized document often requires business staff to assist with searching, verification, tracing, and communication, taking 3-5 hours; professional documents also demand strong domain expertise",
+                  "- High error rate in manual review: Reviewing 5+ documents continuously within a day increases missed-detection risk by about 10%, which may lead to serious safety incidents and legal disputes",
+                  "- Poor traceability in manual review: After an issue is found, teams may need to coordinate with operations and other departments to check logs before confirming document actions, making traceability evidence difficult and inefficient to obtain"
                 ]
               },
               {
                 "title": "2.6 Core Functions",
                 "content": [
-                  "- Structured processing: Organizes original text written in natural language into structured text segments according to chapter layout",
-                  "- Intelligent chapter inspection: Automatically checks text chapters for completeness based on preset specifications and standards",
-                  "- Intelligent risk assessment: Automatically evaluates the risks of specified key information in the document based on preset specifications and standards",
-                  "- Standardized output: Outputs results based on a preset format template"
+                  "- Structured processing: Organizes source text written in natural language into structured text segments by chapter layout",
+                  "- Intelligent section inspection: Based on preset standards and rules, the workflow automatically checks the completeness of text sections",
+                  "- Intelligent risk assessment: Based on preset standards and rules, the workflow automatically evaluates risks for specified key information in the document",
+                  "- Standardized output: Outputs results using preset format templates"
                 ]
               }
             ]
@@ -4744,23 +4746,23 @@
               {
                 "title": "3.1.1 Reasons for Best Practice Selection",
                 "content": [
-                  "- Mature technology: Built on mainstream open-source components such as LangChain and Pydantic, making the overall solution stable and easy to maintain.",
-                  "- More accurate parsing: Layout-aware technology achieves an F1 of 84.4% on complex table extraction tasks, outperforming traditional tools.",
-                  "- Strong generalization: The structured parsing and standardized output modules can be migrated to many PDF review scenarios.",
-                  "- Efficient implementation: A demo can be built quickly by configuring the established process, with moderate programming requirements."
+                  "- Higher review efficiency: Review time for 30-100 page documents is reduced by 90%, making it suitable for fast batch processing.",
+                  "- More stable risk control: Section completeness F1 >=99% and text-summary Faithfulness >=0.98 significantly reduce missed detections and misjudgments.",
+                  "- Lower labor input: Review process labor cost is reduced by 80%, replacing a large amount of repetitive checking work.",
+                  "- Stronger generalization: Layout-aware parsing combined with rule-based workflows can be quickly migrated to PDF review scenarios across industries."
                 ]
               },
               {
                 "title": "3.1.2 Version Information",
                 "content": [
-                  "- **Version Type**: Private deployment - server deployment edition",
-                  "- **Team Name**: Real-World AI self-developed and verified",
+                  "- **Version Type**: Private Deployment - Server Deployment Edition",
+                  "- **Team Name**: Real-World AI Self-Developed and Verified",
                   "- **Chinese Name**: /",
                   "- **English Name**: Real-World AI",
                   "- **Author Website**: This site",
                   "- **Initial Release Date**: 2025-11-14",
-                  "- **Last Updated**: 2026-02-02",
-                  "- **Last Reviewed**: 2026-02-02",
+                  "- **Last Updated**: 2026-03-10",
+                  "- **Last Reviewed**: 2026-03-10",
                   "- **Key Dependencies**: LangChain (by LangChain) · Pydantic (by Pydantic) · unstructured (by Unstructured.io) · Faiss (by Facebook) · GLM"
                 ]
               },
@@ -4774,13 +4776,13 @@
                 "title": "3.1.4 Metrics",
                 "content": [
                   "**Core Business Metrics**",
-                  "- Time to review one 30-100 page document is reduced by 90%",
+                  "- Review time for one 30-100 page document is reduced by 90%",
                   "- Labor cost in the document review workflow is reduced by 80%",
                   "- Human error in the document review workflow is reduced by 80%",
                   "**Core Technical Metrics**",
-                  "- Chapter completeness judgment (macro-average F1) >=99%",
-                  "- Target field similarity matching accuracy (Jaro-Winkler value) >= 0.95",
-                  "- Text summary generation (Ragas Faithfulness value) >= 0.98",
+                  "- Section completeness judgment (macro-average F1) >=99%",
+                  "- Target-field similarity matching accuracy (Jaro-Winkler score) >= 0.95",
+                  "- Text summary generation (Ragas Faithfulness score) >= 0.98",
                   "- JSON document format compliance >= 100%"
                 ]
               }
@@ -5200,7 +5202,7 @@
   "4-enterprise-demo-video": {
     "zh": {
       "overview": {
-        "highlight": "两天半完成企业级Demo视频",
+        "highlight": "2.5天完成1分钟演示片",
         "industry": "信息技术,金融贸易,科研教育",
         "category": "服务,运营,营销",
         "cycle": "2.5日",
@@ -5212,10 +5214,10 @@
               {
                 "title": "亮点卡片",
                 "content": [
-                  "- 两天半完成企业级Demo视频：在需求明确前提下，可快速交付成片",
-                  "- MCP工具链覆盖完整：语音识别、配音、配乐等环节可一体化完成",
-                  "- 开源方案组合成熟：依托Claude Code与多MCP服务协同执行",
-                  "- 工具选型处于前列：核心MCP组件在GitHub、Hugging Face等平台关注度高"
+                  "- 2.5天完成1分钟演示片：显著快于传统7天+制作周期",
+                  "- 成本控制在1000元内：适合中小企业低预算交付",
+                  "- 字错率CER≤5%：字幕识别质量满足演示需求",
+                  "- 一套流程整合字幕配音配乐：支持快速修改与定稿"
                 ]
               }
             ]
@@ -5275,10 +5277,10 @@
               {
                 "title": "3.1.1 入选最佳实践理由",
                 "content": [
-                  "- 交付更快：在需求明确的前提下，最快两天半即可完成企业级演示视频。",
-                  "- 工具链完整：语音识别、文案转语音、音乐生成等关键环节均可打通。",
-                  "- 方案成熟：基于 Claude Code 调用多个 MCP 服务，协作流程清晰稳定。",
-                  "- 选型领先：所用 MCP 工具在 GitHub、Hugging Face 等平台均处于高关注度梯队。"
+                  "- 交付更快：需求明确时最快 2.5 天即可完成，明显短于传统视频制作周期。",
+                  "- 成本可控：1 分钟演示视频成本控制在 1000 元内，适合预算敏感场景。",
+                  "- 工具成熟：组合近期主流 MCP 工具，覆盖 ASR、TTS、配乐等完整链路。",
+                  "- 修改便捷：字幕、配音、背景音乐可自动化重生成，成片迭代成本低。"
                 ]
               },
               {
@@ -5290,9 +5292,9 @@
                   "- **英文名称**: Real-World AI",
                   "- **作者网站**: 本站",
                   "- **首发日期**: 2025-11-07",
-                  "- **最近更新**: 2026-02-02",
-                  "- **最近审阅**: 2026-02-02",
-                  "- **关键依赖**: Claude Code · FFmpeg · FunASR · PaddleSpeech · GLM"
+                  "- **最近更新**: 2026-03-10",
+                  "- **最近审阅**: 2026-03-10",
+                  "- **关键依赖**: Claude Code · FFmpeg · FunASR · PaddleSpeech · Claude Opus 4.6"
                 ]
               },
               {
@@ -7413,8 +7415,8 @@
     },
     "en": {
       "overview": {
-        "highlight": "Enterprise-grade demo video completed in two and a half days",
-        "industry": "Information Technology,Finance & Trade,Science & Education",
+        "highlight": "A 1-minute demo video completed in 2.5 days",
+        "industry": "Information Technology,Finance & Trade,Scientific Research & Education",
         "category": "Service,Operations,Marketing",
         "cycle": "2.5 days",
         "case_no": "Case251107Y02",
@@ -7425,10 +7427,10 @@
               {
                 "title": "Highlight Cards",
                 "content": [
-                  "- Enterprise-grade demo video completed in two and a half days: A finished video can be delivered quickly when requirements are clear",
-                  "- Full MCP toolchain coverage: Speech recognition, voice-over, soundtrack, and other steps can be completed in an integrated workflow",
-                  "- Mature open-source solution combination: Built on coordinated execution with Claude Code and multiple MCP services",
-                  "- Tool selection is among the leaders: Core MCP components receive strong attention on platforms such as GitHub and Hugging Face"
+                  "- A 1-minute demo video completed in 2.5 days: Significantly faster than the traditional 7+ day production cycle",
+                  "- Cost controlled within RMB 1,000: Suitable for low-budget delivery by SMEs",
+                  "- Character Error Rate (CER) <=5%: Subtitle recognition quality meets demo needs",
+                  "- One integrated workflow for subtitles, dubbing, and background music: Supports fast revision and finalization"
                 ]
               }
             ]
@@ -7439,15 +7441,15 @@
               {
                 "title": "2.1 Overview",
                 "content": [
-                  "**Business Background**: Based on video materials recorded by the user and requirement settings entered in text, this solution automatically generates a presentation video with voice, subtitles, and background music."
+                  "**Business Background**: Based on user-recorded video footage and text-based requirement settings, this solution automatically generates an introduction video that includes voice-over, subtitles, and background music."
                 ]
               },
               {
                 "title": "2.2 Classification Tags",
                 "content": [
-                  "**Industry**: Information Technology, Finance & Trade, Science & Education",
+                  "**Industry**: Information Technology, Finance & Trade, Scientific Research & Education",
                   "**Category**: Service, Operations, Marketing",
-                  "**Technology Category**: MCP tools, Computer Vision, Speech and Audio, ASR, TTS"
+                  "**Technology Category**: MCP Tools, Computer Vision, Speech and Audio, ASR, TTS"
                 ]
               },
               {
@@ -7465,19 +7467,19 @@
               {
                 "title": "2.5 Business Pain Points",
                 "content": [
-                  "- Small and mid-sized companies consistently have strong demand for product function demos, but with limited budgets they often have to trade off between high-quality video production and high cost",
-                  "- Traditional manual production of this type of video requires roles such as recording, editing, and sometimes soundtrack production and voice-over, resulting in relatively high labor cost, usually RMB 100-1500 per minute or even higher",
-                  "- Traditional manual production takes a long time for editing footage and processing audio such as denoising, alignment, and soundtrack work, usually taking about 7+ days from preparation to completion",
-                  "- If the finished video needs adjustment, traditional manual production makes revision relatively difficult"
+                  "- Small and medium-sized companies consistently have strong demand for product feature demos, but limited budgets force tradeoffs between high-quality video production and high spending",
+                  "- Traditional manual production of this type of video usually requires personnel for filming, editing, possibly music arrangement, and voice-over, with labor costs typically ranging from RMB 100-1500 per minute or even higher",
+                  "- Traditional manual production takes a long time for editing footage and audio processing, such as denoising, alignment, and music matching, usually around 7+ days from preparation to completion",
+                  "- Traditional manual production makes post-release revisions relatively difficult"
                 ]
               },
               {
                 "title": "2.6 Core Functions",
                 "content": [
-                  "- Convert the original audio of the video into subtitles based on ASR technology",
-                  "- Generate speech from subtitles based on TTS technology",
-                  "- Generate background music based on subtitles and user instructions through music generation technology",
-                  "- Integrate subtitles, speech, background music, and the original video to produce a new presentation video"
+                  "- Convert the original video audio into subtitles using ASR technology",
+                  "- Generate voice-over from subtitles using TTS technology",
+                  "- Generate background music from subtitles and user instructions using music generation technology",
+                  "- Integrate subtitles, voice-over, background music, and the original video to generate a new introduction video"
                 ]
               }
             ]
@@ -7488,24 +7490,24 @@
               {
                 "title": "3.1.1 Reasons for Best Practice Selection",
                 "content": [
-                  "- Faster delivery: When requirements are clear, an enterprise-grade demo video can be completed in as little as two and a half days.",
-                  "- Complete toolchain: Key steps such as speech recognition, text-to-speech, and music generation can all be connected.",
-                  "- Mature solution: Uses Claude Code to call multiple MCP services, with a clear and stable collaboration workflow.",
-                  "- Leading selection: The MCP tools used are all in the high-attention tier on platforms such as GitHub and Hugging Face."
+                  "- Faster delivery: When requirements are clear, completion can be as fast as 2.5 days, clearly shorter than traditional video production cycles.",
+                  "- Cost under control: The cost of a 1-minute demo video can be kept within RMB 1,000, making it suitable for budget-sensitive scenarios.",
+                  "- Mature toolchain: Combines current mainstream MCP tools to cover the full chain of ASR, TTS, and soundtrack generation.",
+                  "- Easy revision: Subtitles, dubbing, and background music can be regenerated automatically, keeping iteration cost low."
                 ]
               },
               {
                 "title": "3.1.2 Version Information",
                 "content": [
-                  "- **Version Type**: Private deployment - server deployment edition",
-                  "- **Team Name**: Real-World AI self-developed and verified",
+                  "- **Version Type**: Private Deployment - Server Deployment Edition",
+                  "- **Team Name**: Real-World AI Self-Developed and Verified",
                   "- **Chinese Name**: /",
                   "- **English Name**: Real-World AI",
                   "- **Author Website**: This site",
                   "- **Initial Release Date**: 2025-11-07",
-                  "- **Last Updated**: 2026-02-02",
-                  "- **Last Reviewed**: 2026-02-02",
-                  "- **Key Dependencies**: Claude Code · FFmpeg · FunASR · PaddleSpeech · GLM"
+                  "- **Last Updated**: 2026-03-10",
+                  "- **Last Reviewed**: 2026-03-10",
+                  "- **Key Dependencies**: Claude Code · FFmpeg · FunASR · PaddleSpeech · Claude Opus 4.6"
                 ]
               },
               {
@@ -7518,15 +7520,15 @@
                 "title": "3.1.4 Metrics",
                 "content": [
                   "**Core Business Metrics**",
-                  "- Audio, video, and subtitles stay synchronized, the video is clear and plays smoothly, and the output meets expected quality, ideally with added value such as soundtrack effects",
-                  "- Response is timely during production and modifications are quick, with finalization completed within 1 week",
-                  "- Production cost is controlled within RMB 1000",
+                  "- Audio, visuals, and subtitles are synchronized, the video is clear and plays smoothly, meeting expected quality and ideally including value-added elements such as background music",
+                  "- The production process is responsive, revisions are quick, and the final cut is completed within 1 week",
+                  "- Production cost is controlled within RMB 1,000",
                   "- Video duration is about 1 minute",
                   "**Core Technical Metrics**",
                   "- Character Error Rate (CER) <=5%",
                   "- Average recognition accuracy (Acc) >= 75%",
                   "- Average recognition speed (RTF) <= 0.5",
-                  "- Subjective spot checks of speech naturalness pass"
+                  "- Speech naturalness passes subjective spot checks"
                 ]
               }
             ]
@@ -8276,7 +8278,7 @@
   "5-educational-app-children": {
     "zh": {
       "overview": {
-        "highlight": "一周内无代码搭建问答应用",
+        "highlight": "零代码搭建完整教育工作流",
         "industry": "科研教育,文化体育",
         "category": "服务",
         "cycle": "一周内",
@@ -8288,10 +8290,10 @@
               {
                 "title": "亮点卡片",
                 "content": [
-                  "- 一周内无代码搭建问答应用：基于BISHENG按步骤配置即可完成Demo",
-                  "- 开源流程完整易复用：工作流覆盖出题、互动、反馈等核心环节",
-                  "- 连续互动体验完整：支持换题、多次猜测、看答案和质疑问题",
-                  "- 适合非技术人首个项目：家长和教育从业者也能低门槛搭建"
+                  "- 零代码搭建完整教育工作流：按步骤配置即可上线趣味问答Demo",
+                  "- 问答响应延迟<1秒：儿童互动过程流畅自然",
+                  "- 支持连续互动5轮：具备完整启蒙训练体验",
+                  "- 单轮回答准确率90%：保障题目与反馈质量"
                 ]
               },
               {
@@ -8358,10 +8360,10 @@
               {
                 "title": "3.1.1 入选最佳实践理由",
                 "content": [
-                  "- 搭建最快：在当前开源方案中，流程完整度高且搭建步骤最简洁。",
-                  "- 零代码可用：基于 BISHENG 工作流平台，按步骤配置即可完成问答应用。",
-                  "- 体验完整：覆盖换题、猜测、答疑等核心互动环节，适合儿童启蒙场景。",
-                  "- 普及性强：适合作为非技术用户的首个 AI 应用搭建项目，学习和复用成本低。"
+                  "- 零代码上手：基于工作流平台配置即可完成搭建，非技术人员也能快速复用。",
+                  "- 响应流畅：问答延迟低于 1 秒，连续互动可达 5 轮，保证儿童使用体验。",
+                  "- 内容可靠：单轮回答准确率达 90%，适合启蒙问答与趣味训练场景。",
+                  "- 适合验证：工作流完整、步骤简洁，可直接作为教育类 AI 应用模板。"
                 ]
               },
               {
@@ -8373,8 +8375,8 @@
                   "- **英文名称**: zh",
                   "- **作者网站**: [手搓100个Workflow【活动】](https://dataelem.feishu.cn/wiki/OJYRwuJzZiUHhhkI4MLcMJvfnzh)（表格最后一行，作者为zh）",
                   "- **首发日期**: 2024-12",
-                  "- **最近更新**: 2026-02-02",
-                  "- **最近审阅**: 2026-02-02",
+                  "- **最近更新**: 2026-03-10",
+                  "- **最近审阅**: 2026-03-10",
                   "- **关键依赖**: BISHENG · GLM"
                 ]
               },
@@ -8969,10 +8971,10 @@
     },
     "en": {
       "overview": {
-        "highlight": "A Q&A app built with no code within one week",
-        "industry": "Science & Education,Culture & Sports",
+        "highlight": "Build a complete education workflow with zero code",
+        "industry": "Scientific Research & Education,Culture & Sports",
         "category": "Service",
-        "cycle": "Within one week",
+        "cycle": "Within 1 week",
         "case_no": "Case251031Y01",
         "sections": [
           {
@@ -8981,16 +8983,16 @@
               {
                 "title": "Highlight Cards",
                 "content": [
-                  "- A Q&A app built with no code within one week: A demo can be completed by configuring BISHENG step by step",
-                  "- Open-source workflow is complete and easy to reuse: The workflow covers core steps such as question generation, interaction, and feedback",
-                  "- Complete continuous interaction experience: Supports changing questions, multiple guesses, viewing answers, and challenging the question",
-                  "- Suitable as a first project for non-technical users: Parents and education practitioners can also build it with a low barrier"
+                  "- Build a complete education workflow with zero code: A fun Q&A Demo can go live through step-by-step configuration",
+                  "- Q&A response latency <1 second: Smooth and natural interaction for children",
+                  "- Supports 5 consecutive interaction rounds: Delivers a complete early-learning experience",
+                  "- Single-turn answer accuracy reaches 90%: Ensures question and feedback quality"
                 ]
               },
               {
                 "title": "Demo",
                 "content": [
-                  "(Expected outcome preview. This video was produced by the RWAI team using [Enterprise-grade brief demo video built in two and a half days - verified].)"
+                  "(Preview of expected results. This video was produced by the RWAI team using [Enterprise-Level Brief Demo Video Built in Two and a Half Days - Verified].)"
                 ]
               }
             ]
@@ -9001,21 +9003,21 @@
               {
                 "title": "2.1 Overview",
                 "content": [
-                  "**Business Background**: Rapidly build a fun children's intellectual enlightenment application, using brain teasers here as an example. AI is used to generate different question types such as unconventional thinking and logical reasoning."
+                  "**Business Background**: Rapidly build a fun intellectual early-learning app for children, using brain teasers as an example here. AI technology is used to generate different question types, such as unconventional-thinking and logical-reasoning questions."
                 ]
               },
               {
                 "title": "2.2 Classification Tags",
                 "content": [
-                  "**Industry**: Science & Education, Culture & Sports",
+                  "**Industry**: Scientific Research & Education, Culture & Sports",
                   "**Category**: Service",
-                  "**Technology Category**: Natural Language Processing, Text Generation, Intelligent Q&A"
+                  "**Technology Category**: Natural Language Processing, Text Generation, Intelligent Question Answering"
                 ]
               },
               {
                 "title": "2.3 Implementation Cycle",
                 "content": [
-                  "- Demo setup: Within one week"
+                  "- Demo setup: Within 1 week"
                 ]
               },
               {
@@ -9027,20 +9029,20 @@
               {
                 "title": "2.5 Business Pain Points",
                 "content": [
-                  "- Fully manual education and training usually embeds this kind of Q&A into games, so it cannot be experienced independently and lacks flexibility",
-                  "- Manual education and training makes it difficult for similar Q&A services to reach a wider potential user base",
-                  "- Non-technical people with education and training Q&A experience and knowledge find it difficult to develop an application on their own"
+                  "- Traditional fully manual education and training usually embeds this type of Q&A into games, so it cannot be experienced independently and lacks flexibility",
+                  "- Manual education and training makes it difficult for this kind of Q&A service to reach a broader potential user base",
+                  "- Non-technical people with experience and knowledge in educational Q&A find it difficult to develop a complete application"
                 ]
               },
               {
                 "title": "2.6 Core Functions",
                 "content": [
                   "- Interaction support:",
-                  "- Change the question (to keep it fresh)",
-                  "- Multiple guesses (to encourage trying)",
-                  "- Ask for the answer (instant feedback)",
-                  "- Challenge the question (to develop critical thinking)",
-                  "- Builds a complete intellectual training experience."
+                  "- Change the question (to keep things fresh)",
+                  "- Make multiple guesses (to encourage attempts)",
+                  "- Ask for the answer (for immediate feedback)",
+                  "- Challenge the question (to cultivate critical thinking)",
+                  "- Build a complete intellectual-training experience."
                 ]
               }
             ]
@@ -9051,23 +9053,23 @@
               {
                 "title": "3.1.1 Reasons for Best Practice Selection",
                 "content": [
-                  "- Fastest setup: Among current open-source solutions, it offers strong workflow completeness with the simplest setup steps.",
-                  "- Zero-code usability: Based on the BISHENG workflow platform, a Q&A app can be completed by configuring it step by step.",
-                  "- Complete experience: Covers core interactive links such as changing questions, guessing, and answer support, making it suitable for children's enlightenment scenarios.",
-                  "- Highly accessible: Suitable as a first AI app-building project for non-technical users, with low learning and reuse cost."
+                  "- Zero-code onboarding: The app can be built through workflow platform configuration, allowing non-technical users to reuse it quickly.",
+                  "- Smooth response: Q&A latency stays below 1 second and continuous interaction reaches 5 rounds, ensuring a good experience for children.",
+                  "- Reliable content: Single-turn answer accuracy reaches 90%, making it suitable for early-learning Q&A and fun training scenarios.",
+                  "- Good for validation: The workflow is complete and the steps are concise, so it can directly serve as a template for educational AI applications."
                 ]
               },
               {
                 "title": "3.1.2 Version Information",
                 "content": [
-                  "- **Version Type**: Private deployment - server deployment edition",
-                  "- **Team Name**: Real-World AI republished and verified",
+                  "- **Version Type**: Private Deployment - Server Deployment Edition",
+                  "- **Team Name**: Real-World AI Reproduced and Verified",
                   "- **Chinese Name**: /",
                   "- **English Name**: zh",
-                  "- **Author Website**: [Build 100 Workflows by Hand [Event]](https://dataelem.feishu.cn/wiki/OJYRwuJzZiUHhhkI4MLcMJvfnzh) (last row of the table, author is zh)",
+                  "- **Author Website**: [Hand-Built 100 Workflows [Event]](https://dataelem.feishu.cn/wiki/OJYRwuJzZiUHhhkI4MLcMJvfnzh) (last row of the table, author is zh)",
                   "- **Initial Release Date**: 2024-12",
-                  "- **Last Updated**: 2026-02-02",
-                  "- **Last Reviewed**: 2026-02-02",
+                  "- **Last Updated**: 2026-03-10",
+                  "- **Last Reviewed**: 2026-03-10",
                   "- **Key Dependencies**: BISHENG · GLM"
                 ]
               },
@@ -9082,12 +9084,12 @@
                 "content": [
                   "**Core Business Metrics**",
                   "- Q&A response latency is below 1 second",
-                  "- Supports 5 rounds of continuous interaction with users",
+                  "- Supports 5 consecutive rounds of interaction with users",
                   "**Core Technical Metrics**",
                   "- Average single-turn answer accuracy reaches 90%",
                   "**Other Value Returns**",
                   "- Can serve as the first workflow-building practice project for large-model enthusiasts",
-                  "- Provides parents who need it with a zero-barrier solution for building a fun app for their own use"
+                  "- Provides parents in need with a zero-threshold solution for building a fun app for personal use"
                 ]
               }
             ]
@@ -9664,7 +9666,7 @@
   "6-time-series-forecasting-energy": {
     "zh": {
       "overview": {
-        "highlight": "长时序预测误差更低",
+        "highlight": "能源长预测MAE降至38.4%",
         "industry": "能源制造",
         "category": "运营,风控",
         "cycle": "3-5日",
@@ -9676,10 +9678,10 @@
               {
                 "title": "亮点卡片",
                 "content": [
-                  "- 长时序预测误差更低：MAE较iTransformer和PatchTST分别降低5.2%与3.6%",
-                  "- 零样本迁移成本减半：无需全量训练即可覆盖数据稀缺场景",
-                  "- 3-5日完成验证Demo：将验证周期由2-3周压缩到1周内",
-                  "- 方案选型更可信：自动化基准测试让非算法人员也能快速判断优劣"
+                  "- 能源长预测MAE降至38.4%：较主流SOTA方案继续下降",
+                  "- 选型与迁移成本降低50%：零样本也可快速覆盖新场景",
+                  "- 3-5日完成预测Demo：验证周期压缩至1周内",
+                  "- 预估减少5%业务损失：提升长时序预警可信度"
                 ]
               }
             ]
@@ -9737,10 +9739,10 @@
               {
                 "title": "3.1.1 入选最佳实践理由",
                 "content": [
-                  "- 预测更准：在行业核心基准中，MAE 为 38.4%，优于上一年主流 SOTA 方法。",
-                  "- 迁移更轻：零样本性能接近全量训练方案，业务侧迁移成本降低约 50%。",
-                  "- 决策更快：自动化基准测试帮助快速完成方案选型，可信度明显提升。",
-                  "- 落地更省：低代码框架下 3-5 日即可完成 Demo，验证周期缩短到 1 周内。"
+                  "- 精度领先：MAE 降至 38.4%，较 iTransformer 和 PatchTST 分别再降 5.2% 与 3.6%。",
+                  "- 迁移更省：零样本表现接近全量训练方案，选型与迁移成本降低 50%。",
+                  "- 业务降损：预测误差下降后，预估可减少约 5% 的能源调度与风控损失。",
+                  "- 上线更快：依托低代码框架，3-5 日即可完成 Demo，验证周期压缩到 1 周内。"
                 ]
               },
               {
@@ -9752,8 +9754,8 @@
                   "- **英文名称**: Real-World AI",
                   "- **作者网站**: 本站",
                   "- **首发日期**: 2025-11-25",
-                  "- **最近更新**: 2025-11-25",
-                  "- **最近审阅**: 2025-11-26",
+                  "- **最近更新**: 2026-03-10",
+                  "- **最近审阅**: 2026-03-10",
                   "- **关键依赖**: Autogluon （by AWS AI） · Neuralforecast （by Nixtla） · ETT数据集SOTA 模型"
                 ]
               },
@@ -9781,7 +9783,7 @@
     },
     "en": {
       "overview": {
-        "highlight": "Lower error in long-horizon forecasting",
+        "highlight": "Long-horizon energy forecasting MAE reduced to 38.4%",
         "industry": "Energy & Manufacturing",
         "category": "Operations,Risk Control",
         "cycle": "3-5 days",
@@ -9793,10 +9795,10 @@
               {
                 "title": "Highlight Cards",
                 "content": [
-                  "- Lower error in long-horizon forecasting: MAE is reduced by 5.2% and 3.6% versus iTransformer and PatchTST respectively",
-                  "- Zero-shot transfer cost cut in half: Covers data-scarce scenarios without full-scale training",
-                  "- Validation demo completed in 3-5 days: Compresses the validation cycle from 2-3 weeks to within 1 week",
-                  "- More trustworthy solution selection: Automated benchmarking allows non-algorithm practitioners to judge strengths and weaknesses quickly"
+                  "- Long-horizon energy forecasting MAE reduced to 38.4%: Further improved over mainstream SOTA solutions",
+                  "- 50% lower selection and migration cost: New scenarios can be covered quickly even in zero-shot settings",
+                  "- Forecasting Demo completed in 3-5 days: Validation cycle compressed to within 1 week",
+                  "- Estimated 5% reduction in business losses: Improves the credibility of long-horizon warning signals"
                 ]
               }
             ]
@@ -9807,8 +9809,8 @@
               {
                 "title": "2.1 Overview",
                 "content": [
-                  "**Business Background**: Long-horizon time-series forecasting is widely used in scenarios such as monitoring and early warning for various feature indicators in fields like energy, helping people detect risks and anomalies in time based on forecast trends and then make adjustments.",
-                  "**Solution**: This example targets smart energy scenarios such as electricity, water, and natural gas. It takes historical sequence data of specified features in the scenario as input and outputs predicted values for multiple future time points over a long period. By introducing the latest time-series models from 2025, it captures long-cycle abnormal states and provides trustworthy decision support for energy scheduling and control."
+                  "**Business Background**: Long-horizon time-series forecasting is widely used in monitoring and early-warning scenarios for various feature indicators in fields such as energy, enabling people to identify risks and anomalies in time based on forecast trends and make adjustments accordingly.",
+                  "**Solution**: This case is designed for smart energy scenarios such as electricity, water, and natural gas. It takes historical sequence data of specified features in the scenario as input and outputs forecast values at multiple future time points over a long period. By introducing the latest 2025 time-series model, it captures long-cycle abnormal states and provides a credible basis for energy scheduling and control decisions."
                 ]
               },
               {
@@ -9834,16 +9836,16 @@
               {
                 "title": "2.5 Business Pain Points",
                 "content": [
-                  "- Manual forecasting is costly and error-prone: Manual forecasting depends on practitioner experience, senior experts are expensive, and multiple types of indicators cannot be continuously tracked and predicted at the same time; ordinary staff have limited judgment capability and large errors",
-                  "- Poor stability in long-horizon forecasting: Existing models show significantly amplified error when forecasting 720+ future time points as the horizon increases, making it difficult to capture key periodic patterns and sudden anomalies and causing warning failures",
-                  "- Low delivery credibility: Existing technical approaches lack a unified automated benchmarking process, and different organizations produce different comparison metrics and results, creating confusion in technology selection and best practices"
+                  "- Manual forecasting is costly and error-prone: Manual forecasting depends on practitioner experience, senior experts are expensive, and continuous tracking and forecasting across multiple indicators is not feasible at the same time; less experienced staff have limited judgment and high error rates",
+                  "- Poor stability in long-horizon forecasting: Existing models show significantly amplified errors when predicting 720+ future time points, making it difficult to capture key periodic patterns and sudden anomalies and causing early warnings to fail",
+                  "- Low delivery credibility: Existing technical solutions lack a unified automated benchmarking workflow, and different institutions produce inconsistent indicators and conclusions in comparison reports, complicating technology selection and best-practice decisions"
                 ]
               },
               {
                 "title": "2.6 Core Functions",
                 "content": [
-                  "- Zero-shot long-range forecasting: Stably outputs predicted values for 720+ future time points on unseen new business data",
-                  "- Intelligent ranking for solution selection: Automatically compares specified mainstream time-series forecasting models, generates ranking results, and provides a basis for selection"
+                  "- Zero-shot long-range forecasting: Stably outputs predictions for 720+ future time points on unseen new business data",
+                  "- Intelligent ranking and model selection: Automatically compares mainstream time-series forecasting models and generates ranking results to support model selection"
                 ]
               }
             ]
@@ -9854,41 +9856,41 @@
               {
                 "title": "3.1.1 Reasons for Best Practice Selection",
                 "content": [
-                  "- More accurate forecasting: On the industry's core benchmark, MAE is 38.4%, outperforming the mainstream SOTA methods from the previous year.",
-                  "- Lighter transfer: Zero-shot performance is close to fully trained solutions, reducing business-side transfer cost by about 50%.",
-                  "- Faster decisions: Automated benchmarking helps complete solution selection quickly and significantly improves trustworthiness.",
-                  "- More efficient implementation: Under a low-code framework, a demo can be completed in 3-5 days, shortening the validation cycle to within 1 week."
+                  "- Leading accuracy: MAE is reduced to 38.4%, a further 5.2% lower than iTransformer and 3.6% lower than PatchTST.",
+                  "- Lower migration cost: Zero-shot performance approaches that of full-training solutions, reducing selection and migration cost by 50%.",
+                  "- Lower business loss: With reduced forecasting error, the solution is estimated to cut losses in energy scheduling and risk control by about 5%.",
+                  "- Faster launch: Built on a low-code framework, a Demo can be completed in 3-5 days, compressing validation to within 1 week."
                 ]
               },
               {
                 "title": "3.1.2 Version Information",
                 "content": [
-                  "- **Version Type**: Private deployment - server deployment edition",
-                  "- **Team Name**: Real-World AI self-developed and verified",
+                  "- **Version Type**: Private Deployment - Server Deployment Edition",
+                  "- **Team Name**: Real-World AI Self-Developed and Verified",
                   "- **Chinese Name**: /",
                   "- **English Name**: Real-World AI",
                   "- **Author Website**: This site",
                   "- **Initial Release Date**: 2025-11-25",
-                  "- **Last Updated**: 2025-11-25",
-                  "- **Last Reviewed**: 2025-11-26",
-                  "- **Key Dependencies**: Autogluon (by AWS AI) · Neuralforecast (by Nixtla) · ETT dataset SOTA models"
+                  "- **Last Updated**: 2026-03-10",
+                  "- **Last Reviewed**: 2026-03-10",
+                  "- **Key Dependencies**: AutoGluon (by AWS AI) · NeuralForecast (by Nixtla) · ETT Dataset SOTA Models"
                 ]
               },
               {
                 "title": "3.1.3 Implementation Details",
                 "content": [
-                  "To be published"
+                  "To be released"
                 ]
               },
               {
                 "title": "3.1.4 Metrics",
                 "content": [
                   "**Core Business Metrics**",
-                  "- Solution selection credibility improves by 10% compared with algorithm researchers and by up to 70% compared with non-algorithm practitioners, enabling business staff to make choices quickly and accurately",
-                  "- Solution selection and transfer cost reduced by 50%",
-                  "- Mean Absolute Error (MAE) < 0.39, reducing losses caused by long-horizon forecasting errors in the energy sector by about 5%",
+                  "- Confidence in solution selection increases by 10% (compared with algorithm researchers) to 70% (compared with non-algorithm practitioners), enabling business staff to make fast and accurate choices",
+                  "- Selection and migration cost is reduced by 50%",
+                  "- Mean Absolute Error (MAE) < 0.39, reducing losses caused by long-horizon forecasting errors in the energy field by about 5%",
                   "**Core Technical Metrics**",
-                  "- Mean Absolute Error (MAE) < 0.39: Same as the core business metric"
+                  "- Mean Absolute Error (MAE) < 0.39: same as the core business metric"
                 ]
               }
             ]
@@ -9900,7 +9902,7 @@
   "7-document-translation": {
     "zh": {
       "overview": {
-        "highlight": "20页文档10秒内完成翻译",
+        "highlight": "100+语言互译覆盖全球场景",
         "industry": "信息技术,行政管理,金融贸易,科研教育,文化传媒",
         "category": "服务,运营,管理",
         "cycle": "3.5-5日",
@@ -9912,10 +9914,10 @@
               {
                 "title": "亮点卡片",
                 "content": [
-                  "- 20页文档10秒内完成翻译：纯文本≥2页/秒，图文混合≥1.5页/秒",
-                  "- 翻译准确率≥98.5%：垂直术语库匹配准确率≥99%",
-                  "- 支持100+语言互译：覆盖约96%的企业高频使用语种",
-                  "- 启动验证成本降90%：可利用免费配额与开源组件快速试点"
+                  "- 100+语言互译覆盖全球场景：满足跨区域团队协作需求",
+                  "- 翻译准确率≥98.5%：专业文档可稳定输出高质量译文",
+                  "- 批量处理效率提升20-180倍：高频翻译从小时级缩短到秒级",
+                  "- 人工总成本降低80%：翻译、校对、排版流程显著压缩"
                 ]
               }
             ]
@@ -9973,10 +9975,10 @@
               {
                 "title": "3.1.1 入选最佳实践理由",
                 "content": [
-                  "- 效率领先：相比人工流程整体提速 20-180 倍，20 页文档约 10 秒内完成。",
-                  "- 质量稳定：翻译准确率 ≥98.5%，科技、金融、法律等术语匹配准确率 ≥99%。",
-                  "- 覆盖更广：支持 100+ 语言互译，可满足绝大多数跨区域业务协作需求。",
-                  "- 成本更优：自动化翻译与格式保留能力使人工翻译、校对、排版成本下降约 80%。"
+                  "- 翻译更快：批量处理效率较人工提升 20-180 倍，适合高频、多格式文档翻译。",
+                  "- 质量稳定：翻译准确率 ≥98.5%，术语库匹配准确率 ≥99%，满足专业场景要求。",
+                  "- 覆盖更广：支持 100+ 语言互译，可覆盖绝大多数全球化业务语种。",
+                  "- 成本更低：自动化流程使翻译、校对、排版总成本降低约 80%，Demo 验证成本还可再降 90%。"
                 ]
               },
               {
@@ -9988,9 +9990,9 @@
                   "- **英文名称**: Real-World AI",
                   "- **作者网站**: 本站",
                   "- **首发日期**: 2025-11-27",
-                  "- **最近更新**: 2025-11-27",
-                  "- **最近审阅**: 2025-11-27",
-                  "- **关键依赖**: Gemini CLI · Gemini 3 Pro"
+                  "- **最近更新**: 2026-03-10",
+                  "- **最近审阅**: 2026-03-10",
+                  "- **关键依赖**: Gemini CLI · Gemini 3.1 Pro"
                 ]
               },
               {
@@ -10005,10 +10007,10 @@
                   "**核心业务指标**",
                   "- 支持100+种语言互译，适配更多业务场景",
                   "- 文本翻译准确率 ≥ 98.5%、批量处理效率提升20-180倍",
-                  "- 单次请求响应时间≤3秒",
+                  "- 单次请求首token响应时间≤10秒",
                   "**核心技术指标**",
                   "- 文本翻译准确率 ≥ 98.5%：同核心业务指标",
-                  "- 单次请求响应时间≤3秒：同核心业务指标"
+                  "- 单次请求首token响应时间≤10秒：同核心业务指标"
                 ]
               }
             ]
@@ -10018,8 +10020,8 @@
     },
     "en": {
       "overview": {
-        "highlight": "Translate a 20-page document within 10 seconds",
-        "industry": "Information Technology,Administrative Management,Finance & Trade,Science & Education,Culture & Media",
+        "highlight": "Translation across 100+ languages for global scenarios",
+        "industry": "Information Technology,Administrative Management,Finance & Trade,Scientific Research & Education,Cultural Media",
         "category": "Service,Operations,Management",
         "cycle": "3.5-5 days",
         "case_no": "Case251127X01",
@@ -10030,10 +10032,10 @@
               {
                 "title": "Highlight Cards",
                 "content": [
-                  "- Translate a 20-page document within 10 seconds: Pure text >=2 pages/second, mixed text and images >=1.5 pages/second",
-                  "- Translation accuracy >=98.5%: Vertical terminology matching accuracy >=99%",
-                  "- Supports translation across 100+ languages: Covers about 96% of the high-frequency languages used by enterprises",
-                  "- Startup validation cost down 90%: Free quotas and open-source components can be used for rapid pilot projects"
+                  "- Translation across 100+ languages for global scenarios: Meets the collaboration needs of cross-regional teams",
+                  "- Translation accuracy >=98.5%: Delivers high-quality translations for professional documents reliably",
+                  "- 20x-180x higher batch-processing efficiency: High-frequency translation is reduced from hours to seconds",
+                  "- 80% lower total manual cost: Translation, proofreading, and typesetting workflows are significantly compressed"
                 ]
               }
             ]
@@ -10044,16 +10046,16 @@
               {
                 "title": "2.1 Overview",
                 "content": [
-                  "**Business Background**: Text translation is widely used in scenarios such as daily office work, cross-border business communication, research paper writing and reading, product localization, and multi-region distribution of operational content. It is a high-frequency rigid demand in industries such as information technology, finance and trade, science and education, and culture and media. In addition to translating text snippets, real business workflows also expect efficient translation solutions for editable document formats such as Word, PDF, and Markdown.",
-                  "**Solution**: To address this, this example proposes an intelligent translation workflow that can be privately deployed. Based on the Gemini 3 Pro large model, which is currently at the SOTA level in overall translation capability, and combined with Gemini CLI and configurable prompt files, it implements an integrated translation workflow from text input and intelligent translation to quality evaluation and result output."
+                  "**Business Background**: Text translation is widely used in daily office work, cross-border business communication, research paper writing and reading, product localization, and multi-region distribution of operational content. It is a high-frequency, hard-demand capability in industries such as information technology, finance and trade, scientific research and education, and cultural media. Beyond fragment translation, real business workflows also require efficient translation solutions for editable document formats such as Word, PDF, and Markdown.",
+                  "**Solution**: To address this, this case proposes a privately deployable intelligent translation workflow. Based on the Gemini 3 Pro large model, which is currently at the SOTA level in overall translation capability, and combined with Gemini CLI and configurable prompt files, it delivers an integrated workflow covering text input, intelligent translation, quality evaluation, and result output."
                 ]
               },
               {
                 "title": "2.2 Classification Tags",
                 "content": [
-                  "**Industry**: Information Technology, Administrative Management, Finance & Trade, Science & Education, Culture & Media",
+                  "**Industry**: Information Technology, Administrative Management, Finance & Trade, Scientific Research & Education, Cultural Media",
                   "**Category**: Service, Operations, Management",
-                  "**Technology Category**: Large Language Model (LLM), Natural Language Processing (NLP), Agent, MCP tools, Multilingual Learning, Machine Translation, API Integration"
+                  "**Technology Category**: Large Language Model (LLM), Natural Language Processing (NLP), Agent, MCP Tools, Multilingual Learning, Machine Translation, API Integration"
                 ]
               },
               {
@@ -10071,16 +10073,16 @@
               {
                 "title": "2.5 Business Pain Points",
                 "content": [
-                  "- Low efficiency: When manually handling documents in multiple formats, users often need to repeatedly copy and paste content into translation tools. Translating a 20-page document can take 30-60 minutes, with a poor experience that makes it hard to support batch and high-frequency translation use cases",
-                  "- High cost: Translation experts, especially for low-resource languages, are expensive and scarce, while professional translation software is costly and inflexible",
-                  "- Inconsistent translation quality: Different translators vary in professional background and language habits, leading to inconsistent style and terminology and sometimes mistranslations or omissions"
+                  "- Low efficiency: When handling documents in multiple formats manually, people often need to repeatedly copy and paste content into translation tools. Translating a 20-page document can take 30-60 minutes, offers a poor experience, and is hard to scale to high-frequency batch scenarios",
+                  "- High cost: Translation experts, especially for low-resource languages, are expensive and scarce; professional translation software is costly and inflexible",
+                  "- Inconsistent translation quality: Different translators have different professional backgrounds and language habits, resulting in inconsistent style and terminology, and sometimes even mistranslations or omissions"
                 ]
               },
               {
                 "title": "2.6 Core Functions",
                 "content": [
-                  "- Flexible foundation model selection: The system supports switching among multiple foundation large models",
-                  "- Multilingual translation support: The candidate foundation models recommended by the system all support multilingual translation, making configuration and use convenient"
+                  "- Flexible base model selection: The system supports switching among multiple base large models",
+                  "- Multilingual translation support: The recommended candidate base large models all support multilingual translation, making setup and use convenient"
                 ]
               }
             ]
@@ -10091,30 +10093,30 @@
               {
                 "title": "3.1.1 Reasons for Best Practice Selection",
                 "content": [
-                  "- Leading efficiency: Compared with manual workflows, the overall speed is improved by 20-180x, and a 20-page document can be completed in about 10 seconds.",
-                  "- Stable quality: Translation accuracy >=98.5%, and terminology matching accuracy in science, finance, law, and similar domains >=99%.",
-                  "- Broader coverage: Supports translation across 100+ languages and can meet the needs of most cross-regional business collaboration.",
-                  "- Better cost profile: Automated translation and format preservation reduce manual translation, proofreading, and typesetting cost by about 80%."
+                  "- Faster translation: Batch-processing efficiency is 20x-180x higher than manual work, making it suitable for high-frequency, multi-format document translation.",
+                  "- Stable quality: Translation accuracy reaches >=98.5% and terminology-base matching accuracy reaches >=99%, meeting professional scenario requirements.",
+                  "- Broader coverage: Supports translation across 100+ languages and covers the vast majority of global business languages.",
+                  "- Lower cost: Automated workflows reduce the total cost of translation, proofreading, and typesetting by about 80%, and Demo validation cost can be reduced by another 90%."
                 ]
               },
               {
                 "title": "3.1.2 Version Information",
                 "content": [
-                  "- **Version Type**: Private deployment - server deployment edition",
-                  "- **Team Name**: Real-World AI self-developed and verified",
+                  "- **Version Type**: Private Deployment - Server Deployment Edition",
+                  "- **Team Name**: Real-World AI Self-Developed and Verified",
                   "- **Chinese Name**: /",
                   "- **English Name**: Real-World AI",
                   "- **Author Website**: This site",
                   "- **Initial Release Date**: 2025-11-27",
-                  "- **Last Updated**: 2025-11-27",
-                  "- **Last Reviewed**: 2025-11-27",
-                  "- **Key Dependencies**: Gemini CLI · Gemini 3 Pro"
+                  "- **Last Updated**: 2026-03-10",
+                  "- **Last Reviewed**: 2026-03-10",
+                  "- **Key Dependencies**: Gemini CLI · Gemini 3.1 Pro"
                 ]
               },
               {
                 "title": "3.1.3 Implementation Details",
                 "content": [
-                  "To be published"
+                  "To be released"
                 ]
               },
               {
@@ -10122,11 +10124,11 @@
                 "content": [
                   "**Core Business Metrics**",
                   "- Supports translation across 100+ languages, adapting to more business scenarios",
-                  "- Text translation accuracy >= 98.5%, with batch-processing efficiency improved by 20-180x",
-                  "- Single-request response time <=3 seconds",
+                  "- Text translation accuracy >= 98.5%, with batch-processing efficiency improved by 20x-180x",
+                  "- First-token response time for a single request <=10 seconds",
                   "**Core Technical Metrics**",
-                  "- Text translation accuracy >= 98.5%: Same as the core business metric",
-                  "- Single-request response time <=3 seconds: Same as the core business metric"
+                  "- Text translation accuracy >= 98.5%: same as the core business metric",
+                  "- First-token response time for a single request <=10 seconds: same as the core business metric"
                 ]
               }
             ]
@@ -10138,7 +10140,7 @@
   "8-intelligent-contract-legal-review": {
     "zh": {
       "overview": {
-        "highlight": "合同审核30分钟内完成",
+        "highlight": "3人天审核压缩至30分钟",
         "industry": "金融贸易",
         "category": "风控",
         "cycle": "1天",
@@ -10150,10 +10152,10 @@
               {
                 "title": "亮点卡片",
                 "content": [
-                  "- 合同审核30分钟内完成：整体流程较传统方式提效80%-90%",
-                  "- 合同要素10分钟核对：单项目效率提升约95%+",
-                  "- 人机协作降低幻觉风险：关键审核点逐条校验，减少漏审误审",
-                  "- 审核规则可长期复用：边际成本持续下降，适合金融法审场景"
+                  "- 3人天审核压缩至30分钟：项目级法审效率提升80%-90%",
+                  "- 合同要素10分钟核对完成：单项核查效率提升95%+",
+                  "- 一规则一审避免漏审：逐条扫描每份合同和审核点",
+                  "- 审核规则可长期复用：边际成本持续下降"
                 ]
               }
             ]
@@ -10208,10 +10210,10 @@
               {
                 "title": "3.1.1 入选最佳实践理由",
                 "content": [
-                  "- 审核更快：合同整体审核可由约 3 人天压缩至约 30 分钟完成。",
-                  "- 核对更高效：合同要素核对从约 0.5 人天缩短至约 10 分钟，效率提升 95%+。",
-                  "- 风险更可控：人机协作与逐条规则扫描机制有效降低幻觉、漏审和误审。",
-                  "- 复用价值高：审核规则可持续沉淀复用，适合复杂金融法审长期运营。"
+                  "- 审核提速：单项目整体流程由约 3 人天压缩至 30 分钟，效率提升 80%-90%。",
+                  "- 核对更快：单项合同要素核对从 0.5 人天缩短至约 10 分钟，效率提升 95%+。",
+                  "- 风险更稳：通过代码节点与条件分支逐条扫描，降低漏审、误审与幻觉风险。",
+                  "- 规则可复用：审核经验沉淀为可配置规则资产，长期边际成本持续下降。"
                 ]
               },
               {
@@ -10258,7 +10260,7 @@
     },
     "en": {
       "overview": {
-        "highlight": "Contract review completed within 30 minutes",
+        "highlight": "3 person-days of review compressed to 30 minutes",
         "industry": "Finance & Trade",
         "category": "Risk Control",
         "cycle": "1 day",
@@ -10270,10 +10272,10 @@
               {
                 "title": "Highlight Cards",
                 "content": [
-                  "- Contract review completed within 30 minutes: The overall workflow is 80%-90% more efficient than traditional methods",
-                  "- Contract element verification in 10 minutes: Single-project efficiency improves by about 95%+",
-                  "- Human-AI collaboration reduces hallucination risk: Key review points are checked one by one to reduce missed and incorrect reviews",
-                  "- Review rules can be reused over the long term: Marginal cost keeps falling, making it suitable for financial legal review scenarios"
+                  "- 3 person-days of review compressed to 30 minutes: Project-level legal review efficiency improved by 80%-90%",
+                  "- Contract elements checked in 10 minutes: Single-item verification efficiency improved by 95%+",
+                  "- One-rule-per-review avoids omissions: Scans each contract and each review point item by item",
+                  "- Review rules can be reused long term: Marginal cost keeps declining"
                 ]
               }
             ]
@@ -10304,20 +10306,20 @@
               {
                 "title": "2.5 Business Pain Points",
                 "content": [
-                  "- Low efficiency of manual review: A single project usually includes 5-6 contracts, and the traditional method requires about 3 person-days to complete a full review, with multiple people involved in handoffs and collaboration",
-                  "- High risk of errors in manual verification: In high-intensity continuous review scenarios, the risk of missing or mischecking cross-contract elements rises significantly",
-                  "- Rules are hard to accumulate and reuse: Review experience is highly dependent on individuals, making it difficult to form a standardized and modular review rule system",
-                  "- Complex cross-document relationships: There are many implicit associations between contracts, and between contracts and supporting materials, making manual comparison extremely costly"
+                  "- Low efficiency in manual review: A single project usually includes 5-6 contracts, and the traditional approach takes about 3 person-days to complete a full review, often requiring multi-person handoff and collaboration",
+                  "- High risk of manual verification errors: In high-intensity continuous review scenarios, the risk of missed or incorrect checks across contract elements rises significantly",
+                  "- Rules are hard to consolidate and reuse: Review experience depends heavily on individuals, making it difficult to form a standardized, modular review rule system",
+                  "- Complex cross-document relationships: There are many implicit connections across contracts and between contracts and supporting materials, making manual comparison extremely costly"
                 ]
               },
               {
                 "title": "2.6 Core Functions",
                 "content": [
-                  "- Automatic extraction of contract elements: Automatically extracts key elements such as lender, amount, and number, while supporting manual correction and confirmation",
-                  "- Cross-contract review rule checking: Based on a rule base, checks consistency and compliance across multiple contracts within the same project",
-                  "- Configurable review rule management: Supports user-defined review points, risk levels, and contract type mappings",
-                  "- Visualized display of review results: Original-text positioning of risk points, highlighting, and manual annotations",
-                  "- Intelligent retrieval of similar contracts: Assists legal reviewers with horizontal comparison and decision support"
+                  "- Automatic extraction of contract elements: Automatically extracts key elements such as lender, amount, and reference number, and supports manual correction and confirmation",
+                  "- Cross-contract review rule validation: Based on a rule library, checks consistency and compliance across multiple contracts within the same project",
+                  "- Configurable review rule management: Supports user-defined review points, risk levels, and contract-type mappings",
+                  "- Visual display of review results: Original-text positioning for risk points, highlighted annotations, and manual comments",
+                  "- Intelligent retrieval of similar contracts: Assists legal reviewers with cross-comparison and decision support"
                 ]
               }
             ]
@@ -10328,18 +10330,18 @@
               {
                 "title": "3.1.1 Reasons for Best Practice Selection",
                 "content": [
-                  "- Faster review: Full contract review can be compressed from about 3 person-days to about 30 minutes.",
-                  "- More efficient verification: Contract element verification is shortened from about half a person-day to about 10 minutes, improving efficiency by 95%+.",
-                  "- Better controlled risk: Human-AI collaboration and line-by-line rule scanning effectively reduce hallucinations, missed reviews, and incorrect reviews.",
-                  "- High reuse value: Review rules can be continuously accumulated and reused, making the solution suitable for long-term operation in complex financial legal review."
+                  "- Faster review: The end-to-end workflow for a single project is reduced from about 3 person-days to 30 minutes, improving efficiency by 80%-90%.",
+                  "- Faster verification: Checking contract elements for a single item is reduced from 0.5 person-day to about 10 minutes, improving efficiency by 95%+.",
+                  "- More stable risk control: Code nodes and conditional branches scan rules one by one, reducing the risk of missed review, misreview, and hallucinations.",
+                  "- Reusable rules: Review experience is turned into configurable rule assets, driving down long-term marginal cost."
                 ]
               },
               {
                 "title": "3.1.2 Version Information",
                 "content": [
-                  "- **Version Type**: Private deployment - server deployment edition",
+                  "- **Version Type**: Private Deployment - Server Deployment Edition",
                   "- **Team Name**: BISHENG Team",
-                  "- **Chinese Name**: Bisheng Team",
+                  "- **Chinese Name**: BISHENG Team",
                   "- **English Name**: BISHENG",
                   "- **Author Website**: https://www.bisheng.ai/",
                   "- **Initial Release Date**: 2026-01-09",
@@ -10359,16 +10361,16 @@
                   "**Core Business Metrics**",
                   "- Overall efficiency improvement in project-level contract review",
                   "- Significant reduction in manual verification time",
-                  "- Continuous increase in reuse rate of review rules",
+                  "- Continuous improvement in review-rule reuse rate",
                   "- Review results are traceable and reviewable",
                   "**Core Technical Metrics**",
-                  "- Accuracy of contract element extraction for key fields in financial legal review",
+                  "- Accuracy of contract element extraction (key fields in financial legal review)",
                   "- Accuracy of cross-document consistency judgment",
-                  "- Line-by-line rule coverage rate to avoid missed reviews",
-                  "- Controllability and stability under a human-AI collaboration workflow",
+                  "- Rule-by-rule coverage rate (to avoid missed review)",
+                  "- Controllability and stability under human-in-the-loop workflows",
                   "**Other Value Returns**",
-                  "- Promotes structured and systematic accumulation of financial legal review experience",
-                  "- Provides a replicable pattern for subsequent risk control and compliance automation scenarios"
+                  "- Drives structured and systematic accumulation of financial legal review experience",
+                  "- Provides a reproducible pattern for subsequent risk control and compliance automation scenarios"
                 ]
               }
             ]
@@ -10380,7 +10382,7 @@
   "9-universal-object-detection": {
     "zh": {
       "overview": {
-        "highlight": "目标检测精度超92%",
+        "highlight": "mAP@0.5超过92%",
         "industry": "信息技术,农林牧渔,能源制造",
         "category": "运营,管理,风控",
         "cycle": "≤5日",
@@ -10392,10 +10394,10 @@
               {
                 "title": "亮点卡片",
                 "content": [
-                  "- 目标检测精度超92%：复杂背景下仍能稳定识别关键目标",
-                  "- 误伤误报率≤5%：较传统全覆盖模式明显下降",
-                  "- P99延迟控制在30ms内：较YOLOv8提速约15%，适合实时作业",
-                  "- 资源投入节省50%-80%：精准定位替代全区域覆盖策略"
+                  "- mAP@0.5超过92%：复杂背景下仍能稳定识别目标",
+                  "- 关键目标误伤率≤5%：可挽救10%-15%财产损失",
+                  "- P99延迟≤30ms：较YOLOv8速度提升约15%",
+                  "- 资源投入减少50%-80%：精准定位替代全区域覆盖"
                 ]
               }
             ]
@@ -10454,10 +10456,10 @@
               {
                 "title": "3.1.1 入选最佳实践理由",
                 "content": [
-                  "- 检测更准：平均检测精度 mAP@0.5 超过 92%，能有效识别微小目标和复杂背景对象。",
-                  "- 误报更低：关键目标误伤/误报率 ≤5%，明显优于传统全覆盖模式。",
-                  "- 响应更快：P99 推理延迟控制在 30ms 内，较上一代通用模型提速约 15%。",
-                  "- 资源更省：精准定位策略可减少 50%-80% 的农药、试剂等投入成本。"
+                  "- 检测更准：平均检测精度 mAP@0.5 > 92%，复杂背景下仍能稳定识别微小目标。",
+                  "- 误伤更低：关键目标误伤/误报率 ≤5%，可减少高混淆场景的重大业务损失。",
+                  "- 响应更快：P99 延迟控制在 30ms 内，比上一代通用方案再快约 15%。",
+                  "- 成本更省：精准定位替代全覆盖模式，资源投入减少 50%-80%，数据资产还能持续回流。"
                 ]
               },
               {
@@ -10469,8 +10471,8 @@
                   "- **英文名称**: Real-World AI",
                   "- **作者网站**: 本站",
                   "- **首发日期**: 2025-11-25",
-                  "- **最近更新**: 2025-11-25",
-                  "- **最近审阅**: 2025-11-26",
+                  "- **最近更新**: 2026-03-10",
+                  "- **最近审阅**: 2026-03-10",
                   "- **关键依赖**: Ultralytics YOLO （by Ultralytics） · Triton （by NVIDIA） · Perf Analyzer （by NVIDIA）"
                 ]
               },
@@ -10498,7 +10500,7 @@
     },
     "en": {
       "overview": {
-        "highlight": "Object detection accuracy exceeds 92%",
+        "highlight": "mAP@0.5 exceeds 92%",
         "industry": "Information Technology,Agriculture Forestry Animal Husbandry & Fishery,Energy & Manufacturing",
         "category": "Operations,Management,Risk Control",
         "cycle": "<=5 days",
@@ -10510,10 +10512,10 @@
               {
                 "title": "Highlight Cards",
                 "content": [
-                  "- Object detection accuracy exceeds 92%: Key targets can still be identified stably in complex backgrounds",
-                  "- False-damage and false-alarm rate <=5%: Significantly lower than the traditional full-coverage mode",
-                  "- P99 latency controlled within 30ms: About 15% faster than YOLOv8 and suitable for real-time operations",
-                  "- Resource input saved by 50%-80%: Precise positioning replaces full-area coverage strategies"
+                  "- mAP@0.5 exceeds 92%: Targets can still be recognized reliably in complex backgrounds",
+                  "- Critical-target false damage rate <=5%: Can help avoid 10%-15% of property losses",
+                  "- P99 latency <=30ms: About 15% faster than YOLOv8",
+                  "- 50%-80% lower resource input: Precise targeting replaces full-area coverage"
                 ]
               }
             ]
@@ -10524,8 +10526,8 @@
               {
                 "title": "2.1 Overview",
                 "content": [
-                  "**Business Background**: As a core technology in computer vision, object detection is widely used in fields such as traffic navigation, security monitoring, medical imaging, agriculture, forestry, animal husbandry, and more. Among these tasks, \"complex backgrounds, tiny targets, and high similarity between interference objects\" are typical challenges.",
-                  "**Solution**: The proposed solution builds a general object detection workflow containing modules such as image acquisition, precise recognition, and data feedback. It uses the YOLOv11 algorithm combined with an Active Learning mechanism to automatically capture low-confidence samples and trigger model iteration, solving the problem of performance degradation after deployment due to environmental changes."
+                  "**Business Background**: As a core technology in computer vision, object detection is widely used in traffic navigation, security monitoring, medical imaging, agriculture, forestry, animal husbandry, and other fields. Among these tasks, complex backgrounds, tiny targets, and highly similar distractors are typical challenges.",
+                  "**Solution**: The proposed solution builds a general-purpose object-detection workflow with modules for image capture, precise recognition, and data feedback. It uses the YOLOv11 algorithm combined with an Active Learning mechanism to automatically capture low-confidence samples and trigger model iteration, addressing performance degradation caused by environmental changes after deployment."
                 ]
               },
               {
@@ -10551,17 +10553,17 @@
               {
                 "title": "2.5 Business Pain Points",
                 "content": [
-                  "- High cost of full-scale processing: When target objects such as defects, weeds, or specific products account for only 10%-30% of the area, existing solutions mostly use full-area coverage, causing more than 70% of resources to be wasted",
-                  "- Misidentification of extremely similar targets: When target objects are highly similar to backgrounds or non-target objects such as mimetic interference objects, manual methods or existing solutions are prone to misjudgment, causing serious business losses such as damaging crops or missing defective products",
-                  "- Sunk data loses its value: Traditional operations lack data retention, so massive on-site operational data, especially edge and anomalous samples, is not converted into data assets, seriously affecting the model's learning and judgment capability"
+                  "- High cost of full-scale processing: When target objects such as defects, weeds, or specific goods account for only 10%-30% of an area, existing approaches often still use full-area coverage, wasting more than 70% of resources",
+                  "- False detection among extremely similar targets: When the target and background or non-target objects, such as mimicking distractors, are highly similar in features, manual approaches or existing solutions are prone to misjudgment, causing major business losses such as damaging crops or missing defective products",
+                  "- Sunk data loses value: Traditional operations lack data retention, so massive volumes of field data, especially edge cases and abnormal samples, fail to become data assets, severely weakening model learning and judgment capabilities"
                 ]
               },
               {
                 "title": "2.6 Core Functions",
                 "content": [
-                  "- Precise target filtering: Can locate designated targets in millisecond time from large-area complex backgrounds, replacing the full-coverage mode and reducing cost",
-                  "- Fine-grained hierarchical classification: Uses a multi-level classification system to improve recognition accuracy for interference items with extremely similar forms and reduce usage risk",
-                  "- Automatic data collection: Automatically captures high-value long-tail data backups during operations without manual intervention, accumulating data assets"
+                  "- Precise target filtering: Locates designated targets within milliseconds from large, complex backgrounds, replacing full-coverage modes and reducing cost",
+                  "- Fine-grained hierarchical classification: Builds a multi-level classification system to improve recognition accuracy for highly similar distractors and reduce usage risk",
+                  "- Automatic data collection: Automatically captures and backs up high-value long-tail data during operations without manual intervention, accumulating data assets"
                 ]
               }
             ]
@@ -10572,41 +10574,41 @@
               {
                 "title": "3.1.1 Reasons for Best Practice Selection",
                 "content": [
-                  "- More accurate detection: Average detection precision mAP@0.5 exceeds 92%, enabling effective recognition of tiny targets and objects in complex backgrounds.",
-                  "- Lower false positives: False damage/false alarm rate for key targets <=5%, clearly better than the traditional full-coverage mode.",
-                  "- Faster response: P99 inference latency is controlled within 30ms, about 15% faster than the previous-generation general model.",
-                  "- More efficient resource use: The precise positioning strategy can reduce input cost for pesticides, reagents, and similar resources by 50%-80%."
+                  "- More accurate detection: Average precision mAP@0.5 > 92%, with stable recognition of small targets even in complex backgrounds.",
+                  "- Lower false damage: Critical-target false damage/false positive rate <=5%, reducing major losses in highly confusing scenarios.",
+                  "- Faster response: P99 latency is controlled within 30 ms, about 15% faster than the previous generation of general-purpose solutions.",
+                  "- Lower cost: Precise targeting replaces full-coverage processing, reducing resource input by 50%-80%, while data assets continue to flow back into the system."
                 ]
               },
               {
                 "title": "3.1.2 Version Information",
                 "content": [
-                  "- **Version Type**: Private deployment - server deployment edition",
-                  "- **Team Name**: Real-World AI self-developed and verified",
+                  "- **Version Type**: Private Deployment - Server Deployment Edition",
+                  "- **Team Name**: Real-World AI Self-Developed and Verified",
                   "- **Chinese Name**: /",
                   "- **English Name**: Real-World AI",
                   "- **Author Website**: This site",
                   "- **Initial Release Date**: 2025-11-25",
-                  "- **Last Updated**: 2025-11-25",
-                  "- **Last Reviewed**: 2025-11-26",
+                  "- **Last Updated**: 2026-03-10",
+                  "- **Last Reviewed**: 2026-03-10",
                   "- **Key Dependencies**: Ultralytics YOLO (by Ultralytics) · Triton (by NVIDIA) · Perf Analyzer (by NVIDIA)"
                 ]
               },
               {
                 "title": "3.1.3 Implementation Details",
                 "content": [
-                  "To be published"
+                  "To be released"
                 ]
               },
               {
                 "title": "3.1.4 Metrics",
                 "content": [
                   "**Core Business Metrics**",
-                  "- Save 50%-80% in resource input: Resources such as pesticide input are applied only to precisely localized and narrowed target areas, greatly reducing consumables and operating cost",
-                  "- Long-tail sample data asset conversion rate 98%: Automatically filters and retains difficult long-tail samples such as low-confidence results and conflicting results for subsequent system training and upgrades, reducing useless data accumulation and storage occupation while lowering operations cost",
-                  "- False damage/false alarm rate for key targets <=5%: In highly confusing scenarios, this protects non-target objects such as healthy crops and is estimated to prevent 10%-15% of total property loss",
+                  "- Save 50%-80% in resource input: Resources such as pesticide usage are applied only within precisely localized target areas, greatly reducing consumables and operating costs",
+                  "- Long-tail sample data asset conversion rate reaches 98%: Automatically filters and retains high-difficulty long-tail samples such as low-confidence cases and conflicting results for subsequent training and upgrades, reducing useless data accumulation and storage costs",
+                  "- Critical-target false damage/false positive rate <=5%: In highly confusing scenarios, protects non-target objects such as normal crops and is estimated to avoid 10%-15% of total property losses",
                   "**Core Technical Metrics**",
-                  "- Average detection precision (mAP@0.5) > 92%"
+                  "- Mean Average Precision (mAP@0.5) > 92%"
                 ]
               }
             ]

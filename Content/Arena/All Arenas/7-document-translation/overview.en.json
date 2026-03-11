@@ -1,6 +1,6 @@
 {
-  "highlight": "Translate a 20-page document within 10 seconds",
-  "industry": "Information Technology,Administrative Management,Finance & Trade,Science & Education,Culture & Media",
+  "highlight": "Translation across 100+ languages for global scenarios",
+  "industry": "Information Technology,Administrative Management,Finance & Trade,Scientific Research & Education,Cultural Media",
   "category": "Service,Operations,Management",
   "cycle": "3.5-5 days",
   "case_no": "Case251127X01",
@@ -11,10 +11,10 @@
         {
           "title": "Highlight Cards",
           "content": [
-            "- Translate a 20-page document within 10 seconds: Pure text >=2 pages/second, mixed text and images >=1.5 pages/second",
-            "- Translation accuracy >=98.5%: Vertical terminology matching accuracy >=99%",
-            "- Supports translation across 100+ languages: Covers about 96% of the high-frequency languages used by enterprises",
-            "- Startup validation cost down 90%: Free quotas and open-source components can be used for rapid pilot projects"
+            "- Translation across 100+ languages for global scenarios: Meets the collaboration needs of cross-regional teams",
+            "- Translation accuracy >=98.5%: Delivers high-quality translations for professional documents reliably",
+            "- 20x-180x higher batch-processing efficiency: High-frequency translation is reduced from hours to seconds",
+            "- 80% lower total manual cost: Translation, proofreading, and typesetting workflows are significantly compressed"
           ]
         }
       ]
@@ -25,16 +25,16 @@
         {
           "title": "2.1 Overview",
           "content": [
-            "**Business Background**: Text translation is widely used in scenarios such as daily office work, cross-border business communication, research paper writing and reading, product localization, and multi-region distribution of operational content. It is a high-frequency rigid demand in industries such as information technology, finance and trade, science and education, and culture and media. In addition to translating text snippets, real business workflows also expect efficient translation solutions for editable document formats such as Word, PDF, and Markdown.",
-            "**Solution**: To address this, this example proposes an intelligent translation workflow that can be privately deployed. Based on the Gemini 3 Pro large model, which is currently at the SOTA level in overall translation capability, and combined with Gemini CLI and configurable prompt files, it implements an integrated translation workflow from text input and intelligent translation to quality evaluation and result output."
+            "**Business Background**: Text translation is widely used in daily office work, cross-border business communication, research paper writing and reading, product localization, and multi-region distribution of operational content. It is a high-frequency, hard-demand capability in industries such as information technology, finance and trade, scientific research and education, and cultural media. Beyond fragment translation, real business workflows also require efficient translation solutions for editable document formats such as Word, PDF, and Markdown.",
+            "**Solution**: To address this, this case proposes a privately deployable intelligent translation workflow. Based on the Gemini 3 Pro large model, which is currently at the SOTA level in overall translation capability, and combined with Gemini CLI and configurable prompt files, it delivers an integrated workflow covering text input, intelligent translation, quality evaluation, and result output."
           ]
         },
         {
           "title": "2.2 Classification Tags",
           "content": [
-            "**Industry**: Information Technology, Administrative Management, Finance & Trade, Science & Education, Culture & Media",
+            "**Industry**: Information Technology, Administrative Management, Finance & Trade, Scientific Research & Education, Cultural Media",
             "**Category**: Service, Operations, Management",
-            "**Technology Category**: Large Language Model (LLM), Natural Language Processing (NLP), Agent, MCP tools, Multilingual Learning, Machine Translation, API Integration"
+            "**Technology Category**: Large Language Model (LLM), Natural Language Processing (NLP), Agent, MCP Tools, Multilingual Learning, Machine Translation, API Integration"
           ]
         },
         {
@@ -52,16 +52,16 @@
         {
           "title": "2.5 Business Pain Points",
           "content": [
-            "- Low efficiency: When manually handling documents in multiple formats, users often need to repeatedly copy and paste content into translation tools. Translating a 20-page document can take 30-60 minutes, with a poor experience that makes it hard to support batch and high-frequency translation use cases",
-            "- High cost: Translation experts, especially for low-resource languages, are expensive and scarce, while professional translation software is costly and inflexible",
-            "- Inconsistent translation quality: Different translators vary in professional background and language habits, leading to inconsistent style and terminology and sometimes mistranslations or omissions"
+            "- Low efficiency: When handling documents in multiple formats manually, people often need to repeatedly copy and paste content into translation tools. Translating a 20-page document can take 30-60 minutes, offers a poor experience, and is hard to scale to high-frequency batch scenarios",
+            "- High cost: Translation experts, especially for low-resource languages, are expensive and scarce; professional translation software is costly and inflexible",
+            "- Inconsistent translation quality: Different translators have different professional backgrounds and language habits, resulting in inconsistent style and terminology, and sometimes even mistranslations or omissions"
           ]
         },
         {
           "title": "2.6 Core Functions",
           "content": [
-            "- Flexible foundation model selection: The system supports switching among multiple foundation large models",
-            "- Multilingual translation support: The candidate foundation models recommended by the system all support multilingual translation, making configuration and use convenient"
+            "- Flexible base model selection: The system supports switching among multiple base large models",
+            "- Multilingual translation support: The recommended candidate base large models all support multilingual translation, making setup and use convenient"
           ]
         }
       ]
@@ -72,30 +72,30 @@
         {
           "title": "3.1.1 Reasons for Best Practice Selection",
           "content": [
-            "- Leading efficiency: Compared with manual workflows, the overall speed is improved by 20-180x, and a 20-page document can be completed in about 10 seconds.",
-            "- Stable quality: Translation accuracy >=98.5%, and terminology matching accuracy in science, finance, law, and similar domains >=99%.",
-            "- Broader coverage: Supports translation across 100+ languages and can meet the needs of most cross-regional business collaboration.",
-            "- Better cost profile: Automated translation and format preservation reduce manual translation, proofreading, and typesetting cost by about 80%."
+            "- Faster translation: Batch-processing efficiency is 20x-180x higher than manual work, making it suitable for high-frequency, multi-format document translation.",
+            "- Stable quality: Translation accuracy reaches >=98.5% and terminology-base matching accuracy reaches >=99%, meeting professional scenario requirements.",
+            "- Broader coverage: Supports translation across 100+ languages and covers the vast majority of global business languages.",
+            "- Lower cost: Automated workflows reduce the total cost of translation, proofreading, and typesetting by about 80%, and Demo validation cost can be reduced by another 90%."
           ]
         },
         {
           "title": "3.1.2 Version Information",
           "content": [
-            "- **Version Type**: Private deployment - server deployment edition",
-            "- **Team Name**: Real-World AI self-developed and verified",
+            "- **Version Type**: Private Deployment - Server Deployment Edition",
+            "- **Team Name**: Real-World AI Self-Developed and Verified",
             "- **Chinese Name**: /",
             "- **English Name**: Real-World AI",
             "- **Author Website**: This site",
             "- **Initial Release Date**: 2025-11-27",
             "- **Last Updated**: 2026-03-10",
             "- **Last Reviewed**: 2026-03-10",
-            "- **Key Dependencies**: Gemini CLI · Gemini 3 Pro"
+            "- **Key Dependencies**: Gemini CLI · Gemini 3.1 Pro"
           ]
         },
         {
           "title": "3.1.3 Implementation Details",
           "content": [
-            "To be published"
+            "To be released"
           ]
         },
         {
@@ -103,11 +103,11 @@
           "content": [
             "**Core Business Metrics**",
             "- Supports translation across 100+ languages, adapting to more business scenarios",
-            "- Text translation accuracy >= 98.5%, with batch-processing efficiency improved by 20-180x",
-            "- Single-request response time <=3 seconds",
+            "- Text translation accuracy >= 98.5%, with batch-processing efficiency improved by 20x-180x",
+            "- First-token response time for a single request <=10 seconds",
             "**Core Technical Metrics**",
-            "- Text translation accuracy >= 98.5%: Same as the core business metric",
-            "- Single-request response time <=3 seconds: Same as the core business metric"
+            "- Text translation accuracy >= 98.5%: same as the core business metric",
+            "- First-token response time for a single request <=10 seconds: same as the core business metric"
           ]
         }
       ]

@@ -1,5 +1,5 @@
 {
-  "highlight": "Contract review completed within 30 minutes",
+  "highlight": "3 person-days of review compressed to 30 minutes",
   "industry": "Finance & Trade",
   "category": "Risk Control",
   "cycle": "1 day",
@@ -11,10 +11,10 @@
         {
           "title": "Highlight Cards",
           "content": [
-            "- Contract review completed within 30 minutes: The overall workflow is 80%-90% more efficient than traditional methods",
-            "- Contract element verification in 10 minutes: Single-project efficiency improves by about 95%+",
-            "- Human-AI collaboration reduces hallucination risk: Key review points are checked one by one to reduce missed and incorrect reviews",
-            "- Review rules can be reused over the long term: Marginal cost keeps falling, making it suitable for financial legal review scenarios"
+            "- 3 person-days of review compressed to 30 minutes: Project-level legal review efficiency improved by 80%-90%",
+            "- Contract elements checked in 10 minutes: Single-item verification efficiency improved by 95%+",
+            "- One-rule-per-review avoids omissions: Scans each contract and each review point item by item",
+            "- Review rules can be reused long term: Marginal cost keeps declining"
           ]
         }
       ]
@@ -45,20 +45,20 @@
         {
           "title": "2.5 Business Pain Points",
           "content": [
-            "- Low efficiency of manual review: A single project usually includes 5-6 contracts, and the traditional method requires about 3 person-days to complete a full review, with multiple people involved in handoffs and collaboration",
-            "- High risk of errors in manual verification: In high-intensity continuous review scenarios, the risk of missing or mischecking cross-contract elements rises significantly",
-            "- Rules are hard to accumulate and reuse: Review experience is highly dependent on individuals, making it difficult to form a standardized and modular review rule system",
-            "- Complex cross-document relationships: There are many implicit associations between contracts, and between contracts and supporting materials, making manual comparison extremely costly"
+            "- Low efficiency in manual review: A single project usually includes 5-6 contracts, and the traditional approach takes about 3 person-days to complete a full review, often requiring multi-person handoff and collaboration",
+            "- High risk of manual verification errors: In high-intensity continuous review scenarios, the risk of missed or incorrect checks across contract elements rises significantly",
+            "- Rules are hard to consolidate and reuse: Review experience depends heavily on individuals, making it difficult to form a standardized, modular review rule system",
+            "- Complex cross-document relationships: There are many implicit connections across contracts and between contracts and supporting materials, making manual comparison extremely costly"
           ]
         },
         {
           "title": "2.6 Core Functions",
           "content": [
-            "- Automatic extraction of contract elements: Automatically extracts key elements such as lender, amount, and number, while supporting manual correction and confirmation",
-            "- Cross-contract review rule checking: Based on a rule base, checks consistency and compliance across multiple contracts within the same project",
-            "- Configurable review rule management: Supports user-defined review points, risk levels, and contract type mappings",
-            "- Visualized display of review results: Original-text positioning of risk points, highlighting, and manual annotations",
-            "- Intelligent retrieval of similar contracts: Assists legal reviewers with horizontal comparison and decision support"
+            "- Automatic extraction of contract elements: Automatically extracts key elements such as lender, amount, and reference number, and supports manual correction and confirmation",
+            "- Cross-contract review rule validation: Based on a rule library, checks consistency and compliance across multiple contracts within the same project",
+            "- Configurable review rule management: Supports user-defined review points, risk levels, and contract-type mappings",
+            "- Visual display of review results: Original-text positioning for risk points, highlighted annotations, and manual comments",
+            "- Intelligent retrieval of similar contracts: Assists legal reviewers with cross-comparison and decision support"
           ]
         }
       ]
@@ -69,23 +69,23 @@
         {
           "title": "3.1.1 Reasons for Best Practice Selection",
           "content": [
-            "- Faster review: Full contract review can be compressed from about 3 person-days to about 30 minutes.",
-            "- More efficient verification: Contract element verification is shortened from about half a person-day to about 10 minutes, improving efficiency by 95%+.",
-            "- Better controlled risk: Human-AI collaboration and line-by-line rule scanning effectively reduce hallucinations, missed reviews, and incorrect reviews.",
-            "- High reuse value: Review rules can be continuously accumulated and reused, making the solution suitable for long-term operation in complex financial legal review."
+            "- Faster review: The end-to-end workflow for a single project is reduced from about 3 person-days to 30 minutes, improving efficiency by 80%-90%.",
+            "- Faster verification: Checking contract elements for a single item is reduced from 0.5 person-day to about 10 minutes, improving efficiency by 95%+.",
+            "- More stable risk control: Code nodes and conditional branches scan rules one by one, reducing the risk of missed review, misreview, and hallucinations.",
+            "- Reusable rules: Review experience is turned into configurable rule assets, driving down long-term marginal cost."
           ]
         },
         {
           "title": "3.1.2 Version Information",
           "content": [
-            "- **Version Type**: Private deployment - server deployment edition",
+            "- **Version Type**: Private Deployment - Server Deployment Edition",
             "- **Team Name**: BISHENG Team",
-            "- **Chinese Name**: Bisheng Team",
+            "- **Chinese Name**: BISHENG Team",
             "- **English Name**: BISHENG",
             "- **Author Website**: https://www.bisheng.ai/",
             "- **Initial Release Date**: 2026-01-09",
-            "- **Last Updated**: 2026-03-10",
-            "- **Last Reviewed**: 2026-03-10"
+            "- **Last Updated**: 2026-01-09",
+            "- **Last Reviewed**: 2026-01-09"
           ]
         },
         {
@@ -100,16 +100,16 @@
             "**Core Business Metrics**",
             "- Overall efficiency improvement in project-level contract review",
             "- Significant reduction in manual verification time",
-            "- Continuous increase in reuse rate of review rules",
+            "- Continuous improvement in review-rule reuse rate",
             "- Review results are traceable and reviewable",
             "**Core Technical Metrics**",
-            "- Accuracy of contract element extraction for key fields in financial legal review",
+            "- Accuracy of contract element extraction (key fields in financial legal review)",
             "- Accuracy of cross-document consistency judgment",
-            "- Line-by-line rule coverage rate to avoid missed reviews",
-            "- Controllability and stability under a human-AI collaboration workflow",
+            "- Rule-by-rule coverage rate (to avoid missed review)",
+            "- Controllability and stability under human-in-the-loop workflows",
             "**Other Value Returns**",
-            "- Promotes structured and systematic accumulation of financial legal review experience",
-            "- Provides a replicable pattern for subsequent risk control and compliance automation scenarios"
+            "- Drives structured and systematic accumulation of financial legal review experience",
+            "- Provides a reproducible pattern for subsequent risk control and compliance automation scenarios"
           ]
         }
       ]

@@ -12,6 +12,7 @@ function getArenaJsonPaths() {
   return {
     zh: path.join(PROJECT_ROOT, 'Content', 'Arena', 'page.zh.json'),
     en: path.join(PROJECT_ROOT, 'Content', 'Arena', 'page.en.json'),
+    common: path.join(PROJECT_ROOT, 'Content', 'Arena', 'page.common.json'),
   };
 }
 
@@ -46,6 +47,11 @@ type ArenaRow = {
   security?: string;
   cost?: string;
   challenger?: string;
+};
+
+type ArenaCommonRow = {
+  arena_no?: string | number;
+  video_url?: string | null;
 };
 
 function cleanText(value: unknown): string {
@@ -95,6 +101,7 @@ function buildArenasFromJson(): Arena[] {
   const jsonPaths = getArenaJsonPaths();
   const zhRows = readJsonRows<ArenaRow>(jsonPaths.zh);
   const enRows = readJsonRows<ArenaRow>(jsonPaths.en);
+  const commonRows = readJsonRows<ArenaCommonRow>(jsonPaths.common);
 
   const folderMap = buildFolderMapByArenaNo();
   const enMap = new Map<string, ArenaRow>();
@@ -104,6 +111,13 @@ function buildArenasFromJson(): Arena[] {
       enMap.set(arenaNo, row);
     }
   }
+  const commonMap = new Map<string, ArenaCommonRow>();
+  for (const row of commonRows) {
+    const arenaNo = cleanText(row.arena_no);
+    if (arenaNo) {
+      commonMap.set(arenaNo, row);
+    }
+  }
 
   const arenas: Arena[] = [];
   for (const row of zhRows) {
@@ -111,6 +125,7 @@ function buildArenasFromJson(): Arena[] {
     if (!arenaNo) continue;
 
     const enRow = enMap.get(arenaNo);
+    const commonRow = commonMap.get(arenaNo);
     const titleZh = cleanText(row.title);
     if (!titleZh || titleZh.includes('敬请期待')) continue;
 
@@ -139,6 +154,7 @@ function buildArenasFromJson(): Arena[] {
         security: cleanText(row.security),
         cost: cleanText(row.cost),
       },
+      videoUrl: cleanText(commonRow?.video_url) || undefined,
       hasContent: hasArenaContent(folderId),
     });
   }
@@ -150,7 +166,8 @@ function getArenasMtimeKey(): string {
   const jsonPaths = getArenaJsonPaths();
   const zhMtime = fs.existsSync(jsonPaths.zh) ? fs.statSync(jsonPaths.zh).mtimeMs : 0;
   const enMtime = fs.existsSync(jsonPaths.en) ? fs.statSync(jsonPaths.en).mtimeMs : 0;
-  return `${zhMtime}|${enMtime}`;
+  const commonMtime = fs.existsSync(jsonPaths.common) ? fs.statSync(jsonPaths.common).mtimeMs : 0;
+  return `${zhMtime}|${enMtime}|${commonMtime}`;
 }
 
 export async function getAllArenasFromStaticData(): Promise<Arena[]> {

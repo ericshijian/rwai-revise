@@ -89,11 +89,11 @@
 <p>作者网站：<a href="https://dataelem.feishu.cn/wiki/OJYRwuJzZiUHhhkI4MLcMJvfnzh">手搓100个Workflow【活动】</a>（表格最后一行，作者为zh）</p>
 <p>关联引用</p>
 <p>BISHENG(by 毕昇) GitHub：https://github.com/dataelement/bisheng</p>
-<p>GLM-4.7(by 智谱) GitHub：https://github.com/zai-org/GLM-4.5</p>
+<p>GLM-5(by 智谱) GitHub：https://github.com/zai-org/GLM-5</p>
 <p>版本状态</p>
 <p>首发日期：2024-12-xx</p>
-<p>最近更新：2026-02-02</p>
-<p>最近审阅：2026-02-02</p></td>
+<p>最近更新：2026-03-10</p>
+<p>最近审阅：2026-03-10</p></td>
 </tr>
 </tbody>
 </table>

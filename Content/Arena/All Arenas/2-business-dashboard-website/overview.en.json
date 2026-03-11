@@ -1,6 +1,6 @@
 {
-  "highlight": "Website demo completed in 1-2 days",
-  "industry": "Applicable to All Scenarios",
+  "highlight": "Built by 1 non-technical person in 1-2 days",
+  "industry": "All Scenarios",
   "category": "Service,Marketing,Operations",
   "cycle": "2 days",
   "case_no": "Case251107Y01",
@@ -11,17 +11,17 @@
         {
           "title": "Highlight Cards",
           "content": [
-            "- Website demo completed in 1-2 days: Non-technical users can build a business showcase page by following the guidance",
-            "- Only textual materials are required: Generation can start with a webpage outline and requirement description",
-            "- Generated results can be shared directly: The page comes with an access link for internal review and external presentation",
-            "- Continuous conversational revision: Page details can be adjusted quickly by continuing to add requirements"
+            "- Built by 1 non-technical person in 1-2 days: A Demo can be completed without a full frontend-backend team",
+            "- 90% page content completion: A presentable page can be generated quickly from a text plan",
+            "- Interaction response under 0.5 seconds: Smooth page viewing and demo experience",
+            "- 50% lower upfront labor cost: Significantly reduces coordination input across product, design, and development"
           ]
         },
         {
           "title": "Demo",
           "content": [
-            "**[Two-day business dashboard and website demo sample video.mp4]**",
-            "(Expected outcome preview. Video material is from [Lovable] by LovableAI and [Claude Code] by Anthropic.)"
+            "**[Two-Day Business Dashboard and Website Demo Video.mp4]**",
+            "(Preview of expected results. Video material is from [Lovable] by LovableAI and [Claude Code] by Anthropic.)"
           ]
         }
       ]
@@ -32,15 +32,15 @@
         {
           "title": "2.1 Overview",
           "content": [
-            "**Business Background**: This case attempts to let users quickly turn the website text they envision into a what-you-see-is-what-you-get demo through web-based interaction by using agent technology based on large models, and then share it with others to experience."
+            "**Business Background**: This case explores how users can quickly turn their website ideas expressed in text into a what-you-see-is-what-you-get Demo through web interaction using Agent technology powered by large models, and then share it with others for hands-on experience."
           ]
         },
         {
           "title": "2.2 Classification Tags",
           "content": [
-            "**Industry**: Applicable to All Scenarios",
+            "**Industry**: All Scenarios",
             "**Category**: Service, Marketing, Operations",
-            "**Technology Category**: Visualization and Design, Agent, Context Engineering, Agent Application, Frontend Design"
+            "**Technology Category**: Visualization and Design, Agent, Context Engineering, Agent Applications, Frontend Design"
           ]
         },
         {
@@ -52,25 +52,25 @@
         {
           "title": "2.4 Team Composition",
           "content": [
-            "- Demo phase: 1 business expert or product manager, with no programming requirement"
+            "- Demo phase: 1 business expert or product manager, no programming skills required"
           ]
         },
         {
           "title": "2.5 Business Pain Points",
           "content": [
-            "- In recent years, small and medium-sized startups and many traditional industry enterprises have seen growing demand for online promotion windows, creating massive demand for business dashboards and website building",
-            "- Traditional solutions require coordination among product managers, UI designers, and technical staff and involve multiple steps such as website design, UI drawing, frontend development, and sometimes backend development, resulting in high labor cost and long implementation cycles",
-            "- Traditional solutions involve cumbersome communication during prototype modification and adjustment and cannot accurately achieve what-you-see-is-what-you-get results",
-            "- Traditional solutions may require coordination of frontend and backend resources during the demo stage and ensuring viewer access and usage permissions"
+            "- In recent years, demand for online promotional windows has continued to grow among small and medium-sized startups as well as many traditional enterprises, creating massive demand for business dashboards and website development",
+            "- Traditional approaches require coordination among product managers, UI designers, and engineers, across steps such as website design, UI drafting, frontend development, and sometimes backend development, resulting in high labor costs and long implementation cycles",
+            "- Traditional approaches involve cumbersome communication during prototype revisions and adjustments and often fail to achieve true WYSIWYG outcomes",
+            "- Traditional approaches may also require coordinating frontend and backend resources during demos while managing viewers' access and usage permissions"
           ]
         },
         {
           "title": "2.6 Core Functions",
           "content": [
-            "- Page generation: Based on user-entered prompts, optionally with uploaded materials such as layout outlines for the target page, the agent generates the page",
-            "- Page interaction: The generated page supports basic frontend interactive effects such as dropdowns, selection, search bars, and simple dialogue with a bot",
-            "- Real changes, real results: Users can continue updating the generated page effect through interaction with the agent",
-            "- External link sharing: The page demo can generate a corresponding link for convenient sharing and presentation"
+            "- Page generation: Based on user-entered prompts, optionally with uploaded materials such as layout outlines for the target page, the Agent generates the page",
+            "- Page interaction: The generated page supports demonstration of basic frontend interactive effects, such as dropdowns, selections, search bars, and simple conversations with a bot",
+            "- Edit-and-see results: Users can continue interacting with the Agent to update the generated page effects",
+            "- Shareable external link: The page Demo can generate a corresponding link for convenient sharing and presentation"
           ]
         }
       ]
@@ -81,24 +81,24 @@
         {
           "title": "3.1.1 Reasons for Best Practice Selection",
           "content": [
-            "- Low barrier to entry: Usually one non-technical person can complete the demo in 1-2 days.",
-            "- Simple input requirements: It can start with only basic materials such as a textual webpage outline and functional goals.",
-            "- Easy to share: Generated pages come with links and are suitable for reporting, reviews, and cross-team collaboration.",
-            "- Flexible revision: Page details can continue to be adjusted through dialogue, enabling fast iteration."
+            "- Faster setup: Typically, 1 non-technical person can complete the Demo within 1-2 days, much faster than traditional multi-person collaboration workflows.",
+            "- WYSIWYG: Page content completion reaches 90% and accuracy reaches 80%, with support for iterative adjustment during generation.",
+            "- Convenient sharing: Generated pages come with external links, making them easy to demo, review, and share externally.",
+            "- Lower cost: Upfront labor input is reduced by 50%, making it suitable for SMEs to quickly validate business ideas."
           ]
         },
         {
           "title": "3.1.2 Version Information",
           "content": [
-            "- **Version Type**: Cloud-based - web operation edition",
-            "- **Team Name**: Real-World AI self-developed and verified",
+            "- **Version Type**: Cloud - Web Operation Edition",
+            "- **Team Name**: Real-World AI Self-Developed and Verified",
             "- **Chinese Name**: /",
             "- **English Name**: Real-World AI",
             "- **Author Website**: This site",
             "- **Initial Release Date**: 2025-11-07",
             "- **Last Updated**: 2026-03-10",
             "- **Last Reviewed**: 2026-03-10",
-            "- **Key Dependencies**: Lovable · Claude Code · GLM"
+            "- **Key Dependencies**: Lovable · Claude Code · Kimi-K2.5"
           ]
         },
         {
@@ -111,15 +111,15 @@
           "title": "3.1.4 Metrics",
           "content": [
             "**Core Business Metrics**",
-            "- Interactive response latency is below 0.5 seconds for convenient viewing at any time",
-            "- What you see is what you get: The faster the turnaround from plan feedback to visible result, the better. At present it usually takes 1 week, and the target is a 100% efficiency improvement",
-            "- Reduce early-stage labor cost by 50%",
+            "- Interaction response latency is under 0.5 seconds, making the page easy to view at any time",
+            "- WYSIWYG delivery: the faster the turnaround from feedback to visible results, the better; the current typical speed is 1 week, with a target efficiency gain of 100%",
+            "- Reduce upfront labor cost by 50%",
             "**Core Technical Metrics**",
-            "- Generated page content completion rate, relative to the input text plan, reaches 90%",
-            "- Generated page content accuracy, relative to the input text plan, reaches 80%",
+            "- Generated page content completion rate (compared with the input text plan) reaches 90%",
+            "- Generated page content accuracy (compared with the input text plan) reaches 80%",
             "**Other Value Returns**",
-            "- Provides a practice solution for independent workers and developers",
-            "- Offers design and implementation inspiration for UI and frontend teams"
+            "- Provides an exercise solution for independent builders and developers",
+            "- Provides design and implementation inspiration for UI and frontend teams"
           ]
         }
       ]
