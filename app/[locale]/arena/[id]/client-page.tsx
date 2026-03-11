@@ -262,6 +262,13 @@ export function ArenaDetailClient({ arena, locale, arenaId: _arenaId, initialCon
   const [activeTab, setActiveTab] = useState<TabType>('overview');
   const content = initialContent;
   const isChina = locale === 'zh';
+  const isVerified = arena.verificationStatus === '已验证';
+  const statusLabel = isVerified
+    ? (isChina ? '已验证' : 'Verified')
+    : (isChina ? '验证中' : 'In Verification');
+  const statusBadgeClassName = isVerified
+    ? 'bg-amber-50 text-amber-700 ring-amber-600/20'
+    : 'bg-amber-50/50 text-amber-700/70 ring-amber-600/10';
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
   const withBasePath = (path: string) => `${basePath}${path}`;
   const hasArenaSnapshot =
@@ -348,15 +355,15 @@ export function ArenaDetailClient({ arena, locale, arenaId: _arenaId, initialCon
               <div className="lg:col-span-2 flex flex-col justify-between">
                 {/* Title with inline status badges */}
                 <div className="mb-4">
-                  <div className="flex flex-wrap items-center gap-3 mb-3">
+                  <div className="mb-3">
                     <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900">
                       {arena.title[locale as keyof typeof arena.title] || arena.title.zh}
                     </h1>
-                    {/* Status and Contact Badges - Inline with title */}
-                    <div className="flex items-center gap-2">
-                      <span className="inline-flex items-center rounded-full bg-amber-50 px-3 py-1 text-sm font-semibold text-amber-700 ring-1 ring-inset ring-amber-600/20">
-                        <Trophy className="h-3.5 w-3.5 mr-1" />
-                        {locale === 'zh' ? '已验证' : 'Verified'}
+                    {/* Status and Contact Badges */}
+                    <div className="mt-3 flex flex-wrap items-center gap-2">
+                      <span className={`inline-flex items-center rounded-full px-3 py-1 text-sm font-semibold ring-1 ring-inset ${statusBadgeClassName}`}>
+                        <Trophy className={`h-3.5 w-3.5 mr-1 ${isVerified ? '' : 'opacity-70'}`} />
+                        {statusLabel}
                       </span>
                       <Link
                         href={'/' + locale + '/about'}
@@ -370,7 +377,7 @@ export function ArenaDetailClient({ arena, locale, arenaId: _arenaId, initialCon
 
                   {/* Champion/擂主 Info */}
                   {(locale === 'zh' ? arena.champion : arena.championEn) && (
-                    <div className="mb-2 inline-flex items-center gap-2 px-3 py-1.5 bg-gradient-to-r from-purple-50 to-blue-50 rounded-lg border border-purple-100">
+                    <div className="mb-2 flex w-full items-start gap-2 px-3 py-1.5 bg-gradient-to-r from-purple-50 to-blue-50 rounded-lg border border-purple-100">
                       <Trophy className="h-4 w-4 text-purple-600 flex-shrink-0" />
                       <span className="font-semibold text-purple-900 text-sm">
                         {locale === 'zh' ? '擂主' : 'Champion'}:
@@ -383,7 +390,7 @@ export function ArenaDetailClient({ arena, locale, arenaId: _arenaId, initialCon
                   {(() => {
                     const challenger = locale === 'zh' ? arena.challenger : arena.challengerEn;
                     return challenger && challenger.trim() !== '' ? (
-                      <div className="mb-3 inline-flex items-center gap-2 px-3 py-1.5 bg-gradient-to-r from-purple-50/50 to-blue-50/50 rounded-lg border border-purple-100/60">
+                      <div className="mb-3 flex w-full items-start gap-2 px-3 py-1.5 bg-gradient-to-r from-purple-50/50 to-blue-50/50 rounded-lg border border-purple-100/60">
                         <Trophy className="h-4 w-4 text-purple-400 flex-shrink-0" />
                         <span className="font-semibold text-purple-700 text-sm">
                           {locale === 'zh' ? '攻擂中' : 'Challenger'}:
