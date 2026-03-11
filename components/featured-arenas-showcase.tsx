@@ -123,8 +123,14 @@ export function FeaturedArenasShowcase({ arenas, locale, title, subtitle }: Feat
 
   const selectedArena = arenas[selectedIndex] || arenas[0];
   const isZh = locale === 'zh';
+  const selectedVideoUrl = (selectedArena?.videoUrl || '').trim();
+  const hasSelectedVideo = Boolean(selectedVideoUrl);
 
   useEffect(() => {
+    if (!hasSelectedVideo) {
+      return;
+    }
+
     let rafId: number | null = null;
     setVideoError(false);
     setVideoLoading(true);
@@ -152,7 +158,7 @@ export function FeaturedArenasShowcase({ arenas, locale, title, subtitle }: Feat
         cancelAnimationFrame(rafId);
       }
     };
-  }, [selectedArena?.id]);
+  }, [selectedArena?.id, hasSelectedVideo]);
 
   return (
     <section className="relative py-section bg-[#0A0E17]">
@@ -273,14 +279,18 @@ export function FeaturedArenasShowcase({ arenas, locale, title, subtitle }: Feat
           <div className="lg:col-span-3 lg:pl-8 mt-8 lg:mt-0">
             <div className="relative bg-gradient-to-br from-white/5 to-white/[0.02] border border-white/10 rounded-2xl overflow-hidden">
               {selectedArena ? (
-                videoError ? (
+                !hasSelectedVideo || videoError ? (
                   // Video error fallback
                   <div className="w-full aspect-video bg-black flex items-center justify-center text-white p-8">
                     <div className="text-center">
                       <svg className="w-16 h-16 mx-auto mb-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
                       </svg>
-                      <p className="text-lg mb-2">{isZh ? '视频加载失败' : 'Video Failed to Load'}</p>
+                      <p className="text-lg mb-2">
+                        {!hasSelectedVideo
+                          ? (isZh ? '暂无演示视频' : 'No Demo Video Yet')
+                          : (isZh ? '视频加载失败' : 'Video Failed to Load')}
+                      </p>
                       <p className="text-sm text-gray-400">{isZh ? '演示视频正在准备中' : 'Demo video coming soon'}</p>
                     </div>
                   </div>
@@ -313,7 +323,7 @@ export function FeaturedArenasShowcase({ arenas, locale, title, subtitle }: Feat
                     }}
                   >
                     <source
-                      src="https://rwai-dev.oss-cn-shanghai.aliyuncs.com/demo.mp4"
+                      src={selectedVideoUrl}
                       type="video/mp4"
                     />
                     Your browser does not support the video tag.
@@ -327,7 +337,7 @@ export function FeaturedArenasShowcase({ arenas, locale, title, subtitle }: Feat
               )}
 
               {/* Loading overlay */}
-              {videoLoading && !videoError && selectedArena && (
+              {videoLoading && !videoError && hasSelectedVideo && selectedArena && (
                 <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
                   <div className="text-white text-center">
                     <div className="w-12 h-12 border-4 border-white/20 border-t-white rounded-full animate-spin mx-auto mb-3"></div>
@@ -371,7 +381,7 @@ export function FeaturedArenasShowcase({ arenas, locale, title, subtitle }: Feat
           {/* Second Row - Browse All Link */}
           <div className="text-left">
             <Link
-              href={`/${locale}/contact`}
+              href={`/${locale}/about`}
               className="inline-flex items-center gap-2 group"
             >
               <span className="text-blue-400 text-base font-medium underline underline-offset-4 group-hover:text-blue-300 group-hover:shadow-[0_0_20px_-5px_rgba(59,130,246,0.6)] transition-all duration-300">
