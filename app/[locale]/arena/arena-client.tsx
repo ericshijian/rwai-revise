@@ -678,7 +678,6 @@ export default function ArenaClient({ params, pageTitle, pageSubtitle, arenas }:
                             ) : null}
                             {/* Challenger/攻擂中 Info */}
                             {(isChina ? arena.challenger : arena.challengerEn) &&
-                            (isChina ? arena.challenger : arena.challengerEn) !== '寻找攻擂者' &&
                             (isChina ? arena.challenger : arena.challengerEn).trim() !== '' ? (
                               <div className="mb-2.5 p-2 bg-gradient-to-r from-purple-50/50 to-blue-50/50 rounded-lg border border-purple-100/60">
                                 <div className="flex items-center gap-2 text-sm whitespace-nowrap">

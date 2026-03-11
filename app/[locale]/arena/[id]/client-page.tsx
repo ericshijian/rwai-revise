@@ -312,6 +312,7 @@ export function ArenaDetailClient({ arena, locale, arenaId: _arenaId, initialCon
     cost: arena.metrics?.cost || '较优',
     security: arena.metrics?.security || '较高',
   };
+  const hasVideo = Boolean((arena.videoUrl || '').trim());
 
   return (
     <div className="min-h-screen bg-white">
@@ -381,7 +382,7 @@ export function ArenaDetailClient({ arena, locale, arenaId: _arenaId, initialCon
                   {/* Challenger/攻擂中 Info */}
                   {(() => {
                     const challenger = locale === 'zh' ? arena.challenger : arena.challengerEn;
-                    return challenger && challenger !== '寻找攻擂者' && challenger.trim() !== '' ? (
+                    return challenger && challenger.trim() !== '' ? (
                       <div className="mb-3 inline-flex items-center gap-2 px-3 py-1.5 bg-gradient-to-r from-purple-50/50 to-blue-50/50 rounded-lg border border-purple-100/60">
                         <Trophy className="h-4 w-4 text-purple-400 flex-shrink-0" />
                         <span className="font-semibold text-purple-700 text-sm">
@@ -446,17 +447,42 @@ export function ArenaDetailClient({ arena, locale, arenaId: _arenaId, initialCon
               {/* Right Column (60%): Demo Video */}
               <div className="lg:col-span-3">
                 <div className="relative h-[300px] rounded-2xl overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 shadow-2xl border border-slate-700/50">
-                  <video
-                    className="w-full h-full object-contain"
-                    controls
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                  >
-                    <source src="https://rwai-dev.oss-cn-shanghai.aliyuncs.com/demo.mp4" type="video/mp4" />
-                    {locale === 'zh' ? '您的浏览器不支持视频播放' : 'Your browser does not support the video tag.'}
-                  </video>
+                  {hasVideo ? (
+                    <video
+                      className="w-full h-full object-contain"
+                      controls
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                    >
+                      <source src={arena.videoUrl} type="video/mp4" />
+                      {locale === 'zh' ? '您的浏览器不支持视频播放' : 'Your browser does not support the video tag.'}
+                    </video>
+                  ) : (
+                    <div className="relative w-full h-full overflow-hidden bg-gradient-to-br from-[#07142d] via-[#0a2651] to-[#192f67]">
+                      <div className="absolute inset-0 bg-[radial-gradient(circle_at_22%_18%,rgba(139,180,255,0.18),transparent_44%),radial-gradient(circle_at_78%_76%,rgba(132,116,255,0.14),transparent_46%)]" />
+                      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.045)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.045)_1px,transparent_1px)] bg-[size:28px_28px] opacity-[0.16]" />
+                      <div className="absolute -left-1/4 top-0 h-full w-2/3 bg-gradient-to-r from-transparent via-white/8 to-transparent blur-2xl opacity-40" />
+
+                      <div className="absolute top-4 left-4 z-10">
+                        <span className="inline-flex items-center rounded-full border border-blue-200/20 bg-white/10 px-2.5 py-1 text-[11px] font-medium text-blue-100/85 backdrop-blur-sm">
+                          {locale === 'zh' ? '方案演示' : 'Solution Demo'}
+                        </span>
+                      </div>
+
+                      <div className="relative z-10 w-full h-full flex items-center justify-center">
+                        <div className="flex max-w-md -mt-3 flex-col items-center text-center px-6">
+                          <div className="mb-4 rounded-2xl border border-blue-100/20 bg-white/10 p-3 backdrop-blur-md shadow-[0_0_0_1px_rgba(255,255,255,0.04)_inset]">
+                            <Play className="h-5 w-5 text-blue-100/75" fill="currentColor" />
+                          </div>
+                          <p className="text-base font-semibold tracking-[0.01em] text-blue-50/95">
+                            {locale === 'zh' ? '视频制作中' : 'Video in Production'}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>

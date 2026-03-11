@@ -5,6 +5,7 @@ import type { Arena } from '@/lib/types';
 const ALL_ARENAS_DIR = path.join(process.cwd(), 'Content', 'Arena', 'All Arenas');
 const JSON_ZH_PATH = path.join(process.cwd(), 'Content', 'Arena', 'page.zh.json');
 const JSON_EN_PATH = path.join(process.cwd(), 'Content', 'Arena', 'page.en.json');
+const JSON_COMMON_PATH = path.join(process.cwd(), 'Content', 'Arena', 'page.common.json');
 const PUBLIC_DATA_DIR = path.join(process.cwd(), 'public', 'data');
 const ARENAS_JSON_PATH = path.join(PUBLIC_DATA_DIR, 'arenas.json');
 const ARENA_CONTENT_JSON_PATH = path.join(PUBLIC_DATA_DIR, 'arena-content.json');
@@ -55,6 +56,11 @@ type ArenaRow = {
   security?: string;
   cost?: string;
   challenger?: string;
+};
+
+type ArenaCommonRow = {
+  arena_no?: string | number;
+  video_url?: string | null;
 };
 
 function ensureOutputDir() {
@@ -126,12 +132,20 @@ function hasArenaContent(folderId: string): boolean {
 function buildArenasFromJson(): Arena[] {
   const zhRows = readRowsFromJson<ArenaRow>(JSON_ZH_PATH);
   const enRows = readRowsFromJson<ArenaRow>(JSON_EN_PATH);
+  const commonRows = readRowsFromJson<ArenaCommonRow>(JSON_COMMON_PATH);
 
   const enMap = new Map<string, ArenaRow>();
   for (const row of enRows) {
     const arenaNo = cleanText(row.arena_no);
     if (arenaNo) {
       enMap.set(arenaNo, row);
+    }
+  }
+  const commonMap = new Map<string, ArenaCommonRow>();
+  for (const row of commonRows) {
+    const arenaNo = cleanText(row.arena_no);
+    if (arenaNo) {
+      commonMap.set(arenaNo, row);
     }
   }
 
@@ -143,6 +157,7 @@ function buildArenasFromJson(): Arena[] {
     if (!arenaNo) continue;
 
     const enRow = enMap.get(arenaNo);
+    const commonRow = commonMap.get(arenaNo);
     const folderId = folderMap.get(arenaNo) || '';
 
     const titleZh = cleanText(row.title);
@@ -174,6 +189,7 @@ function buildArenasFromJson(): Arena[] {
         security: cleanText(row.security),
         cost: cleanText(row.cost),
       },
+      videoUrl: cleanText(commonRow?.video_url) || undefined,
       hasContent: hasArenaContent(folderId),
     };
 

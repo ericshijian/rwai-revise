@@ -2,11 +2,12 @@
 """
 自动检测 V1/V2 格式的 xlsx 转换脚本
 输入：List of Arenas.xlsx
-输出：page.zh.json
+输出：page.zh.json, page.common.json
 """
 from __future__ import annotations
 
 import argparse
+import csv
 import json
 import math
 import posixpath
@@ -16,7 +17,9 @@ from pathlib import Path
 import xml.etree.ElementTree as ET
 
 OUTPUT_ZH_JSON_NAME = "page.zh.json"
-JSON_FIELDS = [
+OUTPUT_COMMON_JSON_NAME = "page.common.json"
+OUTPUT_CSV_NAME = "List of Arenas.csv"
+ROW_FIELDS = [
     "arena_no",
     "title",
     "champion",
@@ -29,7 +32,9 @@ JSON_FIELDS = [
     "security",
     "cost",
     "challenger",
+    "video_url",
 ]
+ZH_JSON_FIELDS = [field for field in ROW_FIELDS if field != "video_url"]
 
 # V1: 列 B~M (索引 1~12)
 XLSX_COLS_V1 = {
@@ -45,9 +50,10 @@ XLSX_COLS_V1 = {
     "security": 10,
     "cost": 11,
     "challenger": 12,
+    "video_url": 13,
 }
 
-# V2: 列 A~L (索引 0~11)
+# V2: 列 A~M (索引 0~12)
 XLSX_COLS_V2 = {
     "arena_no": 0,
     "title": 1,
@@ -61,6 +67,7 @@ XLSX_COLS_V2 = {
     "security": 9,
     "cost": 10,
     "challenger": 11,
+    "video_url": 12,
 }
 
 
@@ -241,7 +248,7 @@ def normalize_arena_no(text: str) -> str:
     return value
 
 
-def build_zh_rows(rows: list[list[str]], version: str) -> list[dict[str, str]]:
+def build_rows(rows: list[list[str]], version: str) -> list[dict[str, str]]:
     xlsx_cols = XLSX_COLS_V2 if version == "v2" else XLSX_COLS_V1
 
     result: list[dict[str, str]] = []
@@ -255,13 +262,28 @@ def build_zh_rows(rows: list[list[str]], version: str) -> list[dict[str, str]]:
             continue
 
         item: dict[str, str] = {}
-        for key in JSON_FIELDS:
+        for key in ROW_FIELDS:
             idx = xlsx_cols[key]
             item[key] = clean_value(row[idx] if len(row) > idx else "")
         item["arena_no"] = arena_no
         result.append(item)
 
     return result
+
+
+def split_rows_for_outputs(rows: list[dict[str, str]]) -> tuple[list[dict[str, str]], list[dict[str, str | None]]]:
+    zh_rows: list[dict[str, str]] = []
+    common_rows: list[dict[str, str | None]] = []
+
+    for row in rows:
+        zh_rows.append({key: row.get(key, "") for key in ZH_JSON_FIELDS})
+        video_url = clean_value(row.get("video_url", ""))
+        common_rows.append({
+            "arena_no": row.get("arena_no", ""),
+            "video_url": video_url if video_url else None,
+        })
+
+    return zh_rows, common_rows
 
 
 def parse_xlsx(xlsx_path: Path) -> tuple[list[list[str]], str]:
@@ -279,28 +301,40 @@ def parse_xlsx(xlsx_path: Path) -> tuple[list[list[str]], str]:
     return rows, version
 
 
-def to_json(xlsx_path: Path) -> Path:
+def to_json_and_csv(xlsx_path: Path) -> tuple[Path, Path, Path]:
     if not xlsx_path.exists():
         raise FileNotFoundError(f"File not found: {xlsx_path}")
 
     rows, version = parse_xlsx(xlsx_path)
 
-    output_path = xlsx_path.parent / OUTPUT_ZH_JSON_NAME
-    zh_rows = build_zh_rows(rows, version)
+    json_output_path = xlsx_path.parent / OUTPUT_ZH_JSON_NAME
+    common_output_path = xlsx_path.parent / OUTPUT_COMMON_JSON_NAME
+    csv_output_path = xlsx_path.parent / OUTPUT_CSV_NAME
+    parsed_rows = build_rows(rows, version)
+    zh_rows, common_rows = split_rows_for_outputs(parsed_rows)
 
-    with output_path.open("w", encoding="utf-8") as f:
+    with json_output_path.open("w", encoding="utf-8") as f:
         json.dump(zh_rows, f, ensure_ascii=False, indent=2)
         f.write("\n")
 
+    with common_output_path.open("w", encoding="utf-8") as f:
+        json.dump(common_rows, f, ensure_ascii=False, indent=2)
+        f.write("\n")
+
+    with csv_output_path.open("w", encoding="utf-8-sig", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=ROW_FIELDS)
+        writer.writeheader()
+        writer.writerows(parsed_rows)
+
     print(f"Detected format: {version.upper()}")
-    return output_path
+    return json_output_path, common_output_path, csv_output_path
 
 
 def main() -> None:
     default_file = Path(__file__).resolve().parent / "List of Arenas.xlsx"
 
     parser = argparse.ArgumentParser(
-        description="Generate 'page.zh.json' from List of Arenas.xlsx (auto-detect V1/V2 format)."
+        description="Generate 'page.zh.json' and 'page.common.json' from List of Arenas.xlsx (auto-detect V1/V2 format)."
     )
     parser.add_argument(
         "xlsx",
@@ -311,10 +345,12 @@ def main() -> None:
     args = parser.parse_args()
 
     xlsx_path = Path(args.xlsx).expanduser().resolve()
-    output = to_json(xlsx_path)
+    json_output, common_output, csv_output = to_json_and_csv(xlsx_path)
 
     print(f"Input: {xlsx_path}")
-    print(f"Generated: {output}")
+    print(f"Generated: {json_output}")
+    print(f"Generated: {common_output}")
+    print(f"Generated: {csv_output}")
 
 
 if __name__ == "__main__":
